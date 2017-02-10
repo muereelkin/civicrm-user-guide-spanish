@@ -1,4 +1,4 @@
-MS en la sección * Integración con la Web *.¿Qué es CiviCRM?
+¿Qué es CiviCRM?
 ================
 
 CiviCRM es un potente sistema de gestión de las relaciones con los contactos (CRM) basado en web. Permite a una organización registrar y administrar la información acerca de las diversas personas y organizaciones con las que interactúa. CiviCRM es más que una libreta de direcciones, también le permite registrar las  interacciones con personas y organizaciones, interactuar con sus contactos y solicitar donaciones a través de su sitio web. La información que recoge se almacena en un lugar pero se puede acceder desde casi cualquier sitio.
