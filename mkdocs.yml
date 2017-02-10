@@ -8,9 +8,9 @@ site_author: 'La comunidad de CiviCRM'
 theme: readthedocs
 
 pages:
-- Home: 'index.md'
-- Introduction:
-    - 'What is CiviCRM?': 'introduction/what-is-civicrm.md'
+- Inicio: 'index.md'
+- Introducción:
+    - '¿Qué es CiviCRM? 'introduction/what-is-civicrm.md'
     - 'Real World Examples': 'introduction/real-world-examples.md'
     - 'Components': 'introduction/components.md'
     - 'Extensions': 'introduction/extensions.md'
