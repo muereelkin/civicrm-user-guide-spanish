@@ -1,24 +1,13 @@
-
-CiviCRM User Guide
+Guía de usuario de CiviCRM
 ==================
+Este libro es una guía para los usuarios de CiviCRM y cubre todo lo que necesitan saber para trabajar con CiviCRM en el día a día. Nuestro objetivo es cubrir toda la funcionalidad que está disponible a través de la interfaz de usuario de CiviCRM.
 
-This book is a guide for users of CiviCRM and covers
-everything they need to know
-to work with CiviCRM on a day to day basis. Our aim is to cover all
-functionality that is available via CiviCRM's user interface.
+Aunque no se cubren temas de administración de sistemas o de programación, desarrolladores y administradores también encontrarán este libro útil como guía para entender todo lo que puede hacer CiviCRM. Algunos aspectos de CiviCRM (como la instalación o desarrollos a medida) son demasiados técnicos y están fuera del alcance de este libro.
 
-Although we do not cover system administrator or developer topics,
-CiviCRM developers and system administrators will also find this book
-useful as a guide to everything you can do with an 'out of the box'
-CiviCRM.
+Aunque no están cubiertas aquí, hay referencias a otras fuentes con información técnica que podrán ser útiles para personas de su proveedor de servicios o personal técnico.
+Este libro está disponible para ser leído online.
 
-Some aspects of CiviCRM (such as installation, or custom development)
-are technical and outside the scope of this book. Although they are not
-covered here, we do point to other relevant sources of technical
-document which should be useful for people (like your service provider,
-or technical staff) who understand them.
+Está escrito colaborativamente por la comunidad de CiviCRM (véase la historia de este libro para más detalles).
+Puede ayudar a escribir este libro y ayudar con otras tareas de documentación.
 
-This book is freely available to read online. It is collaboratively written by the CiviCRM community (see the
-*History of this book* chapter for more details). You can help write this
-book and help with other documentation efforts. See
-https://civicrm.org/participate/documentation for more information. 
+Consulte https://civicrm.org/participate/documentation para obtener más información.
