@@ -1,95 +1,34 @@
-Who is CiviCRM?
+¿Quién es CiviCRM?
 ===============
 
-CiviCRM has a unique and diverse community centred around developing,
-using, and documenting the software. Our community includes the CiviCRM
-core team, people at the non-profits that use CiviCRM; consultants
-working with a number of non-profit organizations; programmers and
-developers, power users, volunteers and community organizers! We are
-also closely related to many other open source projects.
+CiviCRM tiene una comunidad única y diversa centrada en desarrollar, utilizar y documentar el software. Nuestra comunidad incluye el equipo de CiviCRM, personas en organizaciones sin fines de lucro que utilizan CiviCRM; consultores que trabajan con organizaciones sin fines de lucro; programadores y desarrolladores, usuarios, voluntarios y miembros de la comunidad! Estamos relacionados estrechamente a muchos otros proyectos de código abierto.
 
-Each member of the community interacts with CiviCRM in their own way,
-working to improve the software and how we organize ourselves. The
-strength of community comes from this diversity and the ease with which
-someone can join us, and means that we are constantly changing and
-improving, often in unexpected ways.
+Cada miembro de la comunidad interactúa con CiviCRM a su manera, trabajando para mejorar el software y organizarnos mejor. La fuerza de la comunidad proviene de esta diversidad y de la facilidad con que una persona puede unirse a nosotros. Esto significa que estamos constantemente cambiando y mejorando, a menudo en formas inesperadas.
 
-Like all communities your membership is characterised by your
-interactions. If you treat others well, have some fun, and help others,
-then you can expect to enjoy being a member of the CiviCRM community.
-But if you are prone to complaining or don't use a respectful tone in
-communications, or if you see the community just as a resource and not
-as a collection of very kind, generous and clever people, then you are
-probably not going to get much of a response. Treat people well and you
-can find the CiviCRM community fun and rewarding.
-
-History
+Historia
 -------
 
-CiviCRM started in 2004 by Dave Greenberg, Donald Lobo and Michal Mach.
-The founders had a lot of previous experience working with non-profit
-organizations and tools. The group was influenced very early by Zack
-Rosen and Neil Drumm, who convinced them to use Drupal as a fundamental
-cornerstone for CiviCRM. This decision has meant that the developers
-have been able to leverage a lot of the functionality that Drupal
-provides, freeing the team up to focus on building the features
-necessary to make a great CRM.
+CiviCRM comenzó en 2004 liderado por Dave Greenberg, Donald Lobo y Michal Mach.
+Los fundadores tenían mucha experiencia trabajando con herramientas de gestión para organizaciones sin fines de lucro. El grupo ifue influenciadon muy pronto Zack Rosen y Neil Drumm, quienes les convencieron para utilizar Drupal como pilar fundamental de CiviCRM. Esta decisión ha permitido que los desarrolladores hayan sido capaces de aprovechar la funcionalidad que ofrece Drupal, liberando el equipo para centrarse en la construcción de las funcionalidades necesarias para hacer un gran CRM.
 
-In 2005 the first version of CiviCRM was released with two of the core
-modules in place: CiviMail and CiviContribute (you can read more about
-these later).
+En 2005 la primera versión de CiviCRM fue lanzada con dos de los módulos del núcleo: CiviMail y CiviContribute (puede leer sobre esto más adelante).
 
-Since those early days CiviCRM has built a large community of users and
-contributors (there are now over 8000 installed sites), the software has
-gone from strength to strength (there are now 8 core modules and
-additional third party components), and the core team has expanded to 8
-members. There is also a large ecology of free software contributors
-around the project and high-profile non-profit organisations such as
-Amnesty International, Creative Commons, Electronic Frontier
-Foundation, Free Software Foundation, Mozilla, and Wikimedia Foundation
-use CiviCRM.
+Desde los primeros días CiviCRM ha construido una gran comunidad de usuarios y colaboradores (ahora hay más de 10000 instalado sitios), el software ha ido creciendo en funcionalidades (ahora hay 8 módulos básicos y componentes adicionales de terceros). Hay también un ecosistema grande de colaboradores de código dentro del proyecto y organizaciones sin fines de lucro de alto perfil tales como Amnistía Internacional, Creative Commons, Electronic Frontier Foundation, Free Software Foundation, Mozilla, y Fundación Wikimedia utilizan CiviCRM.
 
-It's good to talk
------------------
+Es bueno hablar
+------------------
 
-CiviCRM is an open and learning community, and people are ready to hear
-your ideas. If you have a good idea, there's nothing to stop you
-carrying it out - but the best way to start is to start talking about
-it.
+CiviCRM es una comunidad abierta y de aprendizaje, las personas están preparadas para oír sus ideas. Si tiene una buena idea, no hay nada que impida llevarla a cabo - pero la mejor manera de empezar es comenzar a hablar de ello.
 
-If you're not sure where to start, the best place is probably the
-community forum
-([http://forum.civicrm.org/](http://forum.civicrm.org/)). Ask people
-what they think about your idea. There's a wealth of experience on the
-forum, and someone will, very possibly, have tried something similar
-before. CiviCRM people are a friendly bunch and their guiding philosophy
-is collaboration.
+Si no está seguro de dónde empezar, el mejor lugar es probablemente el foro de la comunidad ([http://forum.civicrm.org/] (http://forum.civicrm.org/)). Pregunte lo que piensan acerca de su idea. Hay una mucha experiencia en el foro, y muy posiblemente, alguien habrá probado algo similar antes. El grupo de personas de CiviCRM es agradable y su filosofía es la colaboración.
 
-Depending on your idea, you'll be directed to the next best place; maybe
-an article on the blog
-([http://civicrm.org/blog/](http://civicrm.org/blog/)), a page on the
-wiki ([http://wiki.civicrm.org/](http://wiki.civicrm.org/)), a
-teleconference or a meeting up with another community member in real
-life, yes that's right, REAL LIFE!
+¡Sea el cambio!
+---------------
 
-Be the change
--------------
+Así que tiene una gran idea. Ahora necesita un plan de acción igualmente grande para acompañar esta idea y entonces tendrá que implementarlo. Aunque la comunidad CiviCRM es amigable y lo apoyará y le gustaría estar involucrada y actualizada acerca de su proyecto, usted tendrá que ser el conductor.
+¿Cómo obtendrá los recursos juntos para su proyecto? ¿Cómo puede compaginarlo lo con su trabajo diario? Encontrar una manera de alcanzar simultáneamente sus propios objetivos y beneficiar a la comunidad de CiviCRM es la mejor manera de hacer las cosas.
 
-So you have a great idea. Now you need an equally great action plan to
-accompany this idea and then you'll need to implement it. Although the
-CiviCRM community is friendly and supportive and will like to be
-involved and updated about your project, you'll need to be the driver.
-How will you get the resources together for your project? How can you
-fit it in with your day job? Finding a way to simultaneously achieve
-your own objectives and benefiting the CiviCRM community is the best way
-of getting things done.
-
-And finally...
+Y finalmente...
 --------------
 
-If you're a CiviCRM user who has an ongoing relationship with a
-consultant, there's nothing to stop you from also being an active member
-of the community. The community really benefits from direct feedback
-from end users - your consultant is only one person or organization - by
-asking on the forums you're opening yourself up to help and input from
-the entire community.
+Si es un usuario de CiviCRM, que tiene una relación permanente con un consultor, no hay nada que le impida ser también un miembro activo de la comunidad. La comunidad se beneficia de la retroalimentación directa de los usuarios finales - su consultor es sólo una persona o una organización - preguntando en los foros, se está abriendo a la ayuda y soporte de toda la comunidad.
