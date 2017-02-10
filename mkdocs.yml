@@ -10,11 +10,11 @@ theme: readthedocs
 pages:
 - Inicio: 'index.md'
 - Introducción:
-    - '¿Qué es CiviCRM?'introduction/what-is-civicrm.md'
-    - 'Real World Examples': 'introduction/real-world-examples.md'
-    - 'Components': 'introduction/components.md'
-    - 'Extensions': 'introduction/extensions.md'
-    - 'Who is CiviCRM?': 'introduction/who-is-civicrm.md'
+    - '¿Qué es CiviCRM?': 'introduction/what-is-civicrm.md'
+    #- 'Real World Examples': 'introduction/real-world-examples.md'
+    #- 'Components': 'introduction/components.md'
+    #- 'Extensions': 'introduction/extensions.md'
+    - '¿Quíen es CiviCRM?': 'introduction/who-is-civicrm.md'
 - Getting prepared:
     - 'Is CiviCRM for You?': 'getting-prepared/is-civicrm-for-you.md'
     - 'Identifying Your Needs': 'getting-prepared/identifying-your-needs.md'
