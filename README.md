@@ -1,4 +1,4 @@
-# CiviCRM user guide
+# CiviCRM guía de usuario en español
 
 Note: This repository contains _source files_ for the CiviCRM user and administrator guide. It is intended for use by people that want to contribute to the guide.
 
