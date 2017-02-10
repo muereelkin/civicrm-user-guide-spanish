@@ -22,6 +22,8 @@ CiviCRM es una comunidad abierta y de aprendizaje, las personas están preparada
 
 Si no está seguro de dónde empezar, el mejor lugar es probablemente el foro de la comunidad ([http://forum.civicrm.org/] (http://forum.civicrm.org/)). Pregunte lo que piensan acerca de su idea. Hay una mucha experiencia en el foro, y muy posiblemente, alguien habrá probado algo similar antes. El grupo de personas de CiviCRM es agradable y su filosofía es la colaboración.
 
+Si tiene dudas otro canal muy útil es Stack Exchange ([http://civicrm.stackexchange.com/] (http://civicrm.stackexchange.com/))
+
 ¡Sea el cambio!
 ---------------
 
