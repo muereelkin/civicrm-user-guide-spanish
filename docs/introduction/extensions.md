@@ -1,69 +1,32 @@
-Extensions
+Extensiones
 ==========
 
-Extensions provide additional functionality to core CiviCRM. Extensions
-are the recommended way to create new features and change the way that
-CiviCRM works, especially when these changes are not needed or desired
-by the entire CiviCRM community.
+Las extensiones proporcionan funcionalidad adicional a CiviCRM. Las extensiones son la forma recomendada para crear nuevas funcionalidades y cambiar la forma en que funciona CiviCRM.
 
-Many people write extensions for their *specific use cases* and install
-them it on their CiviCRM installation. Many people write *generic
-extensions* that are useful for multiple organizations. Extensions that
-are useful to multiple organisations can be published in the CiviCRM
-extensions directory. 
+Mucha gente escribe extensiones para sus *casos de uso específicos* y luego las añaden a su instalación de CiviCRM. Mucha gente escribe *extensiones genéricas* que son útiles para muchas organizaciones. Las extensiones que son útiles para múltiples organizaciones pueden ser publicadas en el directorio de extensiones de CiviCRM. 
 
-The extensions directory
-------------------------
+El directorio de extensiones
+---------------------------
 
-The extensions directory is available at
-[https://civicrm.org/extensions](https://civicrm.org/extensions). It
-lists extensions that have been written by members of the CiviCRM
-community and made freely available for download by other
-organizations. Extensions are by default listed in order of popularity
-(which is calculated by the number of sites that report using the
-module).
+El directorio de extensiones está disponible en [https://civicrm.org/extensions](https://civicrm.org/extensions). En él se enumeran las extensiones que han sido escritas por los miembros de la comunidad de CiviCRM y están disponibles libremente para su descarga por otras organizaciones. Por defecto las extensiones están listadas por orden de popularidad (que se calcula por el número de sitios que informan de su utilización).
 
 ![image](../img/z-extensions-website_1.png) 
 
-Extensions are organized into two broad categories: 'native' extensions
-which work with any CMS, and CMS specific extensions that add
-integration between CiviCRM and the CMS and hence are CMS specific. If
-you are familiar with your CMS, you may know CMS specific extensions by
-another name, for example Drupal specific extensions are typically
-called **Drupal Modules** and Wordpress specific extensions are called
-**Wordpress Plugins**.
+Las extensiones se organizan en dos grandes categorías: las extensiones 'nativas' que funcionan con cualquier CMS y extensiones específicas que añaden funcionalidad únicamente disponible para un CMS específico. Si está familiarizado con un CMS, puede conocer a las por otro nombre, por ejemplo **Módulos en Drupal** o ** Plugins en Wordpress**.
 
-Extensions that have been approved for automated distribution can be
-easily installed directly from your CiviCRM installation. 
+Las extensiones que han sido aprobados para su distribución automática se pueden instalar fácilmente desde su instalación CiviCRM. 
 
-Installing extensions
----------------------
+Instalando extensiones
+-----------------------
 
-When configured correctly, extensions can be installed directly into
-CiviCRM via the user interface. Go to **Administer > System Settings >
-Extensions**. You should see a list of extensions that are
-compatible with your version of CiviCRM. Note that you may not see all
-the extensions that were listed in the extensions directory as they may
-not be compatible.
+Cuando se configuran correctamente, las extensiones pueden ser instaladas directamente en CiviCRM a través de la interfaz de usuario. Ir a **Administrar > Opciones del sistema > Gestionar Extensiones**. Debería ver una lista de extensiones que son compatibles con su versión de CiviCRM. Tenga en cuenta que puede que no vea todas las extensiones que se enumeran en el directorio de extensiones ya que pueden no ser compatibles.
 
 ![image](../img/z-extensions-ui.png)
 
-If you do not see a list of extensions here, it may be that your system
-is not properly configured to manage extensions. You should consult your
-system administrator if this is the case. 
+Si no puede ver una lista de extensiones aquí, puede ser que el sistema no está configurado correctamente para administrar las extensiones. Usted debe consultar a su administrador del sistema si este es el caso. 
 
-Writing extensions 
+Writing extensions  
 --------------------
 
-Anyone is free to write an extension to enhance their CiviCRM
-installation (or commission someone to do so). Writing an extension is
-a task for a developer so a detailed discussion of how to write one is
-outside the scope of this book. If you do write an extension to cater
-for your particular use case, you may wish to consider if other
-organizations would also be able to benefit from your work and hence
-whether you should publish your extension and make it more generic.
-Publishing your extension and attracting users brings many benefits in
-the shape of feedback on how it can be improved, bug reports, and code
-contributions that may enhance your extension. 
-
-
+Cualquier persona es libre de escribir una extensión para mejorar su instalación CiviCRM (o encargar a alguien que lo haga). Escribir una extensión es una tarea para un desarrollador. La descripción detallada de cómo escribir una extensión está fuera del alcance de este libro. Si escribe una extensión para atender a su caso en particular, es posible que desee considerar si otras organizaciones también podrían beneficiarse de su trabajo y, por tanto, publicar su extensión y que sea más genérica.
+Publicación de su extensión y atraer a los usuarios a que la utilicen trae muchos beneficios ya que le darán información sobre cómo se puede mejorar, informes de errores, y contribuciones de código que pueden expandir su extensión. 
