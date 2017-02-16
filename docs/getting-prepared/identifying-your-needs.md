@@ -1,120 +1,58 @@
-Identifying Your Needs
+Identificando sus necesidades 
 ======================
 
-This chapter covers some basic strategies for identifying your
-organizational needs, and how they could be met by CiviCRM. It doesn't
-go into detail about CiviCRM functionality or how CiviCRM stores data
-(you will find that in other chapters). Instead, we encourage you to
-first take a step back and think about your organisation.
+Este capítulo cubre algunas estrategias básicas para identificar las necesidades de su organización, y cómo podrían cubrirse con CiviCRM. No entra en detalles sobre funcionalidad de CiviCRM o cómo CiviCRM almacena los datos (que se encuentra en otros capítulos). Por el contrario, le recomendamos que primero dé un paso atrás y piense en su organización.
 
-Building internal support for a new Constituent Relationship Management
-(CRM) solution is a complex task that, when done thoughtfully, can yield
-great rewards.
+Conseguir el soporte interno para la implementación de un nuevo CRM es una tarea compleja pero, cuando se hace cuidadosamente, puede producir grandes recompensas.
 
-Some organizations are comfortable appointing a team to do this
-internally while others rely on outside consultants. Following are our
-recommendations for how best to evaluate your organization’s needs and
-build internal support.
+Algunas organizaciones se sienten cómodas nombrando un equipo interno para ello mientras que otras dependen de consultores externos. Las siguientes son nuestras recomendaciones para evaluar de la mejor manera las necesidades de su organización y construir apoyo interno.
 
-Goal
+Objetivos
 ----
 
-To start with, take a minute to articulate the goal of adopting a CRM.
-For example:
+Para comenzar tómese un minuto para pensar en el objetivo al implementar un CRM.
+Por ejemplo:
 
-*Investing in our organization’s database of 12,000 constituents will
-allow our team to better focus on raising funds and awareness to fulfill
-our mission now and in the future.*
+*Invertir en la base de datos de la organización de 12,000 contactos permitirá a nuestro equipo centrarse más en recaudar fondos*
 
-Evaluation
-----------
+Evaluación
+-----------
 
-Evaluate your organization's specific CRM needs by interviewing key
-stakeholders. This might include development, communications, marketing,
-events and programs staff as well as board members.
+Evaluar necesidades específicas de su organización entrevistando a los principales interesados. Esto podría incluir desarrollo, comunicaciones, marketing, personal de eventos y programas, así como miembros de la Junta.
 
-**Help them identify the constituents** they interact with on a routine
-basis and to articulate key challenges in managing constituent
-information (collecting, updating, sharing and using contact
-information).
+**Ayudarlos a identificar a los contactos** con los que interactúan de forma rutinaria.
 
-**Identify specific inefficiencies** that could be addressed by a
-comprehensive Constituent Relationship Management solution.
+**Identificar las ineficiencias ** que podían ser abordadas por una solución CRM.
 
-**Enumerate the resulting lost productivity**. For example:
+**Enumerar la pérdida de productividad resultante**. Por ejemplo:
 
--   **Incoherent view of our constituents.** We are unable to see a
-    holistic record of our constituents eg: who is a donor, volunteer
-    and e-newsletter subscriber.
--   **Inability to include all prospective donors in all outreach
-    efforts.** With fractured constituent lists we are unable to include
-    all constituents in our efforts to raise funds, awareness and
-    promote events.
--   **Inefficient use of staff.**Redundant staff time is spent re-keying
-    information originally received digitally, importing, exporting and
-    de-duping records.
--   **Lack of communication.**Inability to communicate across
-    departments about our various interactions with the same
-    constituent.
--   **Data vulnerability.**Inability to make reliable backups of all
-    data and protect it against malicious or accidental loss.
+- **Vista inconsistente de nuestra base social.** Somos incapaces de ver un registro integral de nuestros contactos.
+- **Incapacidad para incluir a todos los posibles donantes en una acción concreta.** con listas incompletas de los contactos no podemos incluir a todos ellos en acciones para recaudar fondos, transmitir mensajes y promocionar eventos.
+- **Uso ineficiente de personal** El tiempo invertido de su personal para manipular información recibida en otros medios (papel, formulario web, etc.)
+- **Falta de comunicación.** Incapacidad para comunicar entre distintos departamentos las interacciones con la misma persona.
+- **Vulnerabilidad de datos.** Incapacidad para hacer copias de seguridad fiables de todos los datos y protegerlos contra la pérdida accidental o maliciosa.
 
 
-**Lastly, inventory current data sources** that could be consolidated
-and shared across departments. For example:
+**Por último, detectar todas las fuentes de datos** que podrían ser consolidadas y compartidas entre departamentos.
 
--   **Owner / Department / Count / Constituent / Description /
-    filename**
--   Kris / Comms / 245 / short-lead media contacts / comms campaigns /
-    comms2010.doc
--   Katie /Dev / 79,000 / donors / donors active since 2005 /
-    donors2005-2010.xls
--   Martha /Marketing / 233 / corporate partners / active partners /
-    (Outlook)
--   Dan /Marketing / 134 / grassroots partners / all grassroots partners
-    / grasspartners05-10 (Google docs)
--   Carole / Volunteers / 3450 / volunteers / all MLK day volunteers,
-    skills / mlk_volunteers_10.xls
+Beneficios
+---------
 
-Benefits
---------
+Enumere los beneficios de invertir en una solución CRM integral.
+Por ejemplo:
 
-Enumerate the specific benefits of investing in a holistic CRM solution.
-For example:
+- **Accesible por todo personal** desde dentro y fuera de la oficina (con permisos granulares de nivel de entrada)   - **Registro integral para cada contacto** mostrando todas las interacciones con la organización
+- **Creación dinámica de grupos de contactos** lo que nos permite crear grupos en base a criterios tales como 'todos los donantes de más de $100 en Madrid' o 'todos los donantes que han pasado a ser grandes donantes este año'   - **Dinámica creación de donante superior y otros informes**   - **Gestión y autocreación de los contactos de manera desatendida** de su registro con información de de contacto/contribución/suscripción/actividad
 
--   **Accessible to the entire staff** from inside and outside the
-    office (with granular permissions from entry level to super-users)
--   **Holistic record for each constituent** showing all their contact
-    information and interactions with our organization.
--   **Dynamic creation of constituent groups** allowing us to create
-    groups of constituents based on criteria such as ‘all donors of over
-    $100 in Massachusetts’ or ‘all donors whose gifts have amounted to
-    major gifts this year’
--   **Dynamic creation of top donor and other reports**
--   **Constituents' self-service creation and management** of their
-    contact/contribution/subscription/activity records
+Recomendaciones
+-------------
 
-Recommendations
----------------
+Cuando recomiende la solución CRM enumere y compare sus características y los costos asociados con otras soluciones del mercado. Comparta casos de estudio de otras organizaciones que usan la solución recomendada.
 
-In recommending your CRM solution enumerate and compare its features and
-costs to other market solutions. Share case studies of other
-organizations who use the recommended solution.
+**Los costos de implementación-** incluya un presupuesto para la implementación que contemple:
 
-**Implementation costs -** Include a budget for implementation that
-contemplates:
+- Descubrimiento y administración de proyectos   - Limpieza, consolidación y migración de datos   - Configuración del sistema   - Entrenamiento post implementación y documentación
 
--   discovery and project management
--   data clean up, consolidation and migration
--   system configuration
--   post implementation training and documentation
+**Costos de mantenimiento** - Incluir un presupuesto para el mantenimiento continuo que contemple:
 
-**Maintenance costs** - Include a budget for ongoing maintenance that
-contemplates:
-
--   pro-active server maintenance
--   incremental data backups
--   operating system and software upgrades
--   ongoing training
-
-
+- Mantenimiento proactivo del servidor   - Copias de seguridad incrementales-   - Actualizaciones de sistema operativo   - Formación continua

@@ -1,113 +1,55 @@
-Hosting
-=======
+Alojamiento
+========
 
-Before installing CiviCRM, careful consideration must be given to where
-it will be hosted. The main options with an outline of the situations in
-which you would want to choose them, and the advantages and
-disadvantages of doing so are outlined below:
+Antes de instalar CiviCRM, se debe prestar cuidadosa atención a donde se alojará. Las principales opciones son:
 
-Internal hosting
------------------
+Alojamiento interno
+------------------
 
-If you have an internal IT department or staff members with a technical
-background, you may wish to host CiviCRM internally. To do this, you
-will need:
+Si usted tiene un departamento de TI interno o miembros del personal con una formación técnica, puede alojar CiviCRM internamente. Para hacer esto, usted necesitará:
 
--   Servers or dedicated PC hardware available to run as a web server,
-    24-7.
--   A space on premises to permanently store the hardware, possibly air
-    conditioned.
--   An un-interrupted power supply (UPS) to ensure the server is still
-    available during power outages.
--   Either a stable internet connection with a static IP address and an
-    SLA (Service Level Agreement) for high availability, or a leased
-    line. It is important to note that should the Internet connectivity
-    to the building in which your server resides goes down, only users
-    on internal network will be able to access it. External visitors
-    will not be able to access your website, including logging into
-    CiviCRM and accessing online contribution forms. Widgets posted on
-    other sites will also become unavailable. The bandwidth is also an
-    important factor, as it must be high enough to serve the amount of
-    traffic your website receives.
+- Servidores o PCs dedicados disponibles para configurarse como servidor web en modo 24x7  
+- Un espacio adecuado en sus instalaciones ubicar los servidores, posiblemente con aire acondicionado.
+- Un sistema de alimentación ininterrumpido (SAI) para que el servidor esté disponible durante cortes de electricidad.- Una conexión estable a internet con una dirección IP estática con alta disponibilidad. Es importante destacar que si la conectividad a Internet de su oficina se cae sólo los usuarios de la red interna podrán acceder al sistema. Los visitantes externos no podrán acceder a su página web y realizar acciones como ingresar a CiviCRM o realizar contribución online. El ancho de banda es también un factor importante, ya que debe ser lo suficientemente alto para responder a las peticiones que su sitio web recibe.
 
-There are other aspects to address too. If you have an internal network,
-the web server should be partitioned from the other computers and
-servers to enhance security (e.g. in a Virtual Private Network or DMZ).
-A web server could, potentially, introduce vulnerabilities that an
-external individual, script or bot could use as a gateway into your
-otherwise private, non-Internet facing systems. It is also a good idea
-to research the maintenance and daily running costs of having an
-internal server, and compare it to that of using an external host.
+También hay otros aspectos importantes a comentar. Si tiene una red interna, el servidor web debe estar separado de los otros equipos y servidores para mejorar la seguridad (por ejemplo en una VPN o una DMZ).
+Un servidor web podría potencialmente introducir vulnerabilidades que un usuario externo, un script o un bot podrían utilizar como puerta entrada a sus sistemas privados. También es una buena idea investigar los costos de mantenimiento y gestión diario de tener un servidor interno y compararlos con los de utilizar un servidor externo.
 
-External hosting 
------------------
+Alojamiento externo
+========
 
-With internal expertise you could manage the install and configuration
-in-house, but host CiviCRM with an external provider. In this instance,
-we recommended you rent a VPS (Virtual Private Server) to ensure you
-have complete control of all packages and libraries (e.g. PHP, MySQL,
-etc), and are therefore able to configure it to your specific
-requirements.
+Con la experiencia adecuada podría gestionar la instalación y la configuración en un servidor interno, pero considere alojar CiviCRM con un proveedor externo. En este caso, se recomienda que contratar un VPS (Servidor Privado Virtual) para asegurarse de que tiene un control completo de su instalación (p. ej. PHP, MySQL, etc) y por lo tanto es capaz es capaz de configurarlos a sus necesidades específicas.
 
-Many shared hosts restrict the level of access you have, and may not
-support CiviCRM if you are unable to install the required
-pre-requisites. Shared hosts can also be prone to performance issues, as
-the hardware is shared between a group of customers with varying usage
-levels; if one customer's website suddenly receives a large spike in
-traffic, every website on that server could experience a lengthy outage.
+Muchos alojamientos compartidos restringen el nivel de acceso que tienen y pueden no permitirle instalar CiviCRM si no puede cumplir los requisitos necesarios. Los alojamientos compartidos pueden ser propensos a problemas de rendimiento, debido a que el hardware es compartido entre un grupo de clientes con diferentes niveles de uso. Si el sitio web de un cliente recibe un número grande de tráfico de manera repentina, el resto de sitios alojados pueden experimentar velocidades lentas o interrupciones.
 
-Disadvantages aside, leasing space on a shared host is typically cheaper
-than a VPS, and both are subscription services on a monthly or annual
-basis (discounts may be available for longer leases.
+Inconvenientes aparte, alquilar un servidor compartido es normalmente más barato que un VPS, ambos son servicios de suscripción mensuales o anuales (algunos descuentos pueden estar disponibles para alquileres a más largo plazo).
 
-**We advise that you trial run any service for a short-term before
-committing to a longer period.**
+**Le aconsejamos probar cualquier servicio antes de comprometerse por períodos largos**
 
-Existing hosting
-----------------
+Alojamiento existente
+------------------
 
-If you are already using a website host, contact your provider to
-determine whether they support the packages and libraries required by
-CiviCRM. If they do not, there are two options available to you:
+Si ya utiliza un alojamiento Web, póngase en contacto con su proveedor para determinar si es compatible con los paquetes y librerías de CiviCRM. Si no es así, hay dos opciones:
 
-### **Migrate to another host**.
+### ** Migrar a otro alojamiento **.
 
-Depending on the CMS you are using, the process of moving from one host
-to another may be fairly straightforward. You are in a good position to
-transfer to another host if you can:  
+En función del CMS que utiliza, el proceso de pasar de un host a otro puede ser bastante sencillo. Estás en una buena posición para transferir a otro host si puede:  
 
-1.  request that your users **stop creating and updating content**
-    during the migration,
-2.  **export and import** all of the content from/to the chosen CMS,
-3.  **edit your DNS records** to switch the 'pointers' to your
-    website from the old host to the new host
+1. Solicitar que sus usuarios **dejen de crear y actualizar contenidos** durante la migración,2. **exportar e importar** todo el contenido desde/hacia el CMS elegido,3. **editar sus registros DNS** para cambiar los enlaces que apuntaban al sitio anterior por el nuevo sitio web
 
-### **Run the website and CiviCRM in parallel, on different servers**.
+### **Ejecutar el sitio web y CiviCRM en distintos servidores**.
 
-If you cannot move your website to a different host, you could purchase
-a second account on a host capable of running CiviCRM, and run the two
-systems alongside each other.
+Si no puede mover su sitio we a un host diferente, podría contratar un segundo alojamiento para CiviCRM y ejecutar los dos sistemas en paralelo.
 
-In this instance, you would use a CNAME DNS record to point to a second
-copy of the CMS and CiviCRM on the other host (e.g.
-civicrm.yourwebsite.com; the CNAME effectively adds a prefix to your
-website's address), and link to it from your website, perhaps in form of
-a log-in button.
+En este caso, puede utilizar un DNS CNAME para que apunte al servidor con CiviCRM con un subdominio (por ejemplo, civicrm.yourwebsite.com; el CNAME añade un prefijo a la dirección de su sitio web) y pueda enlazar a él desde su sitio web, tal vez con un botón de iniciar sesión.
 
-Aside from paying a second bill, one of the limitations to this approach
-is the need to clone the style of your website on the second host to
-give the visitor the illusion that they are in the same place. If
-changes to the style are changed, the work must be duplicated.
+Aparte de pagar un segundo servicio, una de las limitaciones de este enfoque es la necesidad de clonar el estilo de su sitio web en el segundo servidor para dar al usuario la sensación de que están en el mismo sitio. Si se cambian los cambios en el estilo web, también se debe cambiar en el segundo sitio.
 
-Outsourcing to a CiviCRM implementer/host
------------------------------------------
+Contratar a un implementador de CiviCRM
+-------------------------------------------
 
-There are implementers and experts in the CiviCRM community able to
-manage the hosting and/or installation for you. If requested, they may
-also be available to manage a local implementation and configuration on
-your premises.
+Existen implementadores y expertos en la comunidad CiviCRM capaces de gestionar y alojar su sistema. Si se lo solicita, también pueden administrar una implementación local y una configuración en sus instalaciones.
 
-For a list of experts recommended within the community, visit:
-[https://civicrm.org/providers](https://civicrm.org/providers)
+Para una lista de expertos recomendada dentro de la comunidad, visite: [https://civicrm.org/providers] (https://civicrm.org/providers)
 
 
