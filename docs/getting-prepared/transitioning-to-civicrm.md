@@ -1,196 +1,82 @@
-Transitioning to CiviCRM
+Implementando CiviCRM 
 ========================
 
-This chapter outlines the parts that typically make up a CiviCRM project
-and should be read by people about to embark on such a project. Some of
-this information may be obvious to experienced project managers. A
-comprehensive guide to project management is beyond the scope of one
-chapter but we have outlined things that are typically encountered in a
-CiviCRM project and provided pointers on some things to watch out for.
+En este capítulo se describen las partes que normalmente componen un proyecto de CiviCRM y está dirigido a las personas a punto de embarcarse en un proyecto de este tipo. Parte de esta información puede ser obvia para gestores de proyectos experimentados.
 
-First, some pop philosophy courtesy of Cynthia Tarasco:
+Cuando empieza un nuevo proyecto con CiviCRM debería invertir tiempo pensando en:
 
-"Life is a series of making decisions. Some decisions are easy because
-they do not require a substantial investment of time or money. Deciding
-which flavor ice cream to buy fits into this category: if you get
-vanilla today you can always get chocolate tomorrow. Other decisions are
-much more difficult because they require substantial investments of
-resources, and you will be living with your choice for the foreseeable
-future. Adopting a new CRM fits into this category, so planning and
-project management are vital."
+- Las personas que van a participar en el proyecto   - Cuáles son los objetivos de negocio que debería cubrir CiviCRM- Cómo va a abordar el desarrollo inicial- El tipo de soporte apoyo que necesitará   - Los costes de alojamiento e infraestructura asociados- Formación y documentación- Gestión del cambio
 
-When you start out on a new CiviCRM project you should spend time
-thinking about:
-
--   the people who will be involved in the project
--   what the business goals of using CiviCRM are
--   how you will approach the initial development
--   what ongoing support you will need
--   the costs associated with hosting and your IT infrastructure
--   training and documentation
--   change management
-
-People and the project team
+La gente y el equipo del proyecto 
 ---------------------------
 
-Including a wide range of people that represent the different parts of
-your organisation will help with delivery of your project. A mixture of
-management and day-to-day staff helps the team to keep an eye on the big
-picture as well as ensure that the project is ultimately useful to
-front-line staff.
+Incluir un amplio rango de personas que representan las distintas partes de su organización le ayudarán en la ejecución del proyecto. Una mezcla de dirección y de personal del día a día ayudará al equipo a mantener tanto una visión global y asegurar que el sistema sea útil para las operaciones diarias.
 
-You'll be exploring new territory with your CiviCRM installation and
-this can sometimes be stressful. It might be helpful to share this
-project's management with others who can give you a different
-perspective and moral support when you need it!
+Estará explorando un territorio nuevo con la instalación de CiviCRM y esto puede ser estresante. Podría ser útil compartir la gestión de este proyecto con otros que le pueden dar una perspectiva diferente y apoyo moral cuando lo necesite!
 
-Managing a CiviCRM project will require a major time investment from
-people within your organisation, even if you employ an external
-consultant. Organisations often underestimate the amount of time that
-will be required from their staff in implementing an IT project - such
-as training, modifying existing processes and providing new or updated
-information to relevant people. It's not something that can be tacked on
-to the end of an already busy schedule and this should be taken into
-consideration.
+La gestión de un proyecto CiviCRM requerirá una inversión de tiempo importante de las personas dentro de su organización, incluso si usted emplea a un consultor externo. Las organizaciones a menudo subestiman la cantidad de tiempo que se requiere de su personal de TI en el proyecto - tareas como formación, la modificación de los procesos existentes y proporcionar información nueva o actualizada.
 
-Goals
+Objetivos
 -----
 
-You should have a good idea of the goals for implementing CiviCRM. This
-could be something like: reduce administrative work in managing events
-by 25% or increase donations by 25% with the same staff. The goals
-should be SMART (specific, measurable, attainable, relevant, timely)!
+Debe tener una idea clara de los objetivos de implementar CiviCRM. Esto podría ser algo así como: reducir el trabajo administrativo en la gestión de eventos en un 25% o aumentar las donaciones en un 25% con el mismo personal.
 
-These business goals will help you in directing and managing your
-project. For example, if the project group wants some customization that
-requires budget and effort, your business goals will help you decide one
-way or the other. The business goals will help you to focus on why you
-are implementing CiviCRM and what you want to achieve in the long run.
+Estos objetivos de negocio le ayudarán en la dirección y la gestión de su proyecto. Por ejemplo, si el proyecto requiere un poco de personalización que implica un presupuesto y esfuerzo adicional, sus objetivos de negocio le ayudarán a decidir si vale la pena o no. Los objetivos de negocio le ayudarán a centrarse en el motivo de implementar CiviCRM y lo que quiere lograr en el largo plazo.
 
-Development
------------
+Desarrollo
+-------------
 
-It often makes sense to break development up into smaller more
-manageable sections, which can be implemented in discrete stages or
-iterations. A common first phase of development is to choose something
-simple to implement in CiviCRM, or specific functionality for a team who
-can then act as CiviCRM evangelists within the organisation.
+A menudo tiene sentido dividir el desarrollo en trabajos más pequeños y manejables, que pueden ser implementados en etapas o iteraciones. Una primera fase común del desarrollo es elegir algo sencillo de implementar en CiviCRM, o una funcionalidad específica para un equipo que luego pueden actuar como evangelistas CiviCRM dentro de la organización.
 
-Implementing in stages allows staff to get used to changes gradually
-without feeling overwhelmed, and gives the developer or implementer the
-ability to be responsive to feedback from users during the development
-process.
+La implementación por etapas permite al personal acostumbrarse a los cambios poco a poco sin sentirse abrumado, y le da al desarrollador o implementador la capacidad de responder a los comentarios de los usuarios durante el proceso de desarrollo.
 
-Another reason that people choose to develop iteratively is that it is
-very hard for users to correctly or fully articulate their requirements
-at the start of the project. Giving users hands-on experience of an
-early version of the system helps them understand how it works and what
-is possible. They can then provide valuable feedback and might
-articulate requirements that they haven't thought of previously.
+Otra de las razones que la gente elige para desarrollar de forma iterativa es que es muy difícil para los usuarios articular correctamente sus requerimientos al comienzo del proyecto. Dar a los usuarios una experiencia práctica en una primera versión del sistema les ayuda a entender cómo funciona y lo que es posible hacer. A continuación, pueden proporcionar una valiosa retroalimentación y pueden articular requerimientos que no han pensado previamente.
 
-Implementing your CMS (Drupal, WordPress or Joomla!) either before or
-after implementing CiviCRM is another convenient way to split up a
-CiviCRM project. As well as the normal advantages of breaking up the
-development into manageable chunks, this helps staff understand the
-important differences between a CMS and a CRM.
+La implementación de su CMS (Drupal, WordPress o Joomla!), ya sea antes o después de CiviCRM es otra manera conveniente para dividir un proyecto CiviCRM. Aparte de las ventajas normales de dividir el desarrollo en trabajos manejables, esto ayuda al personal a comprender las diferencias importantes entre un CMS y un CRM.
 
-### Pilot projects
+### Proyectos piloto
 
-Pilots help to reduce risk during a project implementation. For example,
-rather than moving your organisation's entire event management
-infrastructure to CiviCRM, run one pilot event using CiviCRM and
-evaluate it. You can then incorporate the learning back into the
-development process.
+Los proyectos pilotos ayudan a reducir el riesgo durante una ejecución del proyecto. Por ejemplo, en lugar de gestionar todos los eventos de su organización con CiviCRM, pruebe con un evento piloto utilizando CiviCRM y evalúe. A continuación, puede incorporar el aprendizaje de nuevo en el proceso de desarrollo.
 
-Ongoing support and development
+Desarrollo y soporte recurrente
 -------------------------------
 
-It is a mistake to think about a CiviCRM project as a one-off
-development that will meet the needs of your organisation for the
-foreseeable future. Organisations constantly change and evolve and your
-CRM should evolve with you, otherwise it will eventually become
-out-of-sync with the organisation.
+Es un error pensar en un proyecto CiviCRM como un desarrollo de una sola vez que satisfaga las necesidades de su organización para el futuro inminente. Las organizaciones constantemente cambian y evolucionan y su CRM debería evolucionar también, de lo contrario se quedaría desfasado de la organización.
 
-Once you have been using CiviCRM for a while and staff are comfortable
-with it, you will likely want to take advantage of other functionality.
-Each improvement or new piece of functionality that you decide to
-implement in CiviCRM will take resources, so you'll need to plan for
-these.
+Una vez que usted ha estado utilizando CiviCRM por un tiempo y el personal se siente cómodo con él, es probable que desee utilizar otras funcionalidades.
+Cada mejora o nueva funcionalidad que decide implementar en CiviCRM necesitará recursos, por lo que necesita planificarlos.
 
-Even if your organisational needs don't change, there are ongoing
-support implications, including:
+Incluso si las necesidades de organización no cambian, hay tareas relacionadas con el soporte entre otras:
 
--   keeping your site up-to-date with security patches
--   upgrading to the latest version of CiviCRM (not necessary, but
-    CiviCRM is improving all the time and your users will thank you for
-    the improved usability and functionality each time you upgrade)
--   upgrading the CMS 
--   hosting
+- Mantener su sitio actualizado con los parches de seguridad 
+- Mantener CiviCRM con la versión más reciente
+- Actualizar el CMS 
+- Alojamiento
 
-Training
---------
+Formación
+---------
 
-Training is a significant aspect of most CiviCRM projects. Your training
-could take many shapes and sizes depending on your users, but it often
-makes sense to spend resources on formal and reusable training resources
-(user guides, lesson plans and so on).
+La formación es un aspecto importante de la mayoría de los proyectos CiviCRM. Su formación podría darse en distintas formas dependiendo de sus usuarios. A menudo tiene sentido invertir en recursos de formación que sean reutilizables como guías de usuario o tutoriales.
 
-CiviCRM's range of functionality can be overwhelming at first
-(especially to the less technically-minded). Remember that staff who
-were not involved in the project's early stages will need to have
-concepts explained clearly to them - things that are obvious to you may
-be quite foreign to others.
+La funcionalidad completa de CiviCRM puede ser abrumadora al principio (en especial a los usuarios menos técnicos). Recuerde que para el personal que no ha participado en las primeras etapas del proyecto será necesario explicar algunos conceptos con mucha claridad - lo que es obvio para usted puede ser bastante ajeno para los demás.
 
-Trying to cover everything in one training session probably won't be
-effective; your staff will need time to digest the new ideas. Instead,
-hold smaller training sessions that introduce concepts and specific
-functionality, followed by periods of testing, piloting and feedback.
-Tailor your training for your audience: not everyone needs to sit
-through a two-hour training session on how to manage events if there is
-a single person responsible for event management and planning. And where
-possible, involve staff in training other staff members as this
-increases the sense of ownership and helps to embed learning.
+Tratar de cubrir todo en una sesión de entrenamiento, probablemente no será eficaz; su personal necesitará tiempo para digerir las nuevas ideas. En su lugar realice sesiones de formación más pequeñas que introduzcan conceptos y funcionalidades específicas, seguidos de períodos de prueba, experimentación y retroalimentación.
+Adapte la formación para su público: no todo el mundo tiene que sentarse a una sesión de entrenamiento de dos horas sobre la gestión de eventos si hay una sola persona responsable de la gestión y planificación de eventos. Y en lo posible, involucre al personal en la formación de otros miembros de la organización ya que esto aumenta el sentido de pertenencia y ayuda a integrar el aprendizaje.
 
-Training is also ongoing. New staff will need to be trained, users
-familiar with the system can benefit from learning about more advanced
-topics, and staff will need further training when there are significant
-upgrades or new functionality added. If you plan to use CiviCRM for any
-large or mission-critical events, allow adequate time for additional
-staff training and testing.
+La formación también es algo continuo Las nuevas personas deberán ser entrenadas y los usuarios que ya están familiarizados podrán aprender nuevas funcionalidades. Si va a utilizar CiviCRM para cualquier evento de gran tamaño o de misión crítica, asegúrese de que haya tiempo suficiente para la formación del personal adicional y para realizar pruebas.
 
-Hosting and infrastructure
+Alojamiento e infraestructura 
 --------------------------
 
-Hosting is a key aspect of any CiviCRM project. You will need to provide
-maintenance of the server on which CiviCRM is stored, and have someone
-available to fix problems that inevitably occur from time to time. If
-your site needs to be accessible 24 hours a day, you should have a
-support agreement with your ISP that covers this. Ensure that your
-budget is sufficient for appropriate hosting, and that effective backup
-procedures and policies are in place.
+El alojamiento es un aspecto clave de cualquier proyecto CiviCRM. Usted deberá asegurarse que el servidor en el que se almacena CiviCRM esté bien mantenido, y deberá tener a alguien disponible para solucionar problemas que inevitablemente se producen de vez en cuando. Si su sitio tiene que ser accesible 24 horas al día, deberá tener un contrato de soporte con su proveedor de Internet que cubra esto. Asegúrese de que su presupuesto es suficiente para el alojamiento apropiado, y que las copia de seguridad se están realizando.
 
-Keep in mind that in the hosting provider world, you get what you pay
-for. In many cases, cheap hosting providers keep their prices down by
-limiting the services or flexibility they provide. CiviCRM doesn't work
-well on poor hosting, and under-budgeting for hosting may lead to other
-problems. Similarly, make sure that the computers your staff are using
-are powerful enough to provide a good experience with CiviCRM.
+Tenga en cuenta que en el mundo del alojamiento, se obtiene lo que se paga. En muchos casos, los proveedores de alojamiento baratos mantienen sus precios mediante la limitación de los servicios o la poca flexibilidad que proporcionan. CiviCRM no funciona bien en alojamientos baratos y limitados. Esto puede traer problemas. Del mismo modo, asegúrese de que los ordenadores de su personal son lo suficientemente potentes como para proporcionar una buena experiencia con CiviCRM.
 
-Change management
+Gestión del cambio
 -----------------
 
-Introducing a new (or the first) CRM will cause changes in work flow and
-processes at your organisation. These changes may be "political",
-practical or technical. Either way, a lot of change at the same time can
-be difficult and stressful.
+La introducción de un nuevo CRM provocará cambios en el flujo de trabajo y procesos en su organización. Estos cambios pueden ser "políticos", prácticos o técnicos. De cualquier manera, una gran cantidad de cambio al mismo tiempo puede ser difícil y estresante.
 
-To mitigate this, give staff time to accept and support each change so
-that they share in ownership of the new system rather than feeling as if
-something has been forced on them. Focus on simple tasks at the
-beginning of deployment and introduce more difficult tasks as staff
-understanding of the system grows. Show staff how the new system will
-make their work easier and where their feedback has been incorporated.
+Para mitigar esto, de tiempo al personal para aceptar y apoyar cada cambio de forma que compartan la titularidad del nuevo sistema en lugar de sentirse que están obligados a utilizarlo porque sí. Concéntrese en tareas simples en el inicio del despliegue e introduzca tareas más difíciles a medida que la aceptación del sistema por parte del personal crece. Muestre al personal de cómo el nuevo sistema hará que su trabajo sea más fácil y de qué manera se han tenido en cuenta sus comentarios.
 
-Good planning can minimise the risks around change, but it is important
-to be flexible within your plan; unforeseen things often occur, and a
-rigid plan could prevent you from reaching the best solution.
+Una buena planificación puede minimizar los riesgos en torno al cambio, pero es importante ser flexible dentro del plan; cosas imprevistas ocurren a menudo, y un plan rígido podría impedir que llegue a la mejor solución.
