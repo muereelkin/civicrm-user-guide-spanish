@@ -14,7 +14,7 @@ pages:
     #- 'Real World Examples': 'introduction/real-world-examples.md'
     - 'Componentes': 'introduction/components.md'
     - 'Extensiones': 'introduction/extensions.md'
-    - '¿Quíen es CiviCRM?': 'introduction/who-is-civicrm.md'
+    - '¿Quién es CiviCRM?': 'introduction/who-is-civicrm.md'
 - Poniéndose a punto:
     - '¿Es CiviCRM para usted?': 'getting-prepared/is-civicrm-for-you.md'
     - 'Identificando sus necesidades': 'getting-prepared/identifying-your-needs.md'
