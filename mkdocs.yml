@@ -30,7 +30,7 @@ pages:
     - 'Experimente con CiviCRM': 'getting-prepared/test-it-out.md'
     - 'Alojamiento': 'getting-prepared/hosting.md'
     - 'Implementando CiviCRM': 'getting-prepared/transitioning-to-civicrm.md'
-#- Initial set up:
+- Initial set up:
     #- 'Installation and basic set-up': 'initial-set-up/installation-and-basic-set-up.md'
     #- 'Scheduled jobs': 'initial-set-up/scheduled-jobs.md'
     #- 'Customizing the user interface': 'initial-set-up/customizing-the-user-interface.md'
