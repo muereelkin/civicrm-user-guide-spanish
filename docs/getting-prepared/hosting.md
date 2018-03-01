@@ -16,7 +16,7 @@ También hay otros aspectos importantes a comentar. Si tiene una red interna, el
 Un servidor web podría potencialmente introducir vulnerabilidades que un usuario externo, un script o un bot podrían utilizar como puerta entrada a sus sistemas privados. También es una buena idea investigar los costos de mantenimiento y gestión diario de tener un servidor interno y compararlos con los de utilizar un servidor externo.
 
 Alojamiento externo
-========
+-------------------
 
 Con la experiencia adecuada podría gestionar la instalación y la configuración en un servidor interno, pero considere alojar CiviCRM con un proveedor externo. En este caso, se recomienda que contratar un VPS (Servidor Privado Virtual) para asegurarse de que tiene un control completo de su instalación (p. ej. PHP, MySQL, etc) y por lo tanto es capaz es capaz de configurarlos a sus necesidades específicas.
 
@@ -27,17 +27,17 @@ Inconvenientes aparte, alquilar un servidor compartido es normalmente más barat
 **Le aconsejamos probar cualquier servicio antes de comprometerse por períodos largos**
 
 Alojamiento existente
-------------------
+---------------------
 
 Si ya utiliza un alojamiento Web, póngase en contacto con su proveedor para determinar si es compatible con los paquetes y librerías de CiviCRM. Si no es así, hay dos opciones:
 
-### ** Migrar a otro alojamiento **.
+### Migrar a otro alojamiento
 
 En función del CMS que utiliza, el proceso de pasar de un host a otro puede ser bastante sencillo. Estás en una buena posición para transferir a otro host si puede:  
 
 1. Solicitar que sus usuarios **dejen de crear y actualizar contenidos** durante la migración,2. **exportar e importar** todo el contenido desde/hacia el CMS elegido,3. **editar sus registros DNS** para cambiar los enlaces que apuntaban al sitio anterior por el nuevo sitio web
 
-### **Ejecutar el sitio web y CiviCRM en distintos servidores**.
+### Ejecutar el sitio web y CiviCRM en distintos servidores
 
 Si no puede mover su sitio we a un host diferente, podría contratar un segundo alojamiento para CiviCRM y ejecutar los dos sistemas en paralelo.
 
@@ -46,10 +46,10 @@ En este caso, puede utilizar un DNS CNAME para que apunte al servidor con CiviCR
 Aparte de pagar un segundo servicio, una de las limitaciones de este enfoque es la necesidad de clonar el estilo de su sitio web en el segundo servidor para dar al usuario la sensación de que están en el mismo sitio. Si se cambian los cambios en el estilo web, también se debe cambiar en el segundo sitio.
 
 Contratar a un implementador de CiviCRM
--------------------------------------------
+----------------------------------------
 
 Existen implementadores y expertos en la comunidad CiviCRM capaces de gestionar y alojar su sistema. Si se lo solicita, también pueden administrar una implementación local y una configuración en sus instalaciones.
 
-Para una lista de expertos recomendada dentro de la comunidad, visite: [https://civicrm.org/providers] (https://civicrm.org/providers)
+Para una lista de expertos recomendada dentro de la comunidad, visite: [https://civicrm.org/providers](https://civicrm.org/providers)
 
 

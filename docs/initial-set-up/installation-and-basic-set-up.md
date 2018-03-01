@@ -1,524 +1,241 @@
-Installation and basic set-up
-=============================
+Instalación y configuración básica
+==================================
 
-Before reading further, please be aware that much of the information
-contained here is intended for technicians and may be difficult to
-understand if you have little or no experience in setting up web
-applications. If you don't understand this topic, you may wish to either
-seek help, or point your organisation's technical staff to this
-material.
+Antes de seguir leyendo, por favor tenga en cuenta de que gran parte de la información aquí contenida está destinada a técnicos y puede ser difícil de entender si usted tiene poca o ninguna experiencia en la creación de aplicaciones web. Si usted no entiende este tema, quizás desee solicitar ayuda o dirigirse al personal técnico de su organización.
 
-Prerequisites
+
+Requisitos previos
+------------------
+
+Antes de plantearse la instalación de CiviCRM, asegúrese de haber leído el capítulo 'hosting' para confirmar si su servidor puede o no admitirlo.
+
+CiviCRM debe instalarse en un equipo que ha sido configurado con un servidor web (como Apache o Nginx), PHP y MySQL. Algunas personas prefieren probar CiviCRM en su propio ordenador local antes de instalarlo en un servidor web dedicado. Si usted está haciendo esto y no tiene los requisitos previos mencionados, puede descargar paquetes de Internet como WAMP, XAMPP, MAMPP y LAMP, que instalarán rápidamente un servidor web Apache, PHP y MySQL. (Los dos primeros paquetes son para Windows y los segundos dos son para Macintosh y Linux, respectivamente).
+
+Antes de que pueda comenzar la instalación, debe decidir qué sistema de gestión de contenido (CMS) se utilizará para crear y gestionar los sitios web que desee integrar, eligiendo entre las opciones de código abierto: Drupal, Wordpress o Joomla!.
+
+Puede encontrar instrucciones completas sobre cómo instalar CiviCRM aquí:
+https://docs.civicrm.org/sysadmin/en/latest/index.html
+
+
+Internet vs. instalaciones locales
+----------------------------------
+
+La mayoría de las organizaciones acceden a CiviCRM a través de Internet. Sin embargo, algunas organizaciones sólo quieren que el personal interno tenga acceso a CiviCRM y eligen instalar CiviCRM en una red interna y tenerlo sólo accesible internamente. La desventaja de una instalación interna es que no está disponible públicamente para que los contactos puedan actualizar sus datos o acceder a formularios para ser completados.
+
+
+Actualizaciones
+---------------
+
+Las nuevas versiones de CiviCRM son liberadas aproximadamente dos veces al año (una vez en primavera y la otra en otoño). Usted tendrá que aplicar actualizaciones a su sitio CiviCRM periódicamente si desea aprovechar las nuevas características y mejoras, y también para mantener su sitio seguro. Algunas actualizaciones contienen correcciones de seguridad y es fundamental que se apliquen de manera oportuna. Es importante que pueda planificar los recursos (personas y tiempo) necesarios para aplicar actualizaciones a su sitio. Es recomendable aplicar las actualizaciones en un sitio de pruebas antes que el sitio en producción para asegurarse de que el proceso se ejecute sin problemas. También es fundamental realizar copias de seguridad de su sitio y su base de datos antes de ejecutar una actualización en su entorno de producción incluso si usted ha probado el proceso en un sitio de prueba.
+
+Dado que las aplicar las actualizaciones es un proceso importante muchas organizaciones contratan los servicios de un proveedor de servicios experto en CiviCRM para llevarlas a cabo.
+
+
+Configuración
 -------------
 
-Before exploring the installation of CiviCRM, ensure you have read the
-chapter 'hosting' to confirm whether or not your host can support it.
+Una vez instalado CiviCRM, debe revisar las tareas de configuración iniciales que le permiten personalizar CiviCRM para su organización.
 
-CiviCRM must be installed on a computer that has been configured with a
-web server (such as Apache or ngnx), PHP and MySQL. Some people prefer
-to try out CiviCRM on their own local computer before installing it on a
-dedicated web-server. If you are doing this and don't have the
-prerequisites just mentioned, you can download packages from the
-Internet such as WAMP, XAMPP, MAMPP and LAMP, which will quickly install
-an Apache web server, PHP and MySQL. (The first two packages are for
-Windows and the second two are for the Macintosh and Linux
-respectively).
+Inicie sesión en su sitio CiviCRM y vaya a **Administrar > Consola de Administración > Lista de verificación de configuración**. En esta sección se describen las tareas generales, mientras que la configuración de cada componente será incluida en cada sección específica.
 
-Before you can begin installation, you need to decide which CMS (Content
-Management System; used for building and managing websites) you wish to
-integrate with, choosing between the open-source options: Drupal,
-Wordpress or Joomla!.
+Utilice esta lista para revisar y completar las tareas de configuración para su sitio. Usted será redirigido de regreso a esta lista de verificación después de guardar cada configuración. Los ajustes que aún no haya revisado serán mostrados en rojo. Después de haber visitado una página, los enlaces seŕan mostrados en verde (aunque todavía puede ser necesario volver a visitar la página para completar o actualizar la configuración).
 
-You can find full instructions on installing CiviCRM here:[
-http://wiki.civicrm.org/confluence/display/CRMDOC/Installation+and+Upgrades](http://wiki.civicrm.org/confluence/display/CRMDOC/Installation+and+Upgrades%20)[](http://wiki.civicrm.org/confluence/display/CRMDOC/Installation+and+Upgrades%20)
-
-Internet vs. local installs
------------------------------
-
-Most organisations access CiviCRM over the internet. However, some
-organizations who only want internal staff to have access to CiviCRM and
-are security conscious, choose to install CiviCRM on an internal network
-and have it only accessible internally. The downside to an install that
-is not publicly available is that your contacts cannot 'self serve' to
-update their data.
-
-Upgrades
---------
-
-New versions of CiviCRM are released approximately twice a year (once in
-the Spring and once in the Autumn). You will need to apply upgrades to
-your CiviCRM site periodically if you want to take advantage of new
-features and improvements, and also to keep your site secure. Some
-upgrades contain security fixes and it is crucial that these are applied
-in a timely manner. It's important that you plan for the resources
-(people and time) required to apply upgrades to your site. You need to
-plan on testing upgrades on a copy of your live site to make sure the
-process runs smoothly. It's also critical to make backups of your site
-and database prior to running an upgrade on your live site even if you
-had tested the process on a test site.
-
-Since upgrades are an important and technical process, many
-organisations employ the services of a CiviCRM expert service provider
-to carry them out.
-
-Configuration
--------------
-
-Once CiviCRM has been installed, you should review the initial
-configuration tasks which allow you to customize CiviCRM for your
-organization.
-
-Log in to your CiviCRM site and navigate to **Administer >
-Administration Console > Configuration Checklist**. This section will
-cover the general tasks, while component-specific configuration will be
-covered in each component section.
-
-Use this checklist to review and complete configuration tasks for your
-site. You will be redirected back to this checklist after saving each
-setting. Settings which you have not yet reviewed will be displayed in
-red. After you have visited a page, the links will display in green
-(although you may still need to revisit the page to complete or update
-the settings).
 
 ![image](../img/Configuration_Checklist_4_4.png)
 
-### Localization
-
-Localization involves adapting CiviCRM for use in a specific country or
-language by translating the text displayed on the screen and setting
-region specific formats for dates and money (including currency). By
-default, CiviCRM is localized for the United States. If you are using
-CiviCRM in a different country, need to store contact addresses that
-appear in countries other than the United States, or want to use CiviCRM
-in another language, you will need to review and update the values on
-this screen.
-
-CiviCRM has been translated into a number of different languages and
-translations are available to download when you download CiviCRM. These
-translations are contributed by community members. If CiviCRM is not
-available in your language, you may wish to consider translating it.
-You can find a translation guide on the wiki.
-
-It is also possible to configure your site to support multiple
-languages. In this mode, your users will be able to choose from a list
-of available languages after logging in. You can also create and store
-multi-language versions of text. Examples include custom field labels,
-an online contribution page, campaign information, and event
-descriptions.
-
-For more info, have a look here:
-[http://wiki.civicrm.org/confluence/pages/viewpage.action?pageId=88408149](http://wiki.civicrm.org/confluence/pages/viewpage.action?pageId=88408149)
-
-Under Localization you will also find the **Advanced Date Input Settings**.
-By default, CiviCRM provides ranges for input on specific date fields. For instance,
- the default range for Activity Dates are 20 years prior to the current year all the way through to 10 years beyond the current year. If you would like to track activities that have occurred, say, 25 years ago then you would need to update this range to enable your end users to log these activities. To update these settings to the appropriate range go to **Administer > Localization > Date Formats > Advanced Date Input Settings**. If you were to leave these settings as the default you will see an error such as this:
-
-![Advanced Date Input Settings](../img/configure-localization-advanced-date-input-settings.png)
-
-### Organization Address and Contact Info
-
-Use this screen to enter identifying information for the organization or
-entity which "owns" this CiviCRM installation. The organization name and
-address are used to identify your organization in CiviMail mailings when
-you include the domain.name and domain.address tokens.
-
-You should also enter a valid email address belonging to your
-organization, which will be used as the From field in system-generated
-(automated) emails.
-
-### Enable components
-
-This is where you can turn on or turn off the components for your
-CiviCRM system.
-
-When you first install CiviCRM the most frequently used components
-(CiviContribute, CiviEvent, CiviMail, CiviMember, CiviReport) are
-already enabled. If you do not need those components you can disable
-them. You can also enable any or all of CiviCampaign, CiviCase,
-CiviGrant and CiviPledge. You can revisit this page at any time to
-enable more components.
-
-You can also disable a component you have already used. The information
-in the component is retained and will still be there if you re-enable
-it. It would be unusual to disable a component you have already used.
-If you want to simplify the administration menu and advanced search page
-then a better approach may be to use permissions (see the Permissions
-and access control chapter).
-
-### Display Preferences
-
-This screen allows you to modify the screen and form elements for the
-following tasks:
-
--   **Viewing Contacts** - Controls the tabs displayed when viewing a
-    contact record. EXAMPLE: If your organization does not keep track of
-    Relationships, deselect this option to simplify the screen display.
-    Tabs for Contributions, Pledges, Memberships, Events, Grants and
-    Cases are also hidden if the corresponding component is not enabled.
--   **Viewing Smart Groups** - Controls the display of the smart groups a contact belongs to.
--   **Editing Contacts** - Controls the sections included when adding or
-    editing a contact record. EXAMPLE: If your organization does not
-    record Gender and Birth Date for individuals, then simplify the form
-    by deselecting Demographics.
--   **Contact Search** - Controls the sections included in the Advanced
-    Search form. EXAMPLE: If you don't track Relationships, you will not
-    search for that section. Simplify the form by deselecting this
-    option.
--   **Contact Dashboard** - Allows your constituents to view the groups
-    they are subscribed to, their contribution history, event
-    registration information and more. You can control the sections that
-    should be included in the dashboard here. EXAMPLE: If you don't want
-    constituents to view their own contribution history, deselect that
-    option.
--   **WYSIWYG Editor** - Select **CKEditor** to provided users with an easy way to enter text into fields that allow HTML formatting (such as the introductory section for your online contribution pages). You can configure CKEditor (see http://ckeditor.com/) to add or remove functionality as desired. Select **Textarea** if you don't want to provide a WYSIWYG editor.
--   **Enable Popup Forms** - this is on by default. Uncheck to  revert to opening the form by refreshing the page.
--   **Individual Display Name** - Display name format for individual
-    contact display names.
--   **Individual Sort Name** - Sort Name format for individual contact
-    sort names.
-
-### Address Settings
-
-At **Localization > Address Settings** CiviCRM allows you to modify the default fields for adding and editing
-contact and event address data. You can also change the address field
-layout used for screen display and mailing labels. Review the
-out-of-the-box defaults by adding a new contact record and noting the
-address fields provided on the form. Save the record and note the order
-in which the fields are displayed on the Contact Summary screen. If you
-plan on generating mailing labels for contacts, review the label layout
-(select Mailing Labels from the *-actions-* drop-down after doing a
-search using the Find Contacts menu option).
-
-After reviewing the default fields and layouts, review the Address
-Settings screen and make changes as needed.
-
--   **Mailing Labels** - Controls formatting of mailing labels here. The
-    default format is:
-
-    *{contact.addressee}
-    {contact.street_address}
-    {contact.supplemental_address_1}
-    {contact.supplemental_address_2}
-    {contact.city}{, }{contact.state_province}{ }{contact.postal_code}
-    {contact.country}*  
-
-  You must include the *{contact.addressee}* token here in order to
-    include the name of the addressee in your labels. Users will be able
-    to select from a variety of label types corresponding to the label
-    manufacturer code when they generate the labels from a list of
-    contacts. It's a good idea to test your format with the type of
-    label and printer you plan on using to verify spacing.
--   **Address Display** - Controls the layout of contact and event
-    location addresses displayed on CiviCRM screens. The default format
-    is:
-
-    *{contact.address_name}
-    {contact.street_address}
-    {contact.supplemental_address_1}
-    {contact.supplemental_address_2}
-    {contact.city}{, }{contact.state_province}{ }{contact.postal_code}
-    {contact.country}*
-
-    This format also applies to event locations, despite the use of the
-    *contact* record type in the layout. The *{contact.address_name}*
-    token is particularly useful for events where you need to include a
-    location name (e.g. "Smithson Hall").
-
--   **Address Editing Fields** - Modify the available address
-    editing fields here. You can hide fields that you don't plan on
-    using in order to simplify the forms. EXAMPLE: If you don't plan on
-    recording latitude and longitude for contacts, you can deselect
-    those field.
-    -   **Street Address Parsing**- CiviCRM uses the US Postal Service's
-        (USPS) Postal Addressing Standards to parse an address into
-        fields to hold the address elements: Street Number, Street Name,
-        and Apt/Unit/Suite. It's best to enter address information
-        that conforms to the Postal Addressing Standards, not only for
-        consistency in your data, but also to best take advantage of the
-        the Street Address Parsing function. When address parsing is turned on you can edit and or view
-        the parsed address by clicking on Edit Address Elements when you are editing a address.
-
-    ![Configuration Address Parsing](../img/basic-set-up-address-parsing.png)  
-
-   You can learn more about USPS' Postal Addressing Standards at          [http://pe.usps.com/text/pub28/welcome.htm](http://pe.usps.com/text/pub28/welcome.htm).
--   **Address Standardization** - CiviCRM includes an optional feature
-    for interfacing to the United States Postal Services (USPS) Address
-    Standardization web service. You must register to use the USPS
-    service at
-    [https://www.usps.com/business/web-tools-apis/welcome.htm](https://www.usps.com/business/web-tools-apis/welcome.htm).
-    If you are approved, they will provide you with a User ID and the
-    URL for the service. The URL provided by USPS will not be prefixed
-    with "http://". When entering this URL into the CiviCRM settings
-    field, you must prefix it with "http://".
-
-### Mapping and Geocoding
-
-CiviCRM includes support for both the Google and OpenStreetMap mapping
-services. These services allow your users to display contact addresses
-and event locations on a map. To enable this feature, select your
-mapping provider and obtain a key for your site from that provider.
-
-You can also select a Geocoding Provider. This can be that same or
-different form you mapping provider. Once this service is enabled, your
-contact and event records will be automatically geocoded (the latitude
-and longitude for that address is inserted) as you add or edit address
-data.
-
-### Search Settings
-
-These let you adjust search behaviors such as the use of wildcards and
-which data to include in quick search results. Adjusting search settings
-can improve performance for large datasets.
-
-A wildcard character is a special character that can be used to
-substitute for any other character or characters in searches. CiviCRM
-allows you to use the percent character "%" to substitute for zero or
-more characters, and the underscore character "_" to substitute for any
-single character. Wildcards are useful for broadening your search
-results.
-
-For example, typing 'Volunteer%' as your Activity Subject will match any
-record whose subject starts with "Volunteer" (e.g. "Volunteer for Open
-House" or "Volunteering Opportunities").
-
--   **Automatic Wildcards** - By default, when users search for contacts
-    by Name, the Search interface treats the text as if it was
-    surrounded by percent signes. EXAMPLE: Searching for 'ada' will
-    return any contact whose name includes those letters - 'Adams,
-    Janet', 'Nadal, Jorge', etc. Disabling this feature will speed up
-    searches significantly for large databases, but will make users
-    explicitly use wildcard characters ("%" or "_") for partial name
-    searches.
--   **Include Email** - By default, when users search contacts by Name,
-    the Search interface also searches for the text in email addresses.
-    Disabling this feature will speed up searches significantly for
-    large databases, but users will need to use the Email search fields
-    (from Advanced Search, Search Builder, or Profiles) to find contacts
-    by email address.
--   **Include Nickname** - By default, nicknames are automatically *not*
-    included when users search by Name. Change this value to Yes if you
-    want nicknames to be included.
--   **Include Alphabetical Pager** - If disabled, the alphabetical pager
-    will not be displayed on the search screens. This will improve
-    response time for search results on large datasets.
--   **Include Order By Clause**- If disabled, search results will not be
-    ordered. This will improve response time for search results on large
-    datasets significantly.
--   **Default Contact Search Profile** - You can select a Profile to
-    override the columns displayed by default in Find Contacts search
-    results.
--   **Smart group cache timeout** - Smart groups are basically saved
-    searches. The list of contacts for each smart group is cached in the
-    database in order to avoid running the saved search every time you
-    access a smart group. This field determines the number of minutes to
-    maintain the cache before refreshing it. The default value of 0
-    means the cache is emptied immediately when any contact is edited or
-    a new one is added. If your contact data changes frequently, you may
-    want to try setting this to a value of 5 minutes (or even longer) to
-    reduce processing load on your server. The drawback of delaying the
-    refreshing of the cache is that old data will still be served up to
-    users for a few minutes after new data is added.
--   **Autocomplete Contact Search** - If enabled, selected fields will
-    be displayed in auto-complete dropdown lists and the "Quick Search"
-    box on the navigation menu. The contact name is always included.
--   **Contact Reference Options** - Selected fields will be displayed in
-    autocomplete dropdown search results for 'Contact Reference' custom
-    fields. Contact Name is always included. Note: You must assign
-    'access contact reference fields' permission to the anonymous role
-    if you want to use custom contact reference fields in profiles on
-    public pages. For most situations, you should use the 'Limit List to
-    Group' setting when configuring a contact reference field which will
-    be used in public forms to prevent exposing your entire contact
-    list.
--   **Autocomplete Results**- This specifies the maximum number of
-    contacts to show at a time when typing in an autocomplete field. The
-    default is 10.
--   **InnoDB Full Text Search -** If you are using MySQL 5.6+ you can
-    enable InnoDB full-text search optimizations.
-
-### Miscellaneous (Undelete, PDFs, Limts, Logging, reCAPTCHA, etc.)
-
-Use the Miscellaneous Settings screen to configure and control the
-following behaviors:
-
--   **Dashboard Cache Timeout -** The number of minutes to cache dashlet
-    content on the dashboard.
-
--   **Checksum Lifespan -** The number of days before a personalized
-    (hashed) link will expire.
-
--   **Contact Trash and Undelete** - If enabled, deleted contacts will
-    be moved to the trash (instead of being destroyed). Users with the
-    proper permission are able to search for the deleted contacts and
-    restore them (or delete them permanently).
--   **Logging** - If enabled, all actions performed on non-cache tables
-    will be logged (in the respective log_\* tables). By default, these
-    tables will be created in the same database. However you can
-    configure CiviCRM to write logging tables to a different database by
-    editing your site's *civicrm.settings.php* file. Specify
-    the separate logging database in the CIVICRM_LOGGING_DSN setting.
-    After enabling this feature you can review changes to contact
-    records using the Contact Logging Report. Go to **Reports > Reports
-    Listing > Contact Logging Report (Summary)**.
--   **Attach PDF copy to receipts** - If enabled, CiviCRM sends PDF
-    receipt as an attachment during event signup or online contribution.
--   **Path to wkhtmltopdf executable -** wkhtmltopdf is an alternative
-    utility for generating PDF's which may provide better performance
-    especially if you are generating a large number of PDF letters or
-    receipts. Your system administrator will need to download and
-    install this utility, and enter the executable path here.
--   **New Version Alerts** - If enabled on-screen alerts will be
-    displayed to users with "Administer CiviCRM" permissions when a new
-    version of CiviCRM is available. This setting will only work if the
-    "Version Check & Statistics Reporting" setting is enabled.
--   **Version Checking and Statistics Reporting** -This feature
-    automatically checks the availability of a newer stable version of
-    CiviCRM. New version alerts are displayed on the main CiviCRM
-    Administration page. Statistics about your CiviCRM installation are
-    also reported anonymously to the CiviCRM team to assist in
-    prioritizing ongoing development efforts. The following information
-    is gathered: CiviCRM version, versions of PHP, MySQL and framework
-    (Drupal/Joomla!/Wordpress), and default language. Record counts (but
-    no actual data) are also reported. You can set this field to No if
-    you are not comfortable with having this information reported for
-    your site.
--   **Display "empowered by CiviCRM** - When enabled, "empowered by
-    CiviCRM" is displayed at the bottom of public forms. This will help
-    increase awareness of CiviCRM.
--   **Maximum Attachments** - You can increase or decrease the maximum
-    number of files (documents, images, etc.) that can be attached to
-    emails, activities, and grant records. The default value is 3.
--   **Maximum File Size (in MB)** - Maximum size of a file (documents,
-    images, etc.) which can attached to emails or activities. Note that
-    your PHP configuration files, *php.ini*, should support at least as
-    big a file size as the value specified here.
--   **Allow second-degree relationship permissions -** If enabled,
-    contacts with the permission to edit a related contact will inherit
-    that contact's permission to edit other related contacts. This can
-    be used, for example, to let the teacher of a class edited the
-    records for students in that class when they are both linked to the
-    class (set up as an organisation sub-type) via relationships.
--   **reCAPTCHA** - reCAPTCHA is a free service that helps prevent
-    automated abuse of your site by requiring users to read a random
-    pair of words and type them into the form. To use reCAPTCHA on
-    public-facing CiviCRM forms, sign up at
-    [recaptcha.net](http://recaptcha.net/), enter the provided public
-    and private reCAPTCHA keys here, then enable reCAPTCHA under the
-    Advanced Settings section in a Profile where you want it used.
-
-    If you want to use reCAPTCHA protection for online contribution,
-    membership signup or event registration forms, you'll need to
-    configure a Profile with reCAPTCHA enabled, and then include it in
-    those forms.
-
-### Contact Types
-
-You can modify the names of the built in Contact Types (Individual,
-Household, Organizations), and you can create and modify "contact
-subtypes" for more specific uses (e.g. Student, Parent, Team, etc..)
-
-### Outbound email
-
-If you are sending emails to contacts using CiviCRM, you need to enter
-settings which allow CiviCRM to connect to your mail server. Such emails
-include sending receipts to contributors, sending confirmations to
-people registering for events, and using CiviMail to send bulk mailings.
-
-CiviCRM supports three different methods of connecting to a mail server:
-mail (the built-in PHP mail function); SMTP (Simple Mail Transport
-Protocol); and Sendmail. Each method requires that you enter specific
-settings. If you're unfamiliar with these terms, or unsure of the
-correct values for these settings, check with your system administrator,
-ISP or hosting provider.
-
-You should always send a test email after you enter or modify the
-settings. Simply click "Save and Send Test Email"(shown in the following
-screenshot). An email will be sent to the email address associated with
-your user login account. The From email address will be the default From
-address you've configured in the previous section.
-
-![Picture_11](../img/CiviCRM-Configuring-Picture_11-en.png "Save and Send Test Email")
-
-If CiviCRM is unable to send the test email, you will see a message on
-your screen with the specific error and some suggestions for
-trouble-shooting the problem.
-
-### Disabling outbound email
-
-If you do *not* want users to send outbound emails from CiviCRM at all,
-select "Disable Outbound Email". However, if you disable outbound email,
-and you are using Online Contribution pages or online Event
-Registration, you will need to turn off the automated receipting and
-registration confirmation features (these are enabled by default).
-Otherwise your constituents will see error messages after they've
-completed a contribution or registration.
-
-**Redirect to Database**- If this option is selected, all emails will be
-recorded as archived mailings instead of being sent out.
-
-See **Email System Configuration** for more details.
-
-### From Email Addresses
-
-CiviCRM will use the default From address defined here when sending
-automated emails. If you've already entered an email address in the
-Domain Information screen, that address will be listed here (as
-illustrated on the leftmost field of the following screenshot).
-
-![image](../img/From%20email.PNG)
-
-When users send an email using CiviCRM, their primary email address is
-used as the From address by default. However, they can also select one
-of the general email addresses defined here as an alternative.
-
-### Payment Processors
-
-Payment processors are companies that handle credit card transactions
-for merchants and non-profit organizations and then transfer funds to
-the organization's bank account. If you plan on using CiviCRM to accept
-online contributions, online membership signup and renewal or online
-event registration, you will need to select and configure a payment
-processor for your site.
-
-CiviCRM includes support for several different processors, and provides
-a way for third-party developers to add support for additional
-processors based on their clients' needs. Each processor has their own
-pricing structure and features, and you will want to investigate each
-available option to determine the best fit for your organization. Refer
-to the "Contributions" section for a list of factors to consider in
-selecting a processor.
-
-The actual steps involved in configuring and testing your payment
-processor connection are different for each processor. For more
-information, visit:
-[http://wiki.civicrm.org/confluence/display/CRMDOC/Payment+Processors](http://wiki.civicrm.org/confluence/display/CRMDOC/Payment+Processors)
-
-### Permissions for anonymous users
-
-This link is only present on Drupal sites. On Joomla! and WordPress
-(and Drupal) Sites permissions for anonymous and other users are set
-after navigating to **Administer > Users and Permissions >
-Permissions** > **Drupal (or Joomla! or WordPress) Access Control**.
-See the *Permissions and Access Control* chapter in this section for
-information on setting permissions.
-
-### System Workflow Templates
-
-CiviCRM comes with a set of system-generated emails, including
-contribution receipts and event registration confirmations. These are
-known as system workflow templates, and it's a good idea to review them.
-They will be sent out with your organization's name on them. You can
-customize the style and wording of these messages here.
-
-Workflow messages include text AND necessary program logic. Use caution
-when editing so as not to modify the program logic. Be sure to test the
-workflow and review the emails sent after making any changes. If you
-find that your changes have caused problems, errors or missing
-information - you can always "Revert" to the system default for that
-workflow.
-
-
-You should now have reviewed all the basic configuration tasks. The
-remaining tasks on the checklist involve an understanding of the ways in
-which you can record and use contact data and are best left until you
-have read more in this book.
+
+### Localización
+
+La localización implica la adaptación de CiviCRM para su uso en un país o idioma específico mediante la traducción del texto que se muestra en la pantalla y el establecimiento de formatos específicos de región para las fechas y el dinero (incluyendo moneda). De forma predeterminada, CiviCRM está localizado para los Estados Unidos. Si usted está utilizando CiviCRM en un país diferente, necesita almacenar direcciones de contacto que aparezcan en países que no sean los Estados Unidos, o desea utilizar CiviCRM en otro idioma, deberá revisar y actualizar los valores en esta pantalla.
+
+CiviCRM  ha sido traducido a varios idiomas y las traducciones están disponibles para descargar cuando se descarga CiviCRM. Estas traducciones son aportadas por miembros de la comunidad. Si CiviCRM no está disponible en su idioma, tal vez desee considerar traducirlo. Puede encontrar una guía de traducción en la wiki.
+
+También es posible configurar su sitio para que admita varios idiomas. En este modo, los usuarios podrán elegir de una lista de idiomas disponibles después de iniciar sesión. También puede crear y guardar varias versiones multi-idioma de texto.
+
+Para obtener más información, eche un vistazo aquí:
+http://wiki.civicrm.org/confluence/pages/viewpage.action?pageId=88408149
+
+
+### Dirección de la organización e información de contacto
+
+Utilice esta pantalla para introducir la información que identifica la organización o entidad que es propietaria de esta instalación de CiviCRM. El nombre y la dirección de la organización se utilizan para identificar su organización en los envíos de CiviMail.
+
+Además deberá introducir una dirección de correo electrónico válida perteneciente a su organización. Esta dirección se utilizará como el remitente de los correos electrónicos generados por el sistema.
+
+
+### Habilitar componentes
+
+Aquí es donde se pueden activar o desactivar los componentes de CiviCRM.
+
+Cuando instala por primera vez CiviCRM los componentes más utilizados (CiviContribute, CiviEvent, CiviMail, CiviMember, CiviReport y CiviPledge) ya están habilitados. Si no necesita esos componentes, puede desactivarlos. También puede habilitar otros componentes como CiviCampaign, CiviCase y CiviGrant. Puede volver a visitar esta página en cualquier momento para habilitar más componentes.
+
+También puede desactivar un componente que ya ha utilizado. La información del componente se conserva y seguirá estando allí si la vuelve a habilitar. Sería inusual desactivar un componente que ya han utilizado. Si desea simplificar el menú de administración y la página de búsqueda avanzada, en lugar de deshabilitar componentes puede utilizar permisos específicos (consulte el capítulo Permisos y control de acceso).
+
+### Preferencias de visualización
+
+Esta sección le permite modificar los elementos que se visualizan en las pantallas de CiviCRM a través de las siguientes configuraciones:
+
+-   **Visualización de contactos**: controla las pestañas mostradas cuando se visualiza un registro de un contacto. Por ejemplo: Si su organización no realiza un seguimiento de las relaciones, desmarque esta opción para simplificar la visualización. Las pestañas de contribuciones, compromisos, membresías, eventos, contribuciones y casos se ocultan automáticamente si el componente correspondiente no está habilitado.
+
+-   **Visualización de grupos inteligentes**: controla forma en que se visualizan los grupos inteligentes a los que pertenece un contacto. La opción "Mostrar a pedido" es la que suele dar el mejor resultado y es recomendable para la mayoría de sitios.
+
+-   **Editando contactos**: controla los campos y las secciones que se muestran al crear o editar un contacto. Por ejemplo: Si su organización no registra el sexo y la fecha de nacimiento para las personas, entonces simplifique el formulario desactivando la Demografía.
+
+-   **Buscar contactos**: controla las secciones incluidas en el formulario búsqueda avanzada. Por ejemplo: Si no utiliza las relaciones puede simplificar el formulario desactivando esta opción.
+
+-   **Panel de contactos**: permite a sus contactos ver los grupos que se suscriben, el historial de las contribuciones, información de registro de eventos entre otra información. Puede controlar las secciones que deben incluirse en el panel de control. EJEMPLO: Si no desea que los contactos vean su propio historial de contribuciones, desactive esa opción.
+
+-   **Editor WYSIWYG**: seleccione la opción CKEditor para proporcionar a los usuarios una forma fácil de introducir texto en los campos que permiten el formato HTML (como la introducción de las páginas de contribución en línea). Puede configurar CKEditor (consulte http://ckeditor.com/) para agregar o quitar funciones. Seleccione Textarea si no desea disponer de un editor enriquecido (WYSIWYG).
+
+-   **Habilitar ventanas pop-up**: esta opción está activada de forma predeterminada y permite abrir ventanas emergentes (pop-up) en algunas pantallas del sistema. Desactive esta opción para volver a abrir los formularios a pantalla completa.
+
+-   **Visualización del nombre para individuos**: muestra el formato de visualización para mostrar nombres de contactos de tipo individuo.
+
+-   **Formato para ordenar los contactos por el nombre**: Formato que utilizará el sistema para ordenar los resultados de una búsqueda de los contactos individuales.
+
+
+### Configuraciones de Direcciones
+
+Accediendo a **Localización > Configuración de direcciones**, puede modificar los campos que se muestran por defecto para agregar y editar información de direcciones de contactos y de  eventos. También puede cambiar la distribución del campo de direcciones que se visualiza en pantalla y las etiquetas de correo. Puede controlar los valores predeterminados agregando un nuevo contacto y revisando los campos de dirección. Guarde el contacto y apunte el orden en el que se muestran los campos en la pantalla resumen del contacto. Si planea generar etiquetas de correo para los contactos, revise el diseño de la etiqueta (seleccione "Etiquetas de correo - Imprimir" en el menú desplegable después de realizar una búsqueda con la opción de menú **Buscar > Buscar contactos**).
+
+Después de revisar los campos y diseños predeterminados, vuelva a la pantalla de **Configuración de direcciones** y realice los cambios necesarios.
+
+-   **Etiquetas de correo** - Controla el formato de las etiquetas de correo. El formato predeterminado es:
+
+*{Contact.addressee}
+{contact.street_address}
+{contact.supplemental_address_1}
+{contact.supplemental_address_2}
+{contact.city} {,} {contacto.state_province} {} {contact.postal_code}
+{contact.country}*
+
+Debe utilizar el token {contact.addressee} para incluir el nombre del destinatario en sus etiquetas. Es posible seleccionar entre una variedad de tipos de etiquetas según el código del fabricante cuando se generen las etiquetas para una lista de contactos. Es recomendable probar el tipo de etiqueta en la impresora que planea utilizar para verificar que esté todo correcto.
+
+-   **Mostrar dirección** - controla el diseño de las direcciones de contacto y de ubicación de eventos que aparecen en las pantallas de CiviCRM. El formato predeterminado es:
+
+*{Contact.address_name}
+{contact.street_address}
+{contact.supplemental_address_1}
+{contact.supplemental_address_2} 
+{contact.city} {,} {contacto.state_province} {} {contact.postal_code} 
+{contact.country}*
+
+Este formato también se aplica a las ubicaciones de los eventos- El token *{contact.address_name}* puede ser particularmente útil para eventos en los que es necesario incluir un nombre de la ubicación (por ejemplo "Feria de Muestras").
+
+-   **Edición de dirección** - Modifique aquí los campos de dirección disponibles al editar un contacto. Puede ocultar campos que no planea utilizar para simplificar los formularios. EJEMPLO: Si no planea grabar latitud y longitud de los contactos, puede anular la selección de esos campos.
+
+-   **Estandarización de la dirección** - CiviCRM incluye un plugin opcional para la conexión con el servicio Web de Normalización de Direcciones del Servicio Postal de Estados Unidos (USPS).
+
+
+### Mapeo y Geocodificación
+
+CiviCRM incluye soporte para los servicios de cartografía de Google y OpenStreetMap. La configuración de este servicio se encuentra en **Administrar > Opciones del Sistema > Cartografía y Geocodificación**. Estos servicios permiten a los usuarios mostrar direcciones de contacto y ubicaciones de eventos en un mapa. Para habilitar esta función, seleccione su proveedor de mapas y obtenga una clave para su sitio.
+
+También puede seleccionar un proveedor de geocodificación. Este proveedor puede ser el mismo que para el mapeo o uno distinto. Una vez que este servicio esté habilitado, los registros de contactos y eventos se geocodificarán automáticamente (se insertará la latitud y longitud para esa dirección) a medida que añada o edite datos de dirección.
+
+### Preferencias de búsqueda
+
+Puede acceder a esta sección a través de **Administrar > Pantallas y datos personalizados > Preferencias de búsqueda**. Estas configuraciones permiten ajustar los comportamientos de la búsqueda, como el uso de comodines o los datos que se van a incluir en los resultados de una búsqueda rápida. Estos ajustes pueden mejorar el rendimiento en las instalaciones con grandes volúmenes de datos.
+
+Un comodín es un carácter especial que se puede utilizar para sustituir a cualquier otro carácter en las búsquedas. CiviCRM le permite usar el carácter de porcentaje "%" para sustituir a uno o más caracteres, y el carácter de guión bajo "_"_ para sustituir a un carácter individual. Los comodines son útiles para ampliar los resultados de búsqueda.
+
+Por ejemplo, si escribe "Voluntario%" como asunto de en la búsqueda de una actividad, coincidirá con cualquier actividad cuyo asunto comience con "Voluntario" (por ejemplo, "Voluntario para Casa Abierta" o "Oportunidades de Voluntarios").
+
+-   **Comodines automáticos** - De forma predeterminada, cuando los usuarios buscan contactos por su nombre, la búsqueda trata el texto como si estuviera rodeado de signos de porcentaje. Por ejemplo si hace una búsqueda por 'ada' el sistema devolverá cualquier contacto cuyo nombre incluya esas letras 'Adams, Janet', 'Nadal, Jorge', etc. La desactivación de esta función acelerará significativamente las búsquedas de grandes bases de datos, Caracteres ("%" o "_"_) para buscar nombres parciales.
+
+-   **Incluir eMail** - De forma predeterminada, cuando los usuarios buscan contactos por nombre, la interfaz de búsqueda también busca ese texto en las direcciones de correo electrónico. La desactivación de esta función acelerará las búsquedas de forma significativa para las grandes bases de datos, pero los usuarios tendrán que utilizar los campos de búsqueda de correo electrónico (desde Búsqueda Avanzada, Constructor de búsqueda o perfiles) para buscar contactos a través de su correo electrónico.
+
+-   **Incluir Alias** - De forma predeterminada, los apodos o alias no se incluyen automáticamente cuando los usuarios buscan por Nombre. Cambie este valor a "Sí"" si desea que se incluyan.
+
+-   **Incluir Paginador Alfabético** - Si está desactivado, el localizador alfabético no se mostrará en las pantallas de búsqueda. Esto mejorará el tiempo de respuesta de los resultados de la búsqueda en grandes base de datos.
+
+-   **Incluir Orden por Cláusula** - Si está desactivado, los resultados de búsqueda no estarán ordenados. Esto mejorará significativamente el tiempo de respuesta en la búsqueda de resultados en grandes bases de datos.
+
+-   **Perfil Predeterminado de Búsquedas de Contacto** – Usted puede seleccionar un perfil para sustituir las columnas que aparecen de forma predeterminada en la búsqueda de contactos.
+
+-   **Tiempo de espera de caché del grupo inteligente** - Los grupos inteligentes son básicamente búsquedas guardadas. La lista de contactos de cada grupo inteligente se almacena en caché en la base de datos para evitar ejecutar la búsqueda guardada cada vez que accede a un grupo inteligente. Este campo determina el número de minutos para mantener la memoria caché antes de actualizarla. El valor predeterminado de 0 significa que el caché se vacía inmediatamente cuando se edita cualquier contacto o se agrega uno nuevo. Si sus datos de contacto cambian con frecuencia, puede intentar establecer esto con un valor de 5 minutos (o incluso más) para reducir la carga de procesamiento en su servidor. El inconveniente de retrasar la actualización de la memoria caché, es que los datos antiguos se seguirán viendo a los usuarios durante unos minutos después de actualizar con los nuevos datos.
+
+-   **Autocompletar búsqueda de contacto** - Los campos seleccionados serán los que se muestren en la lista que se despliega en la búsqueda rápida que está a la izquierda del menú de navegación. El nombre del contacto está siempre incluido.
+
+-   **Opciones de referencia de contacto** - Los campos seleccionados se mostrarán en los resultados que se despliegan en una búsqueda de autocompletado para campos personalizados del tipo "Referencia de contacto". El nombre del contacto siempre se incluye. Nota: Se debe asignar el permiso de "acceder a los campos de referencia de contacto" al rol anónimo si usted desea utilizar los campos personalizados de referencia de contacto en los perfiles de las páginas públicas. Para la mayoría de las situaciones, debe utilizar la opción "Limitar lista a Grupo" en la configuración un campo de referencia de contacto para evitar exponer toda la lista de contactos.
+
+-   **Autocomplete Results** - especifica el número máximo de contactos que se mostrarán al momento de realizar una búsqueda un campo autocompletable. El valor predeterminado es 10.
+
+-   **InnoDB Full Text Search** - si está utilizando MySQL 5.6+, puede habilitar las optimizaciones de búsqueda de texto completo de InnoDB.
+
+
+### Varios (No borrar, PDFs, Límites, Log, CAPTCHA, etc.)
+
+Utilice la pantalla Ajustes varios **Administrar > Opciones del Sistema > VArios** para configurar y controlar los siguientes comportamientos:
+
+-   **Tiempo de espera de caché del Panel de control** - el número de minutos para actualizar el contenido del panel de control.
+
+-   **Vigencia del Checksum** - El número de días antes de que expire un enlace personalizado que incluye el *checksum*. El checksum es un código seguro que asigna CiviCRM que se puede incluir en un link dentro de un mailing para que un contacto pueda acceder a sus datos (y a otra funcionalidad de CiivCRM) sin la necesidad de tener un usuario y contraseña.
+
+-   **Papelera de contactos y no borrado** - Si está activado, los contactos eliminados se moverán a la papelera (en lugar de destruirse). Los usuarios con el permiso adecuado podrán buscar los contactos eliminados y restaurarlos (o borrarlos permanentemente).
+
+-   **Logging (Registro)**: si está activada, se grabarán todas las acciones realizadas y serán almacenadas con sus cambios (en las respectivas tablas de log). De forma predeterminada, estas tablas se crearán en la misma base de datos. Sin embargo, puede configurar CiviCRM para escribir tablas de registro en una base de datos diferente mediante la edición del archivo civicrm.settings.php y especifique la base de datos de registro independiente en la configuración CIVICRM_LOGGING_DSN. Después de activar esta función, puede revisar los cambios en los registros de contactos mediante el informe de registro de contactos. Vaya a Informes > Informe de contactos (resumen).
+
+-   **Adjuntar copia de PDF a recibos** - Si está activada, CiviCRM envía un recibo en PDF como archivo adjunto en un email para la suscripción de eventos o donativos en línea.
+
+-   **Ruta de wkhtmltopdf** - wkhtmltopdf es una aplicación alternativa para generar PDF que puede proporcionar un mejor rendimiento, especialmente si está generando un gran número de cartas en PDF o recibos. El administrador del sistema tendrá que descargar e instalar esta aplicación, e ingresar la ruta de acceso a la misma.
+
+-   **Alertas de nueva versión** - Se mostrarán  alertas a los usuarios con permisos "Adminisrar CiviCRM" cuando esté disponible una nueva versión de CiviCRM. Esta configuración sólo funcionará si la configuración "Comprobación de versiones y estadísticas" está habilitada.
+
+-   **Comprobación de versiones y estadísticas** - esta función comprueba automáticamente la disponibilidad de una nueva versión estable de CiviCRM. Las alertas de la nueva versión se muestran en la página principal de Administración de CiviCRM. Las estadísticas sobre su instalación CiviCRM también se informan anónimamente al equipo CiviCRM para ayudar a priorizar los esfuerzos de los desarrollos en curso. Se recopila la siguiente información: versión de CiviCRM, versiones de PHP, MySQL y framework (Drupal / Joomla / Wordpress), y lenguaje por defecto. También se informan cantidades de registros (pero no datos reales). Puede establecer este campo en “No”, si no se siente cómodo al enviar esta información.
+
+-   **Mostrar "Funciona con CiviCRM"** - Cuando está habilitado, se muestra "Funciona con CiviCRM" en la parte inferior de los formularios públicos. Esto ayudará a divulgar el proyecto de CiviCRM.
+
+-   **Número máximo de archivos adjuntos**  - puede aumentar o disminuir el número máximo de archivos (documentos, imágenes, etc.) que se pueden adjuntar a correos electrónicos o actividades. El valor predeterminado es 3.
+
+-   **Tamaño máximo del archivo (en MB)** - tamaño máximo de un archivo (documentos, imágenes, etc.) que se puede adjuntar a correos electrónicos o actividades. Tenga en cuenta que sus archivos de configuración PHP, php.ini, deben soportar al menos un tamaño de archivo tan grande como el valor especificado aquí.
+
+-   **Permitir permisos de relación de segundo grado** - si está activado, los contactos con los permisos para editar un contacto relacionado heredarán los permisos de ese contacto para editar otros contactos relacionados. Esto se puede usar, por ejemplo, para permitir que el profesor de una clase edite los registros para los estudiantes de esa clase cuando ambos están vinculados a la clase (configurada como un subtipo de organización) a través de relaciones.
+
+-   **Claves de ReCAPTCHA** - reCAPTCHA es un servicio gratuito que ayuda a prevenir el abuso automatizado de su sitio, requiriendo a los usuarios leer un par de palabras al azar y escribirlas en el formulario. Para utilizar reCAPTCHA en los formularios CiviCRM  públicos, regístrese en el sitio de reCaptcha de Google e ingrese los datos públicos y privados proporcionados
+
+
+### Tipos de contactos
+
+Puede modificar los nombres de los tipos de contacto incorporados (Individual, Familia, Organización), crear y modificar "subtipos de contacto" para usos más específicos (por ejemplo, Estudiante, Padre, Equipo, etc.). Puede acceder a esta página en **Administrar > Pantallas y datos personalizados > Tipos de contacto**.
+
+
+### Correo Electrónico Saliente
+
+Si está enviando correos electrónicos a los contactos mediante CiviCRM, debe configurarlo para que pueda conectarse a su servidor de correo. Tales correos electrónicos incluyen el envío de recibos a los contribuyentes, el envío de confirmaciones a las personas que se registran para eventos y el uso de CiviMail para enviar correos masivos.
+CiviCRM admite tres métodos diferentes de conexión a un servidor de correo: correo (la función de correo PHP integrada); SMTP (protocolo de transporte de correo simple) y Sendmail. Cada método requiere que ingrese configuraciones específicas. Si no está familiarizado con estos términos, o si no está seguro de los valores correctos, consulte al administrador del sistema, al ISP o al proveedor de alojamiento.
+Siempre debe enviar un correo electrónico de prueba después de introducir o modificar la configuración. Simplemente haga clic en "Guardar y enviar correo electrónico de prueba" (se muestra en la siguiente captura de pantalla). Se enviará un correo electrónico a la dirección de correo electrónico asociada a su cuenta de inicio de sesión de usuario. La dirección de correo electrónico De será la dirección predeterminada De que configuró en la sección anterior.
+
+Si CiviCRM no puede enviar el correo electrónico de prueba, verá un mensaje en la pantalla con el error específico y algunas sugerencias para solucionar el problema.
+
+
+### Inhabilitación del correo electrónico saliente
+
+Si no desea que los usuarios envíen correos electrónicos salientes desde CiviCRM, seleccione
+-   **Desactivar correo saliente** - Sin embargo, si deshabilita el correo electrónico saliente y está utilizando las páginas de contribución en línea o el registro de eventos en línea, tendrá que desactivar las funciones de confirmación automática de recibos y registros (activadas de forma predeterminada). De lo contrario, sus contactos verán mensajes de error después de haber completado una contribución o registrado a un evento.
+-   **Redireccionar la base de datos** - si se selecciona esta opción, todos los correos electrónicos se registrarán como envíos archivados en lugar de enviarse.
+
+
+###Desde la Dirección de E-mail
+
+CiviCRM utiliza la dirección de correo electrónico principal del usuario como la dirección para enviar correos electrónicos a los contactos. Sin embargo, puede utilizar esta página para definir una o más direcciones de correo electrónico que puede ser seleccionada alternativamente. EJEMPLO: “Servicio al Cliente” <clientservices@example.org>
+
+
+### Procesadores de pago
+
+Los procesadores de pagos son empresas que manejan transacciones con tarjetas de crédito para comercios y organizaciones sin fines de lucro y luego transfieren fondos a la cuenta bancaria de la organización. Si planea usar CiviCRM para aceptar contribuciones en línea, inscripción y renovación de membresías en línea o registro de eventos en línea, tendrá que seleccionar y configurar un procesador de pagos para su sitio.
+CiviCRM soporta varios procesadores diferentes y proporciona una forma para que los desarrolladores integren procesadores adicionales basados en las necesidades de sus clientes. Cada procesador tiene su propia estructura de precios y características. Consulte la sección "Contribuciones" de esta guía para obtener una lista de factores a tener en cuenta al seleccionar un procesador.
+Los pasos reales implicados en configurar y probar su conexión del procesador del pago son diferentes para cada procesador. Para obtener más información, visite:
+http://wiki.civicrm.org/confluence/display/CRMDOC/Payment+Processors
+
+
+### Permisos para Usuarios Anónimos
+
+Este enlace está presente en los sitios de Drupal, Joomla y WordPress. Los permisos de sitios para anónimos y otros usuarios se establecen después de navegar en **Administrar > Usuarios y Permisos > Control de acceso**. Consulte el capítulo Permisos y control de acceso en esta sección para obtener información sobre cómo configurar permisos.
+
+
+### Plantillas del Sistema
+
+Las plantillas que utiliza el sistema, se utilizan para generar los correos enviados a contactos como los recibos de contribución, las confirmaciones de eventos y muchos otros flujos de trabajo. Usted puede personalizar el estilo y la redacción de estos mensajes.
+Los mensajes de flujo de trabajo incluyen el texto y la lógica del programa necesaria. Tenga cuidado al editar para no modificar la lógica del programa. Asegúrese de probar el flujo de trabajo y revisar los correos electrónicos enviados después de hacer cualquier cambio. Si usted encuentra que los cambios han causado problemas, errores o falta de información - siempre se puede "Volver" a la configuración predeterminada para ese flujo de trabajo.
+Si su organización ha modificado las versiones predeterminadas de las plantillas del flujo de trabajo del sistema, entonces los cambios y correcciones que se incluyeron requerirán una actualización para que se unan las versiones modificadas..

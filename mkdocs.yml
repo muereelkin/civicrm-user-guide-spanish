@@ -31,7 +31,7 @@ pages:
     - 'Alojamiento': 'getting-prepared/hosting.md'
     - 'Implementando CiviCRM': 'getting-prepared/transitioning-to-civicrm.md'
 - Configruación Inicial:
-    - 'Instalación y configuración básica (inglés)': 'initial-set-up/installation-and-basic-set-up.md'
+    - 'Instalación y configuración básica': 'initial-set-up/installation-and-basic-set-up.md'
     - 'Trabajos programados (inglés)': 'initial-set-up/scheduled-jobs.md'
     - 'Personalizando la interfaz de usuario (inglés)': 'initial-set-up/customizing-the-user-interface.md'
     - 'Permisos y control de acceso (inglés)': 'initial-set-up/permissions-and-access-control.md'
