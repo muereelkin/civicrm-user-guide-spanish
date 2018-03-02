@@ -37,7 +37,7 @@ pages:
     - 'Permisos y control de acceso (inglés)': 'initial-set-up/permissions-and-access-control.md'
     - 'Seguridad (inglés)': 'initial-set-up/security.md'
     - 'Estado del sistema (inglés)': 'initial-set-up/civicrm-system-status.md'
-- Configruación Avanzada:
+- Configuración Avanzada:
     - 'Configuración del sistema de email (inglés)': 'advanced-configuration/email-system-configuration.md'
     - 'Registro de cambios y logs (inglés)': 'advanced-configuration/change-logging.md'
 - La interfaz de usuario:
