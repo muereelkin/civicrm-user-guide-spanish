@@ -1,110 +1,130 @@
-Searching
-=========
+Búsquedas
+======
 
-This chapter covers different ways to find information you've stored in
-CiviCRM. Two of the techniques in this chapter - finding contacts and
-the "search-action" workflow, described in the second bullet below - are
-core functions in CiviCRM, so most, if not all, users will find this
-chapter helpful.
+Este capítulo trata sobre las diferentes formas de encontrar información
+registrada en CiviCRM. Dos de las técnicas utilizadas, *encontrar contactos* y
+*flujos de trabajo de ¨búsqueda-acción¨*(descritos en la segunda viñeta), son
+funciones fundamentales en CiviCRM, por lo que la mayoría, si no todos los
+usuarios, encontrarán este capítulo útil.
 
-We will start off with some simple searches and then move on to more
-advanced techniques. CiviCRM beginners should be familiar with
-Quicksearch, Advanced Search and the component searches. More advanced
-users should also look at reports, custom searches and Search Builder.
+Empezaremos por algunas búsquedas simples y luego pasaremos a técnicas más
+avanzadas. Los principiantes en CiviCRM deberían estar familiarizados con la
+Búsqueda Rápida, Búsqueda Avanzada y la Búsqueda de componentes. Los usuarios
+más avanzados deberían conocer también las opciones de Informes, Búsquedas
+Personalizadas y Constructor de Búsquedas.
 
-There are three main reasons to search:
+Existen tres razones principales para buscar:
 
--   To find a specific contact: the Quick search box can find contacts
-    by name, email address or a variety of other characteristics.
--   To perform an action on a contact or contacts that meet certain
-    criteria: a common workflow in CiviCRM, called a search-action, is
-    to find contacts that meet certain criteria and then perform an
-    action on them. For example, you might want to find all contacts in
-    the advisory group in order to invite them to a meeting, find all
-    those whose memberships have recently expired to send a renewal
-    reminder, or find all contacts aged under 25 in a specific location
-    to send them an email about an upcoming event nearby.
--   For ad-hoc reporting.
+-   Encontrar un contacto específico: la casilla de Búsqueda Rápida puede
+    encontrar contactos por su nombre, correo electrónico o una gran variedad
+    características.
 
-As a form of ad-hoc reporting, searching is often useful but does have
-limitations. For example, you can't group results by particular
-criteria, summarize, or easily produce graphs of the results. For more
-advanced reporting, see the *CiviReport* section.
+-   Para realizar una acción sobre un contacto o contactos que cumplen
+    determinados requisitos: un flujo de trabajo común en CiviCRM, llamado
+    ¨búsqueda-acción, es decir, encontrar contactos que cumplen con ciertos
+    requisitos y posteriormente ejectuar una acción común sobre ellos. Por
+    ejemplo, encontrar todos los contactos del grupo de asesores para invitarlos
+    a una reunión, encontrar a todos los contactos cuyas membresías han expirado
+    recientemente para enviarles un recordatorio de renovación, o encontrar
+    todos los contactos por debajo de 25 años, en un lugar determinado, para
+    enviarles un correo electrónico sobre un próximo evento.
 
-Quick search
---------------
+-   Para realizar informes específicos ad-hoc.
+
+Para realizar informes específicos, la opción de Buscar normalmente es muy útil
+pero tiene sus limitaciones. Por ejemplo, puede agrupar resultados por criterios
+particulares, realizar resúmenes, o crear gráficos de resultados, fácilmente.
+Para más información sobre Informes Avanzados, consulte la sección *CiviReport*.
+
+Búsqueda Rápida
+---------------
 
 ![Quicksearch](../img/quicksearch.png)
 
-The easiest way to find a specific contact is to use the Quick search
-box that appears in the navigation menu at the top left of the screen. You may choose to search by one of several criteria. Once you click in the box you can start typing immediately to use the default Name/Email search or you can click again to expose several other criteria in a dropdown selection list. Contacts that match the phrase you enter will appear in a dropdown list below the box. For example, if you are searching with Name/Email and you have left
-automatic wildcard enabled then going to **Administer > Customize Data and Screens >
-Search Preferences** entering "peter" will find:
+La forma más fácil de encontrar un contacto determinado es usando la casilla de
+*Búsqueda Rápida* que aparece en el menú de navegación en la parte superior
+izquierda de la pantalla. Puede buscar por uno o varios criterios. Una vez que
+haga clic en la casilla puede comenzar a teclear inmediatamente para usar la
+búsqueda por defecto Nombre/Correo electrónico o puede hacer clic de nuevo para
+que se muestren otros criterios de búsqueda en una lista de selección
+desplegable. Los contactos que coincidan con la frase que haya introducido
+aparecerán en una lista desplegable por debajo del menú. Por ejemplo, si está
+buscando con Nombre/Correo electrónico y ha dejado habilitada la opción comodín
+automático y luego ha ido a **Administrar > Pantallas y campos personalizados
+> Preferencias de búsqueda,** si introduce la palabra ¨peter¨, encontrará:
 
--   people who's first or last name is **Peter**
--   people who have Peter appearing as part of their name, e.g. Mary
-    **Peter**son
--   people who have Peter as part of their email address, e.g.
-    blue**peter**@gmail.com  
--   organisations with Peter in their name, e.g. Al**peter**
-    Community Centre.
+-   personas cuyo nombre o apellido sea **Peter**
 
-You don't need to type the full name of the person - just the first few
-letters.
+-   personas que tengan Peter como parte de su nombre p.ej. Mary **Peter**son
 
-Note: If you search by **phone** then you will need to enter the digits of the phone number without any formatting. The **phone** search is done against a field that consists only of digits with all non-numeric characters stripped out.
+-   personas que tengan Peter como parte de su correo electrónico, p.ej.
+    blue**peter\@**gmail.com
 
-Advanced search
----------------
+-   organizaciones con Peter en su nombre ,p.e.j. Al**peter** Community Centre.
+
+No necesita teclear el nombre completo de la persona - solo las primeras letras.
+
+Nota: Si realiza la búsqueda a través de la opción **teléfono**, tendrá que
+introducir los números de teléfono sin ningún formato. La búsqueda por
+**teléfono** se realiza contra un campo que consiste solo en dígitos sin ningún
+caracter no numérico.
+
+Búsqueda Avanzada
+-----------------
+
 ![Screen shot of advanced search](../img/user-interface-advanced-search-main-screen.png)
 
-Advanced search allows you to search across all the information you have
-about your contacts. For example, you could find "all contacts in
-Venezuela" or "all advisory group members". If you specify two or more
-categories of information, the search displays every contact that
-matches all the categories. For instance, you can combine the two
-criteria just mentioned to find "all advisory group members in
-Venezuela".
+La búsqueda avanzada permite buscar a partir de toda la información de la que
+dispone sobre sus contactos. Por ejemplo, podría encontrar ¨todos los contactos
+de Venezuela¨ o ¨todos los grupos de asesores¨. Si especifica dos o más
+categorias de información, la búsqueda muestra cada contacto que coincide con
+todas las categorias. Por ejemplo, puede combinar los dos criterios que acabamos
+de mencionar para encontrar ¨todos los miembros del grupo de asesores de
+Venezuela¨.
 
-The Advanced search screen is accessible from the navigation menu
-**Search > Advanced Search**. On this screen, search criteria are
-grouped into sections which refer to different types of data that you
-can search on, such as address data, notes and information from
-components such as Contributions or Events. Each group of criteria is
-shown as a blue bar (known as an "accordion" because it expands when you
-click on it). For example, if you want to search for all people in your
-database from 16 to 18 years old, click on the Demographics accordion.
-When it opens, you can specify the birth date range you are interested
-in.
+Puede acceder a la pantalla de Búsqueda avanzada desde el menú de navegación
+**Buscar > Búsqueda Avanzada**. En esta pantalla, los criterios de búsqueda
+están agrupados en secciones que hacen referencia a distintos tipos de datos que
+puede buscar, como direcciones, notas e información sobre componentes como
+Contribuciones o Eventos. Cada grupo de criterios se muestra en una barra azul
+(conocida como ¨acordeón¨ porque se expande cuando haces clic sobre ella). Por
+ejemplo, si quiere buscar todas las personas de entre 16 y 18 años, haga clic en
+el acordeón de Demografía. Cuando se abra, puede elegir la fecha de nacimiento
+que le interese.
 
-#### Display Settings For Results
+#### Muestra de la configuración de resultados
 
 ![Screen shot of Display Results As](../img/user-interface-display-results-as.png)
 
-Advanced Search returns your results as Contact records by default.
-However, you may want to get another record type instead. For example,
-you may want to search on the Membership renewal activity to find
-everyone who renewed their membership last week then display the results
-as Memberships so that you can export name, address and Membership
-expiration date to create and then post out membership cards to those
-contacts. Simply select the record type you want from the **Display Results As** dropdown.
+La búsqueda avanzada muestra por defecto los resultados como registros de
+contacto. Sin embargo, existe la posibilidad de realizar la búsqueda a partir de
+otro tipo de registros. Por ejemplo, puede realizar una búsqueda para encontrar
+a las personas que renovaron su membresía la semana pasada. Podría realizar la
+búsqueda a partir de registros de membresía y no contactos para así exportar los
+campos nombre, dirección y fecha de expiración de la membresía. Con esta
+información podría crear, y luego enviar, tarjetas de membresía a esos
+contactos. Simplemente seleccione el tipo de registro que desee, del campo
+desplegable **Mostrar resultados como** que encontrará en la parte de abajo del
+cuadro de **Criterios básicos.**
 
-#### Views for Display Contacts
+#### Vistas para mostrar contactos
 
 ![Screen shot of Display Contacts](../img/user-interface-new-contact-view-profile.png)
 
-Advanced search allows you to change the columns displayed in your
-search results. The default columns are Name, Street Address, City,
-State, Postal Code, Country, Email and Phone. If you want to display a
-different set of columns (perhaps to include a custom field or remove a
-column you don't need), create a Profile with the Search Views option
-selected. Make sure that the fields in this Profile are set to "Expose
-Publicly and for Listings" visibility, and are marked as Results Columns.
-(For more information about creating Profiles, which are described in
-detail in the Profiles chapter in the Configuration section.)
+La búsqueda avanzada le permite cambiar las columnas que se muestran en los
+resultados de su búsqueda. Las columnas por defecto son *Nombre, Calle, Ciudad,
+Estado, Código Postal, País, Correo Electrónico y Teléfono*. Si quiere que se
+muestren un conjunto de campos diferentes (quizás incluir un campo personalizado
+o eliminar una columna que no necesite), puede crear un **Perfil** (Administrar
+> Pantallas y campos personalizados > Perfiles) y elegir la casilla **Buscar
+Vistas** en la opción ¨Utilizado para¨ . Asegúrese de que los campos del Perfil
+estén configurados con visibilidad ¨Exponer públicamente y para listados¨ y
+estén marcados como columnas de resultados. (Para más información sobre la
+creación de Perfiles, consulte el capítulo de Perfiles, sección Configuración).
 
-For example you may want to include columns for Gender and Date of Birth, while eliminating Country.
-Create a profile that includes birth date, gender and address fields.
+Por ejemplo, si quiere incluir columnas de *Sexo y Fecha* de Nacimiento y quiere
+eliminar la columna de *País* puede crear un Perfil que contenga los campos de
+fecha de nacimiento, sexo y dirección.
 
 ![Screen shot of Search View setting in a profile](../img/user-interface-profile-search-view-setting.png)
 
@@ -112,352 +132,386 @@ Create a profile that includes birth date, gender and address fields.
 
 ![Screen shot of a profile](../img/user-interface-new-contact-view-profile.png)
 
-Read more about creating profiles in the Profiles section of the chapter
-on *Organising Your Data*.
+Lea más sobre crear perfiles en la sección de Perfiles del capítulo de
+*Organizando su información.*
 
-Combining this feature with the "Batch Update via Profile" action
-provides a powerful method of viewing and updating a specific set of
-fields across a batch of contact records.
+Combinar esta característica con la acción ¨Actualizar lotes a través del
+Perfil¨proporciona un método muy práctico de ver y actualizar un conjunto
+específico de campos a partir de un lote de contactos.
 
-### Search settings
-The Search Operator determines whether your criteria are combined with AND statements, or combined with OR statements. For example, you may want to find all individuals who are in the Volunteers group AND who have a Volunteer Training activity recorded for them. In this case use the AND operator. If you need to find everyone who is in the Volunteers group OR has a Volunteer Training activity recorded, use the OR operator.
+ 
 
-The Search in Trash allows you to search contacts that have been deleted but not deleted permanently. When a contact is deleted, the contact and all related data are moved to trash. Only users with the relevant permission will be able to search in trash and will be able to restore the contact from trash.
+### Configuraciones de Búsqueda
+
+El Operador de Búsqueda determina si los criterios de su búsqueda están
+combinados con las funciones de Y o combinadas con las funciones de O. Por
+ejemplo, si quisiera encontrar todos los individuos que están en el grupo
+Voluntarios *Y* que tienen registrada una actividad de Formación de Voluntariado
+debería utilizar el operador **Y**. Si lo que necesita es encontrar a todos los
+individuos que se encuentren en el grupo de Voluntarios *O* que tengan
+registrada una actividad de Formación de Voluntariado, debe utilizar el operador
+**O**.
+
+La Búsqueda en la Papelera le permite buscar contactos que han sido borrados
+pero no de manera permanente. Cuando un contacto se borra, toda la información
+relacionada se mueve a la papelera. Solo los usuarios con permisos especiales
+podrán buscar y recuperar contactos de la papelera.
+
+ 
 
 ![Screen shot of Search in Trash](../img/user-interface-search-in-trash.png)
 
-### The Date Range Filter
+ 
+
+### El Filtro de Rangos de Fecha
 
 ![Screen shot of Date Range Filter](../img/user-interface-date-filter.png)
 
-Most component searches include a date range filter. The images below
-show examples of both:
+La mayoría de buscadores de elementos incluyen un filtro de rangos de fechas.
+Las siguientes imágenes muestran ejemplos de dos tipos de rangos que se pueden
+utilizar:
 
--   by using an absolute date range, e.g. "1st Jan 2010" to "31 July
-    2010"
--   by using a relative date range, e.g. "Previous week"
+-   utilizando un rango de fechas absoluto p.ej. "1 Ene 2010" a "31 Julio 2010"
 
-Relative date ranges are especially useful for searches that you would
-like to then save as Smart Groups (automatically populated groups that
-are configured to include contacts that share a certain set of
-characteristics or activities). For more information see the *Groups and
-tags* chapter.
+-   utilizando un rango de fechas relativo, p.ej. "Semana anterior"
+
+Los rangos de fechas Relativos son especialmente útiles para búsquedas de grupos
+grandes, configurados para incluir contactos que comparten un conjunto de
+características o actividades (Grupos Inteligentes). Para más información
+consulte el capítulo de *Grupos y Etiquetas*.
 
 ![Screen shot of Relative Date Range Filter](../img/user-interface-date-filter-relative.png)
 
-For example you may want to use a relative date range search to find:
+Por ejemplo, puede realizar una búsqueda por rango de fechas relativo para
+encontrar la siguiente información:
 
--   Contacts who have contributed in the last 7 days (Relative date
-    range - "From 1 Week ago")
--   This (financial) years registered Event Participants (Relative date
-    range - "This Year")
--   Contacts who are a certain age
+-   Contactos que han realizado contribuciones en los últimos 7 días (rango de
+    fecha Relativo - ¨Últimos 7 días¨).
 
+-   Participantes de eventos registrados este año (fiscal) - (rango de fecha
+    Relativa - "Este Año")
 
-Relative dates filters based on the time interval "week" assume that Sunday is the first day of the week.   This is not true in all countries, for example Europe and many countries in Asia/Pacific region consider Monday to be the first day of the week. To set which day is the first day of the week, you need to go to **Administer >> Localization >> Date Format**.
+-   Contactos que tienen una edad específica
 
-![Screen shot of how to change the first day of the week](../img/user-interface-searching-week-begins.png)
-
-
-#### **Combining search criteria**
-
-Different criteria are combined by "ANDing" them. For example, if you
-select the tag "major donor" and the country "Mexico", the search will
-return major donors from Mexico. The search will not return major
-donors who are *not* from Mexico, nor those from Mexico who are *not*
-major donors.
-
-You can change the default search operator from AND to OR in the Search Settings.
-
-Within criteria groups that allow you to check boxes for more than one
-value, these options are also combined by "ANDing". For example, if you
-can search for contacts whose Preferred Communication Method is both
-Email *AND* SMS.
-
-With fields that allow you to select more than one value from a dropdown list,
-the values are always combined with "OR". For example, you could find contacts
-that live in Alaska or in Arizona.
+Los filtros de fechas relativos basados en los intervalos de tiempo ¨semana¨
+asumen que el domingo es el primer día de la semana. Esto no es cierto en todos
+los países, por ejemplo en Europa y muchos países de la región Asia/Pacífico,
+donde consideran que el lunes es el primer día de la semana. Para configurar qué
+día es el primer día de la semana, vaya a **Administrar > Localización >
+Formatos de Fechas.**
 
 ![Screen shot of combining search criteria](../img/user-interface-searching-states.png)
 
-Search Builder
---------------
+#### **Combinar criterios de búsqueda**
 
-Advanced search lets you choose from a wide range of criteria in a
-user-friendly panel, but this has limitations. Search builder allows you
-to define your own search and arrange the criteria according to your
-specific needs.
+Se pueden combinar distintos criterios de búsqueda al mismo tiempo. Por ejemplo,
+si dentro de los Criterios básicos selecciona la etiqueta ¨gran donante¨ y el
+país ¨México¨, la búsqueda le devolverá los grandes donantes de México. La
+búsqueda no le devolverá los grandes donantes que *no* son de México, ni tampoco
+los contactos de México que *no* son grandes donantes.
 
-Search Builder allows you to choose from a range of operators:
+Puede cambiar el operador de búsqueda por defecto de *Y* a *O* en la
+Configuración de Búsqueda.
 
+También tiene la opción de elegir varias opciones de búsqueda a través de las
+casillas que ofrecen más de un valor, estas opciones están también configuradas
+para incluir todos los criterios seleccionados en la búsqueda (operador Y). Por
+ejemplo, si quiere buscar contactos cuyo método de comunicación preferido es
+tanto el Correo Electrónico como los SMS puede utilizar esta opción.
 
+Otra opción es a través de campos que le permiten elegir más de un valor de una
+lista desplegable, estos valores siempre se combinan con el operador ¨O¨. Por
+ejemplo, si quisiera encontrar contactos que viven en Alaska o en Arizona,
+podría utilizar esta opción.
 
-| Operator  | Purpose | Example |
-| -- | -- | -- |
-| = | Equals. Matches on the exact value you specify | **"First Name" = "Bob"** will find contacts who's first name is exactly "Bob" |
-|  ≠  | Not equals. Matches on everything that is not the specified value. | **"Gender" ≠ "Female"** will find contacts who are not female |
-|  > , ≥  | Greater-than, greater-than-or-equal-to | **"Birth Date" ≥ "Jan 1 2000"** will find contacts born on or after Jan 1 2000  |
-| < , ≤ | Less-than, less-than-or-equal-to | **"Last Name" < "J"** will find contacts whose name starts with a letter that comes before J in the alphabet  |
-| In | Value is one of those you specify | "Group" In "Board Members, Staff" will find contacts who are in either of the specified groups |
-| Like| Same as the = operator, but supports the % wildcard character | **"Last Name" Like "Gree%"** will find contacts whose last name begins with "Gree" (Green, Greenberg, etc)  |
-| Regex | Same as the = operator, but supports all regular expression operators. See http://en.wikipedia.org/wiki/Regular_expressions | **"Middle Name" Regex "[a-c]"** will find contacts whose middle initial is A, B or C  |
-| Is Empty, Not Empty| Empty means the field exists and is equal to the number zero or contains nothing.  | **"City" Is Empty** will find all contacts who do have an address but the city was left blank  |
-| Is Null, Not Null | Null means the field does not exist or contains nothing.  | **"City" Is Null** will find all contacts who do not have an address at all  |
+![Screen shot of combining search criteria](../img/user-interface-searching-states.png)
 
+Contructor de Búsquedas
+-----------------------
 
+La búsqueda avanzada le permite elegir entre un amplio rango de criterios en un
+panel fácil de usar, pero esto tiene limitaciones. El constructor de búsquedas
+le permite definir su propia búsqueda y organizar los opciones de búsqueda según
+sus necesidades específicas.
 
-Search Builder also allows you to combine criteria with multiple AND and
-OR groups. To AND criteria (which means to find results matching all
-criteria specified), click **Another search field** and enter criteria
-under **Include contacts where**. To OR criteria (which means to find
-results matching either one OR the other criterion), enter one
-criterion in **Include contacts where** and the other under **Also
-include contacts where.** The following example will search for females
-born after Jan 1 2000 OR members of the Administrators or Advisory Board
-groups:
+El constructor de búsqueda le permite elegir entre un rango de operadores:
+
+ 
+
+| Operador                  | Propósito                                                                                                                                      | Ejemplo                                                                                                                          |
+|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| =                         | Igual. Coteja los valores exactos que usted haya especificado                                                                                  | **"Nombre" = "Bob"** encontrará todos los contactos que tienen como ¨nombre¨exactamente "Bob"                                    |
+| ≠                         | No es igual. Coteja todos los valores que no son iguales al especificado.                                                                      | **"Sexo" ≠ "Femenino"** econtrará todos los contactos que no son de sexo femenino                                                |
+| \> , ≥                    | Mayor que, mayor o igual a                                                                                                                     | **"Fecha de Nacimiento" ≥ "1 Enero 2000"** econtrará los contactos nacidos el 1 de enero del 2000 o en una fecha posterior       |
+| \< , ≤                    | Menor que, menor o igual que                                                                                                                   | **"Apellido" \< "J"** encontrará los contactos cuyo nombre comience con una letra que esté en el alfabeto antes de la letra ¨J¨. |
+| En                        | El valor es alguno de los que ha especificado                                                                                                  | "Grupo" En "Miembros del Consejo, Empleados" encontrará contactos que estén en alguno de los dos grupos especificados            |
+| Como                      | Igual que el operador = , pero mantiene el % del caracter de comodín                                                                           | **"Apellido" Como "Gree%"** encontrará contactos cuyo apellido comience con "Gree" (Green, Greenberg, etc)                       |
+| Regex                     | Igual que el operador = , pero mantiene todos los operadores de expresiones regulares. Visite http://en.wikipedia.org/wiki/Regular_expressions | **"Apellido" Regex "[a-c]"** encontrará contactos cuyos apellidos comiencen por las letras A, B o C.                             |
+| Está Vacio, No está Vacio | Vacio significa que el campo existe y es igual al número cero o que no contiene nada.                                                          | **"Ciudad" Está Vacio** encontrará todos los contactos que tienen una dirección pero que tienen el campo Ciudad vacio            |
+| Es nulo, No es Nulo       | Nulo significa que el campo no existe o que no contiene nada.                                                                                  | **"Ciudad" Es Nulo** encontrará todos los contactos que no tienen ningún dato de dirección                                       |
+
+El Constructor de Búsquedas le permite combinar criterios con grupos múltiples
+de Y y O. Para utilizar la opción Y (significa encontrar resultados que
+coincidan con todos los criterios especificados), haga clic en **Otro campo de
+búsqueda** e introduzca los criterios en **Incluir Contactos donde.** Para
+utilizar la opción O (significa encontrar resultados que coincidan con alguno de
+los dos criterios), introduzca un criterio en **Incluir contactos donde** y el
+otro bajo la opción **También incluir contactos donde**. En el siguiente ejemplo
+verá la búsqueda de mujeres nacidas después del uno de enero del 2000 O miembros
+de los grupos de administradores O Consejo Asesor:
 
 ![Search Builder](../img/Search%20Builder.png)
 
-Your search results will contain each contact's name, plus a column for
-each search criteria you've defined. If you export search results, the
-export file will contain those same columns.
+Los resultados de su búsqueda contendrán el nombre del contacto, más una columna
+para cada criterio de búsqueda que haya definido. Si quiere exportar sus
+resultados de búsqueda, el fichero de exportación contendrá esas mismas
+columnas.
 
-Just like other searches, you can choose from a list of actions to apply
-to the results of your search. If you export results, you can select
-fields for export. Note that the fields you searched on will get
-exported by default in addition to those you select.
+Como para otras búsquedas, puede elegir entre una lista de acciones para aplicar
+a los resultados de su búsqueda. Si quisiera exportar resultados, puede
+seleccionar campos para exportar. Tenga en cuenta que los campos que haya
+buscado se exportarán por defecto junto con aquellos que haya seleccionado.
 
-You can also save your Search Builder search as a Smart Group. For more
-information on Smart Groups, see the *Groups and Tags* chapter.
+También puede guardar su búsqueda con el Constructor de búsquedas como un Grupo
+Inteligente. Para más información sobre Grupos Inteligentes, vaya al capítulo de
+Grupos y Etiquetas.
 
-Full-text Search
-----------------
+Búsqueda de Texto Completo
+--------------------------
 
-You can use this to search for text values all fields of the database.
-This is particularly useful, for example, if you can remember specific
-words that you have used but can't remember where you have put them. For
-example, lets say that you recorded an activity with a contact and added
-specific words to the description but have now forgot the contact's
-name. You can use Full text search to find the contact and activity by
-words that you remember from the description.
+Puede utilizar esta búsqueda para todos los campos de **texto** de la base de
+datos. Es especialmente útil, por ejemplo, si puede recordar palabras
+específicas que haya usado pero no puede recordar dónde las ha puesto. Por
+ejemplo, digamos que ha grabado una actividad con un contacto y ha añadido
+palabras específicas a la descripción pero ha olvidado el nombre del contacto.
+Puede utilizar la búsqueda por texto Completo para encontrar el contacto y la
+actividad a través de las palabras que recuerde de la descripción.
 
-Component searches
-------------------
+Búsquedas por componentes
+-------------------------
 
-Most CiviCRM components offer a search on the data they maintain, such
-as **Find contributions**, **Find members**, etc. These forms work in a similar
-way to **Advanced search** but return rows of the main objects associated
-with the components, instead of contacts. **Find Members** returns
-memberships, **Find Participants** shows event registrations, **Find
-Contributions** returns contributions and so on.
+La mayoría de componentes de CiviCRM ofrecen una búsqueda de la información que
+poseen, como **Encontrar contribuciones, Encontrar miembros**, etc. Estas
+fórmulas de búsqueda funcionan de forma similar a la **Búsqueda Avanzada** pero,
+en este caso, los resultados encontrados muestran filas de los componentes
+principales asociadas con el resto de componentes, en lugar de los contactos.
+**Encontrar Miembros** devuelve membresías, **Encontrar Participantes** muestra
+registros en eventos, **Encontrar Contribuciones** devuelve contribuciones y así
+sucesivamente.
 
-Each component search has its own Action list. See the *Component*
-sections for more details.
+Cada búsqueda por componente tiene su propia lista de Acciones. Consulte la
+sección *Componentes* para más detalles.
 
-Note that you can also use the Advanced search in conjunction with
-**Display Results As** to search for component objects based on criteria
-available in advanced search. For example, you could find all event
-attendances from contacts that are also members.
+Tenga en cuenta que puede también puede utilizar la búsqueda Avanzada
+conjuntamente con **Mostrar resultados como** (Criterios básicos - Configuración
+de búsqueda) para buscar componentes basados en los criterios disponibles en
+búsqueda avanzada. Por ejemplo, puede encontrar los asistentes a todos los
+eventos de entre los contactos que también son miembros.
 
-Custom searches
----------------
+Búsquedas personalizadas
+------------------------
 
-Custom searches are designed to answer specific questions that can't be
-easily answered using **Advanced Search** or **Search Builder.**
+Las búsquedas Personalizadas están diseñadas para solucionar problemas
+específicos que no pueden solucionarse fácilmente utilizando la **Búsqueda
+avanzada** o el **Constructor de búsquedas**.
 
-Go to **Search** > **Custom Search** in the navigation menu and look at
-the list of available custom searches.These customized searches have
-been written by members of the CiviCRM community to meet their own
-needs, and then contributed back to the community to share with others
-who need the same or similar custom searches. It's worth spending some
-time exploring these searches as some may be useful to you, and they
-will give you an idea of the sorts of things that are possible. Though
-some of these searches can be done in the Advanced Search (especially in
-later versions), custom searches are also set up to display results
-according to your search and may provide more useful columns in the
-results for your needs. Here's a short description of the custom
-searches available.
+Vaya a **Búscar** > Búsquedas Personalizadas** en el menú de navegación y
+mire en la lista de búsquedas personalizadas disponilbles. Estas búsquedas
+personalizadas han sido elaboradas por miembros de la comunidad CiviCRM para
+cubrir sus propias necesidades, y también contribuir con la comunidad al
+compartir con otros usuarios que necesitan la misma búsqueda o una búsqueda
+similar. Merece la pena dedicar un tiempo a explorar estas búsquedas ya que
+algunas pueden ser útiles para usted y le podrán dar una idea del tipo de cosas
+que son posibles.
 
-### Finding contacts in one group but not in another
+Aunque algunas de estas búsquedas pueden realizarse a través de la Búsqueda
+Avanzada (especialmente en las últimas versiones), las búsquedas personalizadas
+también están diseñadas para mostrar resultados según su búsqueda y pueden
+proporcionarle resultados con columnas más útiles para sus necesidades. Aquí
+encontrará una breve descripción de las búsquedas personalizadas disponibles.
 
-This is probably the most popular custom search.
+### Encontrar contactos en un grupo y no en otro
 
-When using Advanced Search, if you select several groups in the Group
-list near the top, it will treat the search as an OR search, and return
-results for contacts who are in any of the groups you select. If you
-want to find contacts who belong to all of the selected groups, you will
-need to use Search Builder.
+Este es, probablemente la búsqueda personalizada más popular.
 
-There is also a very useful built-in custom search, "Include/Exclude
-Contacts in a Group/Tag", that enables you to find contacts who are in
-one group but not in another, which you can find by going to **Search >
-Custom Searches** in the navigation menu.
+Si usa la opción de Búsqueda Avanzada y selecciona varios grupos en la lista de
+Grupos en la parte de arriba, tratará la búsqueda como una búsqueda O, y le
+devolverá resultados de contactos que están en cualquiera de los grupos que haya
+seleccionado. Si quiere encontrar contactos que pertenezcan a todos los grupos
+seleccionados, tendrá que utilizar el Constructor de búsquedas.
+
+Existe también una búsqueda personalizada integrada, ¨Incluir/Excluir contacto
+en un grupo/Etiqueta¨, que le permite encontrar contactos que están en un grupo
+pero no en otro. Puede encontrarlo en **Buscar > Búsquedas Personalizadas** en
+el menú de navegación.
 
 ![Include/Exclude Search](../img/IncludeExclude.png)
 
-By combining Include and Exclude options, you can find contacts who are
-in one group but remove just the group members who fit another
-criterion. For example, you may want to find all the contacts who are
-Newsletter Subscribers or volunteers, but exclude members of Advisory
-Board, perhaps to create a new mailing list to receive a message
-targeted at the most external circles of your constituents.
+Combinando las opciones Incluir y Excluir, puede encontrar contactos que están
+en un grupo y excluir solo los miembros del grupo que cumplan otros criterios.
+Por ejemplo, podría utilizar esta opción, si quisiera encontrar todos los
+contactos suscritos a una Newsletter o voluntarios, pero quisiera excluir a los
+miembros del Consejo de Asesores, y así crear una nueva lista de envío de correo
+para enviar un mensaje dirigido a los círculos más externos de su base de datos.
 
-### **Household Name and State**
+### **Nombre y Estado de Familia​**
 
-Search households in a state or province.
+Buscar familias en un estado o provincia.
 
-Note: which states or provinces are available in the search depends on
-your localization settings. Add additional countries by going to
-**Administer** > **Configure** > **Global Settings** >
-**Localization**. Add to the column of "Available States and Provinces",
-but note this change will also affect profile forms which include
-country or state/province fields.
+Nota: los estados o provincias disponibles en su búsqueda dependen de su
+configuración de localización. Puede añadir países adicionales en la opción
+**Administrar > Configurar > Configuración Global > Localización**. Añada
+¨Estados y Provincias disponibles¨, pero tenga en cuenta que este cambio también
+afectará los perfiles que incluyen campos de país o estado/provincia.
 
-### **Contribution Aggregate**
+### **Contribución Agregada​**
 
-Find aggregate totals of contributions from contacts within a range of
-dates.
+Encuentra agregados totales de contribuciones de contactos en un perido de
+fechas determinado.
 
-### **Postal Mailing**
+### **Envío Postal​**
 
-Search for contacts in a given group and display results with mailing
-information. Use this search to batch update contact information, send
-an email, export contacts, or other actions.
+Busca contactos en un grupo dado y muestra los resultados con la información de
+correo electrónico. Puede usar esta búsqueda para actualizar lotes de
+información de contactos, enviar un correo electrónico, exportar contactos y
+otras acciones.
 
-### **Proximity Search**
+### **Búsqueda de Proximidad​**
 
-Search for contacts located within x miles/kilometres of a specific
-geographical area.
+Busca contactos ubicados a menos de X millas/kilómetros de un área geográfica
+determinada.
 
-1.  Go to **Search > Custom Searches > Proximity Search**
-2.  Enter the distance in miles or kilometres.
-3.  Enter the country within which you want to search.
-4.  Enter any other parameters you wish to give your search.
-5.  Click **Search**.
+1.  Vaya a **Buscar > Búsquedas Personalizadas > Búsqueda de Proximidad**
 
-**TIP:** You can also incorporate Proximity Searching in a profile which
-you've configured for use as a search form.
+2.  Introduzca la distancia en millas o kilómetros
 
-### **Event Aggregate**
+3.  Introduzca el país en el que quiere realizar la búsqueda
 
-Search on event-related payments for a given event or event type in a
-given date range. You may also limit results to show credit card
-payments only or payees only. See also event reports for more useful
-event search options.
+4.  Introduzca cualquier otro parámetro que desee dar a su búsqueda
 
-### **Activity Search**
+5.  Haga clic en **Buscar**.
 
-Find activities using any or all of the activity-related criteria. This
-is also possible in Advanced Search by using Display results as.
+**Consejo:** Puede también incorporar Búsqueda de Proximidad en un perfil que
+haya configurado para usar en un formulario de búsqueda.
 
-### **Price Set Details for Event Participants**
+### **Evento Agregado​**
 
-Get detailed information about which participants opted for which
-different paid options related to an event. For example, see who paid
-just the event fee, who paid for the additional workshop and who paid
-for dinner.
+Busca pagos relacionados con eventos para un determinado evento en un rango de
+fechas determinado. También puede limitar los resultados para mostrar solo pagos
+por tarjetas de crédito o solo beneficiarios. Consulte los informes de Eventos
+para ver más opciones de búsquedas de eventos.
 
-### **Find Contribution Amounts by Tag**
+### **Búsqueda de Actividad​**
 
-Search on any tag for contributions within a range of dates.
+Puede encontrar actividades utilizando cualquier criterio o todos los criterios
+relacionados con actividades. Esto también es posible desde la opción de
+*Mostrar restultados como* de la Búsqueda avanzada.
 
-### **Zip Code Range**
+### **Detalles del listado de precios para participantes del evento**
 
-Find contacts in a specified zip code or postal code range. This is
-useful for targeted mailings or conducting surveys in a particular
-geographical area.
+Puede conseguir información detallada sobre las diferentes elecciones de pago de
+los participantes a un evento. Por ejemplo, puede ver quién ha pagado solo por
+la inscripción al evento, quién ha pagado por los talleres adicionales y quién
+ha pagado por la cena.
 
-1.  Go to **Search > Custom Searches > Zip Code Range**.
+### **Buscar cantidades de contribuiones por etiqueta​**
 
-2.  Enter the start and end range of the zip or postal codes.
+Busque en cualquier etiqueta de contribución dentro de un rango de fechas.
 
-3.  Click **Search**.
+### **Rango de códigos postales**
 
-### **Date Added to CiviCRM**
+Encuentre contactos en un rango específico de códigos postales . Esto es útil
+para envios de correo selectivo o para la realización de encuentas en un área
+geográfica específica.
 
-Search for contacts that have been added within a particular time
-period. Including a group displays just those added within the specified
-time frame who are also in that group. Excluding a group removes those
-group members from the results.
+1.  Vaya a **Buscar > Búsquedas Personalizadas > Rango de códigos postales**
 
-### **Custom Group Multiple Values Listing**
+2.  Introduzca el inicio y la finalización del rango de códigos postales.
 
-A search for multi-value custom data.
+3.  Haga clic en **Buscar**
 
-### **Contributions made in Year X and not Year Y**
+### **Fecha agregada a​ CiviCRM**
 
-Search for contributions that have been made in one year but not
-another. This is useful for following up semi-regular donors and
-encouraging them to donate more regularly. See also the LYBUNT and
-SYBUNT reports.
+Busca contactos que han sido añadidos en un periodo de tiempo determinado.
+*Incluir grupo* muestra solo aquellos añadidos dentro de un marco de tiempo
+determinado que también están en ese grupo. *Excluir grupo* excluye los miembros
+del grupo de la búsqueda.
 
-None of the fields are required; you can choose whether to search a
-specified amount range as well as a time period, and whether you want to
-exclude minimum or maximum amounts.
+### **Listado de valores múltiples personalizado**
 
-It is possible to write your own custom searches, but you'll need to be
-comfortable with MySQL and PHP. See the Developer wiki at
-[http://wiki.civicrm.org/confluence/display/CRMDOC/Develop](http://wiki.civicrm.org/confluence/display/CRMDOC/Develop)
-for more information about how to do this. If you create a custom search
-that you think could be useful for others, consider contributing it back
-to the community.
+Busca por información de valores múltiples personalizados.
 
-The 'search-action' workflow
-----------------------------
+### **Contribuciones hechas en el año X y no en el año Y​**
 
-After you retrieve your search results, you can perform a number of
-actions. An Actions box appears above the results. You can select either
-all records or specific records, then carry out an action with the
-selected records. Different actions are covered in more detail in the
-chapter on Everyday Tasks.
+Busca contribuciones que se han realizado en un año pero no en otro. Esta opción
+es útil para el seguimiento de donantes semi-regulares y para animarlos a donar
+de forma más regular. Consulte los informes de LYBUNT y SYBUNT para más
+información..
+
+No se require ninguno de los campos; puede elegir tanto un rango de cantidades
+determindado como un periodo determinado y si quiere excluir cantidades mínimas
+o máximas.
+
+Tiene la posibilidad de escribir sus propias búsquedas personalizadas, pero
+tendrá que saber manejar MySQL y PHP. Consulte la wiki de desarrollador en
+<http://wiki.civicrm.org/confluence/display/CRMDOC/Develop> para más
+información. Si crea una búsqueda personalizada que cree que podría ser útil
+para otros, considere compartirla con la comunidad.
+
+El flujo de trabajo ¨búsqueda-acción¨
+-------------------------------------
+
+Una vez recuperados los resultados de su búsqueda puede realizar una serie de
+acciones. Una casilla de Acciones aparece sobre los resultados. Puede
+seleccionar, bien todos los registros, o bien registros determinados, y llevar a
+cabo una acción. Puede consultar el capítulo Tareas diarias para conocer en
+detalle, las diferentes acciones que se ofrecen.
 
 ![Screen shot of Action Dropdown](../img/user-interface-searching-actions-dropdown.png)
 
-Some of the most commonly used actions are Add Contacts to Group, Export
-Contacts, Map Contacts, and creating and printing Mailing Labels. (To
-use Map Contacts, you will need to configure Mapping and Geocoding. You
-can read more about this in the *Installation* chapter of the
-*Configuration* section of this manual).
+Algunas de las acciones más utilizadas son Añadir contactos a un grupo, Exportar
+Contactos, Mapear Contactos y Crear e imprimir Etiquetas de envios de correo
+(para usar mapas de contactos necesitará configurar Mapping y Geocoding,
+consulte el capítulo *Instalar* de la sección de *Configuración* de este manual,
+para más información).
 
-For example, to send email to a selected number of contacts, mark the
-contacts you are interested in and then select **Send Email to Contacts** in
-the dropdown list of actions.
+Por ejemplo, para enviar un correo electrónico a un determinado número de
+contactos, marque los contactos por los que está interesado y luego seleccione
+**Enviar email a los contactos** en la lista de acciones desplegable.
 
-The contact summary pop-up
---------------------------
+Ventana emergente de detalles de contacto
+-----------------------------------------
 
-You can see a pop-up box with detailed information for any contact
-listed in your search results by hovering over the contact icon in the
-left column, as shown below. You can adjust the fields shown in this
-"pop-up view" by modifying the fields included in the "Summary Overlay"
-profile (**Administer** > **Customize Data and Screens** >
-**Profiles**).
+Puede ver una ventana emergente con información detallada para cualquier
+contacto listado en los resultados de su búsqueda, si desplaza el cursor sobre
+el icono del contacto en la columna izquierda, como podrá ver en la imagen de
+abajo. Puede ajustar los campos mostrados en esta ventana si modifica los campos
+incluidos en el perfil del ¨Icono Resumen¨ **(Administrar > Pantallas y campos
+personalizados > Perfiles).**
 
 ![Screen shot of Contact Summary pop-up](../img/user-interface-searching-summary-overlay.png)
 
-The wildcard (%)
-----------------
+El comodín (%)
+--------------
 
-Understanding wildcards greatly expands your search options. A wildcard
-represents any character (letter, numeral or punctuation mark). In
-CiviCRM, the wildcard is represented by the % symbol (you may be
-familiar with other symbols such as * from other applications). It is
-most easily understood through examples.
+Si entiende el uso de los comodines, incrementará sus oportunidades de búsqueda.
+Un comodín representa cualquier caracter (letra, cifras, marcas de puntuación).
+En CiviCRM, el comodín se representa con el símbolo % (puede que esté
+familiarizado con otros símbolos como * de otras aplicaciones).
 
-Suppose that somebody asked you to find a contact with a first name
-similar to "Michael", but possible something different such as
-"Michelle" or "Michał". If you search for "Mich%" you will find all
-these variations, including a contact who is supposed to be named
-"Michael" but whose name was misspelled as "Micheal". Wildcards can be
-used before, after, or even within words. For example, searching on
-'Mich%el' will exclude "Michał" and "Micheal" but still find "Michelle"
-and "Michael".  
+Por ejemplo, suponga que alguien le pide que encuentre un contacto con un nombre
+parecido a ¨Michael¨ del estilo de ¨Michelle¨o ¨Michal¨. Si busca por ¨Mich%¨
+encontrará estas variaciones, incluyendo un contacto que se supone que se llama
+¨Michael¨ pero cuyo nombre estaba escrito erróneamente como ¨Micheal¨. Los
+comodines pueden ser utilizados antes, después o incluso entre palabras. Por
+ejemplo, una búsqueda por ¨Mich%el¨ excluirá ¨Michal¨y ¨Micheal¨pero todavía
+encontrará ¨Michelle¨ y ¨Michael¨.
 
-Case sensitivity
-------------------
+Sensible a las mayúsculas
+-------------------------
 
-Note that when you search for character strings, the search is not
-case-sensitive. For example, if you search for 'brooklyn', the search
-will return strings with capitalised letters if the string exists, e.g.
-'Brooklyn' or 'BROOKLYN'. Entering "mi%el" in lowercase will also find
-contacts with an upper case 'M' in their name.
+Tenga en cuenta que cuando busca una serie de caracteres, la búsqueda no es
+sensible a las mayúsculas. Por ejemplo, si busca ¨brooklyn¨, la búsqueda le
+devolverá series con letras mayúsculas, si la serie existe, p.ej. ¨Brookyn¨ o
+¨BROOKLYN¨. Si introduce ¨mi%el¨en letras minúsculas también buscará contactos
+con la letra mayúscula ¨M¨en su nombre.

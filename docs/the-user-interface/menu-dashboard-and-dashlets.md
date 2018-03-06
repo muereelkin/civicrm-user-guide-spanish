@@ -1,99 +1,70 @@
-Menu, Dashboard and Dashlets
+Menu, Panel de control y Dashlets
 ============================
 
-This chapter gives an overview of CiviCRM's dashboard (it's 'home page')
-and the navigation menu available for people working in CiviCRM.
+Este capítulo da una visión de conjunto del **Panel de Control** de CiviCRM que es su página de inicio y del menú de navegación disponible para personas que trabajan con CiviCRM.
 
-The navigation menu
--------------------
 
-The navigation menu is a small bar at the top of every "back office"
-page of CiviCRM.
+El menú de navegación
+-----------------------------------------------------------------------------------------------------------------------------------
 
-![image](../img/4.5%20Menubar.png)... 
+El menú de navegación es una pequeña barra en la parte de arriba de cada página de CiviCRM.
 
-It provides access to nearly every function of CiviCRM and is broadly
-organised into headings by individual CiviComponents (such as
-Contributions, Events and Mailings), with a few exceptions for Search
-and Administer, both of which cover all of the enabled CiviComponents.
+![image](../img/4.5%20Menubar.png)
+
+Proporciona acceso a casi todas las funciones de CiviCRM y está ampliamente organizado en cabeceras a través de componentes Civi individuales (como Contribuciones, Eventos y Envio de correos), con algunas excepciones para Buscar y Administrar, ambas de las cuales cubren todos los componentes de Civi habilitados.
 
 ![NavMenu_SearchPulldown](../img/CiviCRM_update-CiviCore-NavMenu_SearchPulldown-en.jpg "NavMenu_SearchPulldown")
 
-You can modify the navigation menu by going to: **Administer** >
-**Customize** > **Navigation Menu** and then adding or rearranging menu
-items on the screen. Remember that changes you make to the navigation
-menu will be seen by everyone who has the appropriate permissions to see
-the menu, for better or for worse, so be careful when modifying the
-navigation menu.
+Puede modificar el menú de navegación a través de la opción: **Administrar > Pantallas y Campos personalizados > Menú de Navegación** y así añadir o reorganizar los elementos del menú en la pantalla.
 
-To the left of the navigation menu is the Quick search field. See the
-chapter on Searching for more details. 
+Recuerde que los cambios que haga en el menú de navegación serán vistos por todas las personas que tengan los permisos determinados para ver el menú, para bien o para mal, por lo que tenga cuidado cuando modifique el menú de navegación.
 
-The home dashboard & dashlets 
--------------------------------
+A la izquierda del menú de navegación hay un campo de búsqueda rápida. Consulte el capítulo sobre *Búsquedas* para más detalles.
 
-When you first log into CiviCRM, the first page that you will see is the
-dashboard (CiviCRM Home). The dashboard allows you to see important
-information about your site and CiviCRM by displaying a series of
-"dashlets". A dashlet is a report that you can display on your home
-dashboard. Many dashlets come with CiviCRM by default, and you or your
-administrator can create additional dashlets that are specific to your
-organization's needs. Some examples of dashlets that come with CiviCRM
-include:
 
--   Donor Report: a bar graph of the amount of total contributions per
-    month for the last five months.
--   Activities: a list of recent activities that have been recorded by
-    CiviCRM (this could include emails sent to constituents, donations
-    that have been made, or meetings that have been scheduled in
-    CiviCRM).
--   Membership Report: a table summarising information about Members
-    tracked by CiviCRM and broken out by month. This includes the number
-    of Members of each type total amounts of payments made and the
-    number of contributions made, among other things.
+El Panel de Control y los dashlets de la página principal
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Cuando se registra en CiviCRM por primera vez, la primera página que verá es el panel de control (página de inicio de CiviCRM). El panel de control le permite ver información importante sobre su página y CiviCRM a través de una serie de dashlets. Un dashlet es un informe que puede mostrar en el panel de control de su página principal. Muchos dashlets vienen por defecto con CiviCRM, y usted o su administrador pueden crear dashlets adicionales que sean específicos para las necesidades de su organización. Algunos ejemplos de dashlets que vienen por defecto con CiviCRM incluyen:
+
+-   Informes de Donantes: un gráfico de barras de la cantidad del total de contribuciones por mes de los últimos cinco meses.
+
+-   Actividades: una lista de actividades recientes que se han registrado en CiviCRM (como emails enviados a integrantes, donaciones realizadas, o reuniones programadas en CiviCRM).
+
+-   Informe de Membresías: un cuadro de resumen de información sobre Miembros monitoreados por CiviCRM y desglosado por meses. Esto incluye el número de Miembros por tipo, el total de pagos realizados y el número de contribuciones hechas, entre otras cosas.
 
 ![Dashboard_homescreen](../img/CiviCRM_update-CiviCore-Dashboard_homescreen-en.jpg "Dashboard_homescreen")
 
-
-You can add these dashlets to your CiviCRM dashboard by clicking the
-**Configure Your Dashboard** button. You will see a list of dashlets that
-can be dragged into the right or left column of your dashboard.
+Puede añadir estos dashlets a su panel de control de CiviCRM haciendo clic en la opción **Configurar Panel de Control** . Podrá ver una lista de dashlets que se pueden arrastrar hacia las columnas derecha o izquierda de su panel de control.
 
 ![Dasboard_editscreen](../img/CiviCRM_update-CiviCore-Dasboard_editscreen-en.jpg "Dasboard_editscreen")
 
-Click **Done** to save the dashlets to your dashboard. From now on, you will
-see updates to the status of your dashlets every time you log in (if
-you'd like to check and see any changes that have occurred more
-recently, you can always click **Refresh Dashboard Data** - this will reload
-each dashlet and pull in any new information). For performance reasons, dashlets
-are cached. You can change how often the dashboard refreshes by visiting
-**Administer** > **System Settings** > **Misc** and editing **Dashboard cache timeout**.
+Haga clic en **Finalizado** para salvar los dashlets en su panel de control. A partir de ahora, podrá ver las actualizaciones del estado de sus dashlets cada vez que se registre (si quiere comprobar y ver cualquier cambio que se haya producido recientemente, siempre puede hacer clic en **Recargar Datos del Panel de Control**, esto hará que se vuelva a cargar cada dashlet con la información nueva que se haya añadido). Por motivos de rendimiento, los dashlets están escondidos. Usted puede elegir cada cuanto tiempo se actualizan los dashlets a través de la opción **Administrar > Opciones del Sistema > Varios** *tiempo de espera del caché del Panel de Control*. 
 
+Casi todos los informes de CiviCRM pueden aparecer disponibles como un dashlet.
 
-Almost any CiviCRM report can be made available as a dashlet.
+Para crear un dashlet, siga los siguientes pasos:
 
-To create a dashlet, do the following: 
+-   Haga clic en **Informes > Crear Informes desde Plantillas**.
 
--   Click **Reports > Create Reports from Templates**.
--   Select the report template that you want to use.
--   Choose the criteria you want to display in your dashlet. For
-    example, you may want the dashboard version of the report to always
-    show data for "This Quarter" or "This Year". You can also choose to
-    display the report as a table, or as a bar or pie chart. 
--   Click **Preview Report**.
--   Once there, click **Create Report**.
--   At the bottom of the Create Report section, select the box that says
-    **Available for Dashboard?**. Users with permissions to see that
-    information will be able to add that dashlet. (See the section on
-    permissions for more information).
--   Click **Create Report**.
+-   Seleccione la plantilla para el informe que desee usar.
 
-Now add the dashlet to your dashboard: 
+-   Elija las opciones que quiere mostrar en su dashlet. Por ejemplo, quizás quiera que la versión del informe, para su panel de control, muestre siempre información de ¨Este trimestre¨ o ¨Este Año¨. También puede elegir mostrar el informe como una tabla, o como un gráfico de barras o sectores.
 
--   Click **Home** to get to your dashboard.
--   Click **Configure Dashboard**. Drag the dashlet from the "Available
-    Dashlets" box to the column where you'd like it to appear.
--   Click **Done**. 
+-   Haga clic en **Previsualizar Informe**
 
-(Refer to the Reporting section for more details on working with
-reports.)
+-   Haga clic en **Crear Informe**.
+
+-   En la parte de abajo de la sección *Crear Informe*, seleccione la casilla **Disponible para el Panel de Control** . Los usuarios con permiso para ver la información podrán añadir el dashlet. (Consulte sección sobre permisos para más informacion).
+
+-   Haga clic en **Crear Informe**
+
+Ahora añada el dashlet a su panel de control
+
+-   Haga clic en Página Principal para ver su panel de control.
+
+-   Haga clic en **Configurar Panel de Control**. Arrastre el dashlet desde la tabla ¨Dashlets disponibles¨hasta la columna en la que quiera que aparezca.
+
+-   Haga clic en **Finalizado**.
+
+(Consulte la sección de Informes para más detalles sobre cómo utilizar los informes).
