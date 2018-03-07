@@ -49,7 +49,7 @@ Para crear un dashlet, siga los siguientes pasos:
 
 -   Seleccione la plantilla para el informe que desee usar.
 
--   Elija las opciones que quiere mostrar en su dashlet. Por ejemplo, quizás quiera que la versión del informe, para su panel de control, muestre siempre información de ¨Este trimestre¨ o ¨Este Año¨. También puede elegir mostrar el informe como una tabla, o como un gráfico de barras o sectores.
+-   Elija las opciones que quiere mostrar en su dashlet. Por ejemplo, quizás quiera que la versión del informe, para su panel de control, muestre siempre información de "Este trimestre" o "Este Año". También puede elegir mostrar el informe como una tabla, o como un gráfico de barras o sectores.
 
 -   Haga clic en **Previsualizar Informe**
 

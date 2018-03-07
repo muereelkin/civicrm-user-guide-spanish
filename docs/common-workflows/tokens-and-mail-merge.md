@@ -1,63 +1,68 @@
-Tokens and mail merge
-=====================
+Códigos/Tokens y correo combinado
+=================================
 
-You can use data in your CiviCRM database to set up mail merge
-communications both for emails and printed materials such as letters and
-mailing labels. The mail merging functionality relies on Tokens, which
-represent items in your database. This chapter explains how tokens work
-and how to use them in generating printing materials. Using tokens in
-emails is further addressed in the Email section of this book.
+Puede usar la información de la base de datos de CiviCRM para configurar
+comunicaciones de combinación de envíos de correo, tanto para correos
+electrónicos como para material impreso como cartas y etiquetas de envío. La
+funciónalidad de la combinación de envíos de correo depende de tokens que
+representan elementos en su base de datos. Este capítulo explica como funcionan
+los tokens y cómo los puede usar para generar materiales de impresión. Usar
+tokens en correos electrónicos se trata más adelante en la sección Email de esta
+guía.
 
-Tokens
-------
+Códigos/Tokens
+---------------------------------------------------------------------------------------------------------
 
-Tokens are the equivalent of mail merge fields in CiviCRM. This means
-that it is possible to insert information from the database into an
-email or a letter that is different for every recipient. For example,
-use the Postal Greeting token to include a customized greeting for each
-recipient in your PDF letters. Most contact fields, including custom
-fields you've created, are available as mail merge tokens. You can view
-available tokens by clicking the **Insert Token** link in the top right
-corner of the message editing area.
+Los códigos o tokens son los equivalentes a los campos de combinación de envíos
+de correo en CiviCRM. Esto significa que es posible introducir información de la
+base de datos en un correo electrónico o una carta que es distinta para cada
+destinatario. Por ejemplo, usar el token de Saludo Postal para incluir un saludo
+personalizado para cada destinatario en sus cartas PDF. La mayoría de los campos
+de contactos, incluyendo los campos personalizados que haya creado, están
+disponibles como tokens de combinación de envío de correos. Puede ver los tokens
+disponibles haciendo clic en el enlace **Inserte Token** en la esquina superior
+derecha del área de edición de mensajes.
 
-Most of the tokens contain information that is in the database fields.
-However, there are some special tokens that accomplish specific tasks in
-emails, such as a link to an opt-out page or link to choose mail
-formats. Some tokens are only available for mass mailings, such as the
-token to provide a link to a message stored online.
+La mayoría de los tokens contienen información que está en los campos de la base
+de datos. Sin embargo, existen algunos tokens especiales que cumplen una tarea
+determinada, como un enlace a una página de baja de suscripción o un enlace para
+elegir el formato del correo electrónico. Algunos tokens solo están disponibles
+para correos masivos, como el token que facilita un enlace hacia un mensaje
+almacenado online.
 
 ![image](../img/Tokens-4.5.png)
 
-### Checksum token
+### Token de checksum
 
-A particularly useful token is the checksum. The checksum allows you to
-give people links to contribution forms, profiles, petitions, and event
-registration forms that are prefilled with information that is already
-in their contact record. The image above shows an example of this.
+Un token particularmente útil es checksum. El checksum le permite ofrecer a
+otras personas, enlaces a formularios de contribuciones, perfiles, peticiones y
+a formularios de registro en eventos que están ya completados con información
+que está registrada en como información del contacto.
 
-Only contact fields and actions can be inserted in your email as tokens.
-Related records, such as the name of the event for which the contacts
-have pending enrollments, cannot be included. However, you could provide
-a link to the person's contact dashboard so that they can review their
-registration details for themselves (once logged in), or you could use a
-checksum token to allow access to a profile through which they can
-modify their information without having to log in.
+La imagen de arriba muestra un ejemplo de esto.
 
-Go to this page for further details on using the checksum
-token: [http://wiki.civicrm.org/confluence/display/CRMDOC/Tokens](http://wiki.civicrm.org/confluence/display/CRMDOC/Tokens).
+Solo los campos de contacto y acciones pueden ser introducidos en los correos
+electrónicos como tokens. Los registros relacionados, como el nombre del evento
+del que los contactos tienen inscripciones pendientes, no pueden ser incluídos.
+Sin embargo, podría proporcionar un enlace en el panel de control del contacto
+de la persona, para que puedan revisar los detalles de registro por ellos mismos
+(una vez hayan iniciado sesión) , o podría usar un token de checksum para
+permitir el acceso a un perfil, a través del cual puedan modificar su
+información sin tener que iniciar sesión.
 
-### Custom tokens
+Vaya a esta página para obtener más detalles sobre cómo usar el token de
+checksum: <http://wiki.civicrm.org/confluence/display/CRMDOC/Tokens>.
 
-It is also possible to have custom tokens created by a developer. For
-instance, the total amount of contributions from a contact. To find out
-more about working with custom tokens, refer to the discussion about
-custom mail merge tokens in the Hooks chapter of the Extending CiviCRM
-section of this book and look at the wiki:
-[http://wiki.civicrm.org/confluence/display/CRMDOC/Tokens](http://wiki.civicrm.org/confluence/display/CRMDOC/Tokens).
+### Tokens personalizados
 
-Another task for a developer is to create if/then logic for your mail
-merge. This is done using the smarty template language as described here
-[http://www.smarty.net/docs/en/language.function.if.tpl](http://www.smarty.net/docs/en/language.function.if.tpl).
+También es posible obtener tokens personalizados creados por un desarrollador.
+Por ejemplo, la cantidad total de contribuciones de un contacto. Para saber más
+de cómo trabajar con tokens personalizados, consulte la discusión sobre tokens
+de combinación de envíos de correo personalizado en el capítulo de Hooks de la
+sección extendida de CiviCRM de la guía y busque en la wiki:
 
+<http://wiki.civicrm.org/confluence/display/CRMDOC/Tokens>.
 
--
+Otra tarea para un desarrollador es crear si/luego lógica para su combinación de
+envío de correos. Esto se hace usando el lenguaje de plantilla inteligente como
+se describe en:<http://www.smarty.net/docs/en/language.function.if.tpl>.
