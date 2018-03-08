@@ -86,8 +86,8 @@ pages:
     #- 'Everyday tasks': 'pledges/everyday-tasks.md'
     #- 'Pledges Reports and Analysis': 'pledges/pledges-reports-and-analysis.md'
 - Eventos:
-    - '¿Qué es CiviEvent? (inglés)': 'events/what-is-civievent.md'
-    - 'Planificación y gestión de eventos (inglés)': 'events/event-planning-and-management.md'
+    - '¿Qué es CiviEvent?': 'events/what-is-civievent.md'
+    - 'Planificación y gestión de eventos': 'events/event-planning-and-management.md'
     - 'Creando un evento (inglés)': 'events/creating-an-event.md'
     - 'Registro online de eventos (inglés)': 'events/online-event-registration.md'
     - 'Integración de eventos con su sitio web (inglés)': 'events/integrating-events-with-your-website.md'

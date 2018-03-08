@@ -1,134 +1,133 @@
-What is CiviEvent?
+¿Qué es CiviEvent?
 ==================
 
-CiviEvent provides a set of tools for running events. These tools make
-you more effective as an event organiser and reduce the amount of
-administration require.
+CiviEvent proporciona un conjunto de herramientas para organizar eventos. Estas
+herramientas le harán más eficiente como organizador de eventos y reducirán el
+número de procesos administrativos necesarios.
 
-CiviCRM helps you manage both simple and complicated registration
-processes. Some key features include:
+CiviCRM le ayuda a gestionar tanto los procesos de registro simples como los
+complicados. Algunas características principales incluyen:
 
--   self-registration for participants, including online credit card
-    payments
--   tracking sign-ups, cancellations, and attendance
--   promotion of your events on your website
--   streamline event set-up for similar, recurring events with event
-    templates and event copy functionality 
--   participant check in on-site at the event from any computer with an
-    internet connection 
+-   auto-inscripción de participantes, incluyendo los pagos online.
 
-Scenario: Youth leadership workshop
------------------------------------
+-   seguimiento de registros, cancelaciones, y asistencias
 
-A community arts group, Arts in Action, conducts leadership workshops
-for people under age 25 throughout the year. Their goals include
-attracting new youth to attend their workshops and enlisting past
-attendees to volunteer and teach. Youth from local schools and theater
-groups are invited to attend, and there are youth speakers and
-volunteers, as well as other speakers for the training workshops.
+-   promoción de sus eventos en su página web
 
-The Arts in Action communications staff use CiviEvent to efficiently
-manage each workshop from the beginning of its planning to the end of
-its evaluation. First, a staff member creates an event page that
-includes an online registration form. Because this is a regular event, a
-staff member has previously created an event template, which fills in
-much of the information needed in the event set-up process. There is a
-flat fee for registration, with additional fees for optional workshops;
-attendees can select what they are registering for and pay for it
-online. The registration form also gathers information about
-participants' food and lodging preferences using a CiviCRM feature
-called a profile.
+-   simplificación en la organización para eventos similares y recurrentes con
+    plantillas y funcionalidades de copia.
 
-A targeted list of youth and groups is drawn from existing contacts, and
-staff send personalised invitations using CiviMail (also based on a
-template, so that information can be reused from one event to the next).
-The invitation includes a direct link to the event page so that
-participants can arrive at the online registration with a single
-click. The event is also announced publicly by posting it on the Arts in
-Action website, and the "Tell-a-friend" function is enabled so that the
-information can easily be spread through people's networks.
+-   registro de los participantes en el lugar del evento desde cualquier
+    ordenador con conexión a internet
 
-A staff person is designated to manage the process by which participants
-register themselves, periodically checking to make sure that payments
-are being made, managing the wait list when participant sign-ups exceed
-the maximum number, and answering any questions.
+Escenario: Taller de liderazgo juvenil
+--------------------------------------
 
-On the day of the event, organisers can check in each attendee on-site
-to keep track in real time of who is attending and whether there are any
-no-shows. Participants with outstanding fees can also be asked to pay at
-this time. The database is updated immediately, freeing up spaces for
-those on the wait list and recording payments.
+Un grupo de arte de la comunidad, *Arts in Action,* lleva a cabo talleres para
+personas menores de 25 años durante el año.
 
-After each workshop, Arts in Action staff evaluate the success of the
-event and use CiviEvent to quickly generate reports such as the number
-of attendees, total event fees paid, and total amount still due. The
-event and mail templates can be updated if necessary and saved for the
-next event.
+El personal de comunicación de *Arte en Acción* utiliza CiviEvent para gestionar
+eficientemente cada taller desde el principio de su planificación hasta el final
+de su evaluación. Primero, un empleado crea una página para el evento que
+incluye un formulario de registro online. Debido a que este es un evento
+regular, un empleado ha creado previamente una plantilla del evento, que cubre
+la mayor parte de información que se necesitará en el proceso de la organización
+del evento. Hay un precio fijo por inscripción, con cuotas adicionales para
+talleres opcionales; los asistentes pueden elegir en lo que se inscriben y
+pueden pagar online. El formulario de inscripción también recoge información
+sobre la comida de los participantes y sus preferencias de alojamiento usando la
+opción de CiviCRM llamada perfil.
 
-Some key concepts 
--------------------
+Se crea una lista de jóvenes y grupos específica de entre los contactos
+existentes y los empleados envían invitaciones personalizadas utilizando
+CiviMail (también basadas en plantillas, para así reutilizar la información de
+un evento a otro). La invitación incluye un enlace directo a la página del
+evento para que los participantes puedan acceder a la inscripción online con un
+solo clic. El evento también se anuncia públicamente en la página web de Arte en
+Acción y se habilita la función de ¨Díselo-a-un-amigo¨ para que la información
+pueda difundirse a través de las redes de la gente.
 
-The chapters in this section take you through everything you need to
-know in order to get the most from CiviEvent. Below are a few concepts
-you might find helpful for you before you begin to set up your event.
-You will put these concepts into practical use when following the
-step-by-step tasks in the next chapters of this section.
+Se designa a un empleado para gestionar el proceso por el que los participantes
+se registran ellos mismos. Debe supervisar el proceso periódicamente, para
+asegurarse que los pagos se hacen, gestionando la lista de espera cuando las
+inscripciones de participantes exceden el número máximo y contestando preguntas.
 
-### Events, participants and contacts
+En el día del evento, los organizadores pueden controlar in situ a cada
+asistente para llevar un seguimiento a tiempo real de quién asiste al evento y
+de si hay alguna ausencia. Se podrá solicitar a los participantes con tasas
+pendientes que paguen en ese momento. La base de datos se actualiza
+inmediatamente, dejando libres espacios para aquellos que estaban en la lista de
+espera y grabando los pagos realizados.
 
-First lets explain some basic concepts. CiviCRM allows you to create one
-or more **events** that your **contacts** can participate in. When a
-contact participates in an event, they are called a **participant**. 
+Después de cada taller, los empleados de Arte en Acción evaluan el éxito del
+evento y usan CiviEvent para generar informes rápidamente como el número de
+asistentes, el total de tasas pagadas y el la cantidad de tasas todavía
+pendientes de pago. El evento y las plantillas de envío de correo pueden
+actualizarse si fuera necesario y guardadas para el próximo evento.
 
-### Event types
+Algunos conceptos clave
+-----------------------
 
-CiviCRM allows you to define different types of events, such as
-conferences, meetings and fundraisers. Which event types to create is
-entirely up to you, according to the needs of your organization.
+El capítulo en esta sección le llevará a través de todo lo que necesita saber
+con el objetivo de sacarle el mayor partido a CiviEvent. Más abajo encontrará
+varios conceptos que podrá encontrar útiles antes de organizar su evento. Pondrá
+en práctica estos conceptos en el capítulo siguiente de esta sección.
 
-Event types come in handy if you have different requirements for types
-of events. For example, you can create custom fields to store and
-display additional data about an event by its event type. See the
-chapter *Custom data on events* in this section for more information
-about this. They are also useful for categorizing and segmenting events
-and attendees, for example, you could easily find all contacts that have
-come to one of your trainings or attended on of your fundraising events.
+### Eventos, participantes y contactos
 
+Primero explicaremos algunos conceptos básicos. CiviCRM le permite crear uno o
+más **eventos** en los que sus **contactos** pueden participar. Cuando un
+contacto participa en un evento pasa a llamarse **participante**.
 
-### Participant roles
+### Tipos de Evento
 
-Every contact that participates in an event is assigned a participant
-role. The most common is probably attendee. Others include volunteer or
-speaker.  Participant roles are fully customizable to match the types of
-events your organization conducts. This allows you to segment
-participants into meaningful categories based on their involvement in
-the event, for example for sending an email to volunteers only or
-generating a list of past table captains for fundraisers. You can also
-create custom fields that apply only to specific roles, for example, to
-collect information about availability from volunteers only.
+CiviCRM le permite definir diferentes tipos de eventos, como conferencias,
+reuniones y eventos de captación de fondos. El tipo de evento que cree depende
+de usted según sean las necesidades de su organización.
 
-### Participant statuses
+Los tipos de evento resultan útiles si tiene diferentes necesidades por tipo de
+evento. Por ejemplo, puede crear campos personalizados para almacenar y mostrar
+información adicional sobre un evento según su tipo de evento. Consulte el
+capítulo *Información personalizada o Eventos* en esta sección para más
+información sobre este punto. También son útiles para categorizar y segmentar
+eventos y asistentes, por ejemplo, podría encontrar fácilmente todos los
+contactos que hayan participado en alguna de sus formaciones o haya asistido a
+alguno de sus eventos de captación de fondos.
 
-Participant statuses (for example, registered, wait-listed, attended or
-cancelled) are used to track what stage the contact is at in their
-'event journey'. Participant statuses are fully customizable to match
-the way your organization does event registration. This allows you to
-segment participants into meaningful categories based on their behavior
-with respect to the event,for the purpose of things like generating
-sign-in sheets, tracking how many people are likely to come to an event,
-and tailoring email communications to registrants.
+### Papeles de los participantes
 
-Other parts of CiviCRM that work with CiviEvent 
--------------------------------------------------
+A todo contacto que participa en un evento se le asigna un papel de
+participante. El más frecuente es probablemente asistente. Otros incluyen
+voluntario o ponente. Los papeles de los participantes son totalmente
+personalizables para que coincidan con el tipo de eventos que realiza su
+organización. Esto le permite segmentar participantes por categorías relevantes
+según su implicación en el evento, por ejemplo, para enviar un correo
+electrónico solo a voluntarios o crear una lista de anteriores *capitanes de
+mesa* para fundraisers.  También puede crear campos personalizados que se
+aplican solo a papeles específicos, por ejemplo, recoger información sobre la
+disponibilidad de solo voluntarios.
 
-CiviEvent is designed to work together with other parts of CiviCRM.  For
-example, you can promote the event to a targeted list and communicate
-with event participants via email before and after the event using
-CiviMail (see the *Email* section, particularly the *Set-up* and
-*Scheduled Reminders* chapters, for more information). CiviEvent works
-with CiviContribute to allow you to accept event payments online. To do
-this, you must enable CiviContribute and set up a payment processor; see
-the *Contributions* section for more information.
+### Estado de los participantes
 
+Los estados de los participantes (por ejemplo, registrados, en lista de espera,
+asistió o cancelado) se usan para realizar el seguimiento de la etapa en la que
+se encuentra el contacto dentro su ¨viaje/evento¨.  Los estados de los
+participantes son totalmente personalizables para que coincida con la forma en
+la que su organización realiza el registro del evento.  Esto le permite
+segmentar a los participantes en categorías representativas basadas en su
+comportamiento con respecto al evento, con la intención de crear procesos como
+la generación de hojas de firmas, realizar el seguimiento de cuántas personas
+tienen la intención de asistir al evento y adaptar las comunicaciones por correo
+electrónico a los inscritos.
 
+Otras partes de CiviCRM que funcionan con CiviEvent
+---------------------------------------------------
 
+CiviEvent está diseñado para funcionar junto a otras partes de CiviCRM.  Por
+ejemplo, puede promocionar el evento a una lista específica y comunicarse con
+los participantes del evento a través del correo electrónico antes y después del
+evento usando CiviMail (para más información diríjase a la sección  *Correo
+Electrónico, *en especial a los capítulos de *Instalación *y * Recordatorios de
+horarios*).  CiviEvent funciona con CiviContribute para permitirle aceptar pagos
+del evento en línea.  Para hacer esto, debe habilitar CiviContribute e instalar
+un procesador de pagos;  para más información diríjase a la sección *Contribuciones*.
