@@ -1,279 +1,130 @@
-Customizing the user interface
-==============================
+Personalización de la interfaz de usuario
+=========================================
 
-CiviCRM is highly flexible and customizable. This chapter gives
-information on the many ways you can change the interface to suit your
-needs and make it easier for your users.
+CiviCRM es altamente flexible y personalizable. Este capítulo proporciona información sobre las distintas maneras en que puede cambiar la interfaz para adaptarla a sus necesidades y a las de sus usuarios. Cómo personalizar los datos está explicado detalladamente en la sección **Organizando su información** y en los capítulos **¿Qué necesita saber?** y **Configuración** de las secciones de los distintos componentes de CiviCRM (por ej: aprenda cómo personalizar los tipos de eventos en la sección de **Eventos**)
 
-How to customize your data itself—what you collect and track—is covered
-in *Organising Your Data* and in the *What you need to know*and *Set-up*
-chapters in the sections on the different CiviCRM components (e.g.,
-learn about customizing event types in the *Events* section).
+Cambiar las opciones desplegables
+---------------------------------
 
-Changing dropdown options
--------------------------
+Las opciones incluidas en los campos desplegables que se ven en los formularios de entrada / edición de contactos en CiviCRM se pueden modificar (agregar, cambiar el nombre, deshabilitar o eliminar opciones) en **Administrar > Pantallas y Datos Personales > Opciones de Lista Desplegables**. Estas incluyen:
+-	Opciones de Género
+-	Prefijos y sufijos individuales (por ejemplo, Sra., Sr. y Jr., Sr.)
+-	Tipos de teléfono (por ejemplo, Teléfono, Móvil, Pager)
+-	Servicios de mensajería instantánea (por ejemplo, Yahoo, MSN, AIM, GTalk, Jabber y Skype)
+-	Tipos de sitios web (por ejemplo, Trabajo, Facebook, Twitter)
+-	Tipos de ubicación (por ejemplo, Inicio, Trabajo, Facturación, Principal).Tenga en cuenta que la ubicación "Facturación" se asigna a direcciones de facturación cuando los contactos realizan una contribución, pagan por eventos o se dan de alta como miembros. Los nombres de tipo de ubicación no pueden contener espacios.
 
-The options included in the dropdown fields you see on contact
-entry/editing forms in CiviCRM can be modified (you can add, rename,
-disable or remove options) from **Administer > Customize Data and
-Screens > Dropdown Options**. These include:
 
--   Gender
--   Individual prefixes and suffixes (e.g., Ms., Mr. and Jr., Sr.)
--   Phone types (e.g. Phone, Mobile, Pager)
--   Mobile phone providers (e.g. Sprint, Verizon and Cingular)
--   Instant messenger services (e.g., Yahoo, MSN, AIM, GTalk, Jabber and
-    Skype)
--   Website types (e.g., Work, Facebook, Twitter)
--   Location types (e.g., Home, Work, Billing, Main). Note that that
-    Billing location is assigned to Billing Addresses entered when
-    constituents contribute or pay for event and membership fees online.
-    Location type names may not contain spaces (e.g., Summer Home is not
-    permitted; use SummerHome).
+Las opciones en métodos de comunicación preferidos (por ejemplo, teléfono, correo electrónico, correo postal, SMS) en el formulario de edición / entrada de contacto también se pueden modificar, vaya a **Administrar > Comunicaciones > Métodos Preferidos de Comunicación.**
+La modificación de las opciones desplegables de entidades del sistema -como tipos de actividad, tipos de relación, etc.- está fuera del alcance de este capítulo; consulte el apartado de *Organizando sus datos* y las secciones de los diferentes componentes de CiviCRM.
 
-The choices in Preferred Communication Methods (e.g., Phone, Email,
-Postal Mail, SMS) in the contact edit/entry form can also be modified;
-go to **Administer > Communications > Preferred Communications
-Methods**.
+Cambiar las preferencias de visualización
+-----------------------------------------
 
-Modifying dropdown options that define data—such as Activity Type,
-Relationship, etc.—is outside the scope of this chapter; see *Organising
-Your Data* and the sections on the different CiviCRM components.
-
-Changing display preferences
-----------------------------
-
-If there are types of activities you do not track or categories of data
-you do not collect, you can make it so these fields and tabs don't even
-show up when your users log into CiviCRM. This can make training and
-everyday use much easier.
-
-To do this, go to **Administer > Customize Data and Screens > Display
-Preferences**.
-
-You can change which tabs are available when you are viewing contact
-records by checking and un-checking the appropriate boxes next to
-**Viewing Contacts**.
+Si hay tipos de actividades que no registra o categorías de datos que no recopila, puede hacer que estos campos y pestañas no aparezcan cuando sus usuarios inicien sesión en CiviCRM. Esto puede hacer mucho más sencillo la adopción del sistema y su correcta utilización.
+Para ello, vaya a **Administrar > Pantallas y datos personalizados > Preferencias de Visualización.**
+Puede cambiar las pestañas disponibles en la ficha del contacto, marcando y desmarcando las casillas correspondientes en la sección **Ver Contacto:**
 
 ![Display Preferences Viewing Contacts](../img/Viewing%20Contacts.png)
 
-For example, if your organization is not using Cases or Grants, you
-could uncheck those boxes and those tabs would no longer show up in the
-user interface. If you later decide start using them, simply re-display
-the tab by checking the box. Information stored in the tabs you hide
-remains in your database; you can hide tabs you have already used, and
-when you choose to display them again, all the information will display
-as it did before.
-
-You can change which blocks of information appear when you are editing a
-contact by checking and unchecking the appropriate boxes next
-to **Editing Contacts**:
+Por ejemplo, si su organización no está usando el módulo de CiviCase (para gestionar casos), podría desmarcar esa casilla y la pestaña correspondiente ya no aparecerá en la interfaz de usuario. Si después decide empezar a usarlo, simplemente vuelva a marcar casilla. La información almacenada en las pestañas ocultas permanece en la base de datos.
+Puede cambiar los bloques de información que aparecen al editar un contacto marcando y desmarcando las casillas correspondientes, en la sección **Editando Contactos:**
 
 ![Display Preferences Editing Contacts](../img/Editing%20Contacts.png)
 
-For example, if your organization doesn't collect information
-Demographics or Communication Preferences, you could uncheck those boxes
-to streamline the editing screen. As with the Viewing Contacts
-preferences, any information contained in fields you choose not to
-display remains in your database, and you can choose to display it again
-at any time by re-checking the boxes in this setting.
+Por ejemplo, si su organización no recopila datos demográficos o preferencias de comunicación, puede desmarcarlos para simplificar la pantalla de edición. Al igual que con las preferencias de contactos en la visualización, cualquier información contenida en campos que elija no mostrar permanecerá en la base de datos y puede volver a mostrarla en cualquier momento cambiando las casillas seleccionadas en esta pantalla.
 
-### Disabling Popup Forms
+###Deshabilitar formularios emergentes (Popup)
 
-The CiviCRM user-interface makes extensive use of popup dialog boxes to
-enable quick viewing and easy editing of data. You can disable this
-feature and limit the interface to traditional browsing by deselecting
-the checkbox **Enable Popup Forms** in **administer > customize data and
-screens > display preferences**. Note that CiviCRM will be slower with
-this feature disabled as every form will require a complete page load in
-the browser.
+La interfaz de usuario CiviCRM utiliza habitualmente cuadros de diálogo emergentes (Popups) para facilitar la edición de datos. Puede desactivar esta función y limitar la interfaz a la navegación tradicional desmarcando la casilla *Habilitar Formularios Popup* en **Administrar > Pantallas y datos personalizados > Preferencias de visualización**. Tenga en cuenta que CiviCRM será más lento con esta función desactivada ya que cada formulario requerirá una carga de página completa en el navegador.
 
 ![Display Preferences Disabling Popup Forms](../img/Contact%20Dashboard.png)
 
-Customizing search preferences
-------------------------------
+Personalización de las preferencias de búsqueda
+-----------------------------------------------
 
-You can change CiviCRM's default search behavior at **Administer >
-Customize Data and Screens > Search Preferences**. Available options
-are:
+Puede cambiar el comportamiento de búsqueda predeterminado de CiviCRM en **Administrar > Pantallas y datos personalizados > Preferencias de Búsquedas**. Las opciones disponibles están explicadas en el capítulo Configuración inicial > Instalación y configuración básica > Preferencias de búsqueda de esta guía
 
--   **Automatic Wildcard** (choose Yes or No): If you choose Yes,
-    wildcards are automatically added to the beginning AND end of the
-    search term when users search for contacts by Name. For example,
-    searching for "ada" will return any contact whose name includes
-    those letters: Adams, Janet; Nadal, Jorge; etc. If disabled, a
-    wildcard is still added, but only to the end of the search term. In
-    this case, searching for "ada" will return any contact whose last
-    name begins with those letters: Adams, Janet' but not Nadal, Jorge.
--   **Include Email** (choose Yes or No): If you choose Yes, email
-    addresses will be automatically included when users search by Name.
--   **Include Nickname** (choose Yes or No): If you choose Yes, contents
-    of the Nickname field will be automatically included when users
-    search by Name.
--   **Include Alphabetical Pager** (choose Yes or No): If you choose
-    Yes, a bar will appear at the top of your search results allowing
-    you to choose a letter of the alphabet. Clicking A, for example,
-    will take you to a page displaying only contacts that begin with A.
+Si su base de datos es grande y sus búsquedas son lentas, considere deshabilitar algunas de estas opciones para aumentar su velocidad.
 
--   **Include Order By Clause** (choose Yes or No): If you choose No,
-    your search results will not be ordered.
--   **Smart group cache timeout**: This determines how often the smart group cache is refreshed. For most sites this value should not be set to zero, since that means no caching at all and will slow down your site.  Even on sites where contact data changes frequently, the suggested minimum value is 5 minutes.
--   **Autocomplete Contact Search**: This is a series of checkboxes for
-    basic contact fields (name, email, phone, etc). The fields that are
-    checked will show up in the autocomplete results list that appears
-    when you use the Quick Search bar at the top left of all screens.
--   **Contact Reference Options**: This is a series of checkboxes for basic contact fields (name, email, phone, etc). The fields that are checked will show up in the autocomplete dropdown search results for 'Contact Reference' custom fields.
--   **Autocomplete Results**: This determines the maximum number of results that will be displayed when typing in an autocomplete field.
-
-If your database is large and your searches are slow, consider disabling
-some of these options to increase your speed.
-
-There is one more place to customize search search settings:
-**Administer > Customize Data and Screens > Display Preferences** has
-a block of **Contact Search** settings:
+En la sección de **Administrar > Pantallas y datos personalizados > Preferencias de visualización** existe un bloque para de configurar las opciones que deberían ser incluidas en los formularios de Búsqueda Básica y Avanzada. Por ejemplo: Si no hace un seguimiento de Relaciones - entonces usted no necesita esta sección incluida en el formulario de búsqueda avanzada. Simplifique el formulario desmarcando esta opción.
 
 ![Display Preferences Contact Search](../img/Contact%20Search.png)
 
-These check boxes modify the **Search > Find Contacts** and **Search >
-Advanced Search** screens. Uncheck the boxes to remove the corresponding
-types of fields from your search screens.
+Estas casillas de verificación modifican las pantallas Buscar > Buscar contactos y Buscar > Búsqueda avanzada. Desmarque las casillas para eliminar los tipos de campos correspondientes de las pantallas de búsqueda.
 
-Customizing date preferences
-----------------------------
+Personalización de las preferencias de fecha 
+--------------------------------------------
 
-The default display preference for dates is set at **Administer >
-Localization > Date Formats**.
+Las preferencias de visualización predeterminadas para las fechas se establece en **Administrar > Localización> Formatos de Fecha.**
 
-You can override this default setting and define the range of allowed
-dates for specific field types at **Administer > Customise Data and
-Screens > Date
-Preferences[](http://drupal.screenshots.civicrm.org/civicrm/admin/setting/preferences/date?action=reset=1)**.
-By default, CiviCRM provides ranges for input on specific date fields.
-For instance, the default range for Activity Dates are 20 years prior to
-the current year all the way through to 10 years beyond the current
-year. If you would like to track activities that have occurred, say, 25
-years ago then you would need to update this range to enable your end
-users to log these activities.
+Puede modificar esta configuración predeterminada y definir el intervalo de fechas aceptadas algunos campos específicos en **Administrar > Pantallas y datos personalizados > Preferencias de fecha.** CiviCRM proporciona intervalos de fechas predeterminados para algunos campos específicos. Por ejemplo, el rango predeterminado para las Fechas de Actividad es de 20 años antes del año en curso y hasta 10 años más allá del año en curso. Si desea realizar un seguimiento de las actividades que se han producido, digamos, hace 25 años, entonces tendría que actualizar este rango para permitir a los usuarios finales registrar estas actividades en esas fechas.
 
-Customizing the navigation menu
--------------------------------
+Personalización del menú de navegación
+--------------------------------------
 
-You can add, delete, rename, and move all items in the CiviCRM
-navigation bar to better meet the needs of your users. Some things you
-might want to do are:
+Puede agregar, eliminar, cambiar el nombre y mover todos los elementos de la barra de navegación de CiviCRM para satisfacer mejor las necesidades de sus usuarios. Algunas cosas que puede hacer son:
+-	Optimizar la navegación quitando elementos de menú que no utilice.
+-	Agregar elementos para soportar flujos de trabajo específicos (por ejemplo, perfiles de entrada de datos)
+-	Añadir enlaces a páginas web o aplicaciones que no sean de CiviCRM.
+-	Cambie el nombre de los elementos del menú para que utilicen los términos que le sean familiares a sus usuarios.
+-	Mueva los elementos del menú para facilitar la utilización de la herramienta
 
--   Streamline the navigation by removing menu items you don't use
--   Add items to support specific workflows (e.g. data entry Profiles)
--   Add links to non-CiviCRM web pages or apps
--   Rename menu items to use terms for familiar to your users
--   Move menu items to better support the flow of your work
+Para personalizar elementos de menú, vaya a **Administrar > Pantallas y datos personalizados > Menú de navegación.** Verá una estructura de archivos que contiene todos los elementos del menú, con los elementos representados por iconos de carpeta. Expanda las carpetas haciendo clic en los pequeños triángulos a la izquierda de sus nombres.
 
-To customize menu items, go to **Administer > Customize Data and
-Screens > Navigation Menu**. You will see a file structure containing
-all of your menu items, with the items represented by folder icons.
-Expand folders by clicking the small triangles to the left of their
-names.
+-	Para eliminar un elemento, haga clic con el botón derecho y seleccione Eliminar.
+-	Para cambiar el nombre de un elemento, haga clic con el botón derecho y seleccione Cambiar nombre.
+-	Para mover un elemento, arrástrelo y colóquelo en la ubicación deseada de la estructura de árbol.
+-	Para agregar un elemento:
+	-	Haga clic en el botón Agregar elemento del menú.
+	-	Ingrese el texto que desea que aparezca en el menú del campo Título.
+	-	Ingrese el enlace a su elemento en el campo Url.
+	-	Seleccione la ubicación de su nuevo elemento en el menú desplegable de padres. Puede colocar el elemento en cualquier lugar de la navegación, en cualquier nivel. Si desea que su nuevo elemento esté en el nivel superior de la navegación, no seleccione nada en esta lista desplegable.
+	-	Compruebe el cuadro Separador si desea agregar una línea debajo de su nuevo elemento para separarlo del elemento siguiente.
 
--  To delete an item, right-click it and select **Delete**.
--  To rename an item, right-click it and select **Rename**.
--  To move an item, drag and drop it to the desired location in the tree structure.
--  To add an item:
- 1.  Click on the **Add Menu Item** button.
- 2.  Enter the text you want to appear in the menu in the **Title**
-    field.
- 3.  Enter the link to your item in the **Url** field.
- 4.  Select the location of your new item from the **Parent** dropdown
-    menu. You can place the item anywhere in the navigation, at any
-    level. If you want your new item to be in the top level of the
-    navigation, do not select anything from this dropdown.
- 5.  Check the **Separator** box if you want to add a line below your new
-    item to separate it form the item below.
 
-Making custom data entry forms
-------------------------------
+Creación de formularios de entrada de datos personalizados
+---------------------------------------------------------
 
-If you have staff or volunteers who are often entering batches of
-similar contacts manually, you can create a tool called a Profile with
-only the fields they need. This can speed up data entry considerably.
+Si tiene personal o voluntarios que suelen introducir manualmente lotes de contactos similares, puede crear una herramienta denominada Perfil con sólo los campos que necesitan. Esto puede acelerar considerablemente la entrada de datos.
+1. Vaya a **Administrar > Pantallas y datos personalizados > Perfiles** y haga clic en **Agregar perfil.**
+2. Ingrese un nombre claro que se relacione con su propósito (por ejemplo, formulario de entrada de datos de nombre y dirección)
+3. Seleccione la opción de *Formulario autónomo o directorio*
+4. Utilice los campos Pre-formulario de Ayuda y Post-formulario de Ayuda para agregar cualquier texto que desee mostrar.
+5. Haga clic en **Guardar**; esto le llevará a la pantalla Agregar campos para que pueda elegir qué campos quiere poner en su perfil.
+6. Desde el menú desplegable Nombre de campo, seleccione el tipo de registro de contacto donde se encuentra el campo deseado. Este será Contacto, Individual, Organización, Hogar, o cualquier subtipo de contacto personalizado que pueda haber creado. (Los otros tipos de registros disponibles en este menú no funcionarán con los formularios de entrada de datos, así que no los elija.) Es importante tener en cuenta que cualquier campo que aplique a más de un tipo de tipo de contacto (como Teléfono o Email que se encuentra tanto para individuos como para organizaciones) se encontrarán eligiendo Contactos en el tipo de registro.
+7. Una vez que haya elegido un tipo de contacto, aparecerá otro menú desplegable que muestra los campos disponibles. Seleccione los campos que desee.
+8. Si el texto que aparece automáticamente en el campo Etiqueta de campo no es lo que desea que aparezca en el formulario, editelo.
+9. Si algún campo es obligatorio, marque la casilla ¿Requerido?.
+10. Utilice los campos Ayuda de Campo Pre y Ayuda de Campo para agregar cualquier texto que desee mostrar a los usuarios que harán la entrada de datos.
+11. Usted puede utilizar el campo Orden para cambiar el orden en que los campos se muestran en el formulario. Los números inferiores se muestran antes que los números más altos.
+12. Haga clic en Guardar y en Nuevo para agregar más campos y Guardar cuando haya terminado.
+13. Se le llevará a una pantalla que enumera todos sus campos y sus configuraciones. Haga clic en *Previsualizar (todos los campos)* para asegurarse de que su formulario se ve de la manera que desea. Haga clic en *Usar (modo de creación)* para ir a la página que contiene su formulario. Copie el enlace y utilícelo para crear un elemento de menú de navegación (consulte la sección anterior para obtener instrucciones).
 
-1.  Go to **Administer > Customize Data and Screens > Profiles**and
-    click**Add Profile**.
-2.  Give your Profile a clear name that relates to its purpose (e.g.,
-    Name and Address Data Entry Form)
-3.  Check the Standalone Form or Directory box in the **Used For**
-    field.
-4.  Use the **Pre-form Help** and **Post-form Help** fields to add any
-    text you'd like to display to hose doing data entry.
-5.  Click **Save**; this takes you to the Add Fields screen so you can
-    choose which fields to put in your Profile.
-6.  From the **Field Name** dropdown menu, select the contact record
-    type where your desired field is found. This will be Contact,
-    Individual, Organization, Household, or any custom contact subtypes
-    you may have created. (The other record types available on this menu
-    will not work with data entry forms, so do not choose them.) It's
-    important to note that any field applying to more than one kind of
-    contact record type (such as Phone or Email, which applies to both
-    Individuals and Organizations) will be found on the Contacts menu.
-7.  Once you have chosen a contact type, another dropdown menu will
-    appear listing the available fields. Choose your desired fields.
-8.  If the text that appears automatically in the **Field Label** field
-    is not what you would like to appear on the form, edit it.
-9.  If every record entered through this form must have data in this
-    field, check the **Required?** box.
-10. Use the **Field Pre Help** and **Field Post Help** fields to add any
-    text you'd like to display to those doing data entry.
-11. You can use the **Order** field to change the order in which fields
-    are displayed on the form. Lower numbers are displayed ahead of
-    higher numbers.
-12. Click on **Save and New** to add more fields, and **Save** when are
-    finished.
-13. You'll be taken to a screen listing all your fields and their
-    settings. Click **Preview (all fields)** to make sure your form
-    looks the way you want it to. Click **Use (create mode)** to go to
-    the page containing your form. Copy the link and use it to create a
-    navigation menu item (see the previous section for instructions).
+Personalización de vistas de búsqueda
+-------------------------------------
 
-Customizing search views
-------------------------
-
-To do this:
-
-1.  Create or open a profile and mark it as used for Search Views (known
-    as Search Results in 4.1 and previous):
-2.  When adding fields to this profile, you will need to set Visibility
-    for the fields to Public Pages and check the Results Column box.
-
-When conducting your advanced search, use the **Search Views** dropdown
-menu in the top right of the page to select your Profile (see image
-below).
+Para hacer esto:
+1. Crea o abra un perfil marcado como *Buscar vistas*
+2. Al agregar campos a este perfil, deberá establecer Visibilidad para los campos en Páginas públicas y marcar el campo Columna de resultados.
+Cuando realice una búsqueda avanzada, utilice el menú desplegable *Vistas para mostrar contactos* en la parte superior derecha de la página para seleccionar su perfil (consulte la imagen a continuación).
 
 ![Customize Search Views](../img/configure-customize-search-views.png)
 
-Using Word Replacement to change terminology
-----------------------------------------------
+Uso de reemplazos de palabras para cambiar la terminología
+----------------------------------------------------------
 
-CiviCRM has a Word Replacement setting that lets you replace existing
-text found in the system with your desired text. For example, if your
-organization does not typically refer to monetary transactions as
-"contributions," but prefers to use the term "donations," you can define
-a word replacement and have it automatically altered throughout your
-instance of CiviCRM.
+CiviCRM tiene una configuración de reemplazo de palabras que le permite reemplazar el texto existente que se encuentra en el sistema con el texto deseado. Por ejemplo, si su organización no suele referirse a las transacciones monetarias como "contribuciones", sino que prefiere utilizar el término "donaciones", puede definir un reemplazo de palabras y hacer que se altere automáticamente en toda la instancia de CiviCRM.
 
-To use Word Replacement:
+Para usar el reemplazo de palabras:
 
-1.  Go to **Administer > Customize Data and Screens > Word
-    Replacements**.
-2.  Enter the original text in the Original column on the left, and the
-    replacement text in the Replacement column on the right.
-3.  Check the Exact Match box on the right to replace only instances of
-    the word or phrase that match exactly. For example, if Exact Match
-    is not checked checked, replacing "Contribution" with "Donation"
-    would also replace "Contributions" with "Donations"; if it is
-    checked, this would not happen.
-4.  Check the Enabled box to the left to replacement of the word or
-    phrase.
-5.  You can add additional rows using the **Add row** button.
-6.  Click **Save** when you are finished entering replacements.
+1. Vaya para **Administrar > Pantallas y datos personalizados > Reemplazos de palabras.**
+2. Introduzca el texto original en la columna *Original* de la izquierda y el texto de reemplazo en la columna *Reemplazo* de la derecha.
+3. Revise la casilla Coincidencia Exacta de la derecha para reemplazar sólo las instancias de la palabra o frase que coincidan exactamente. Por ejemplo, si no se marca la casilla Coincidencia exacta, reemplazar "Contribución" por "Donación" también reemplazará "Contribuciones" por "Donaciones"; Si se marca, esto no sucederá.
+4. Marque la casilla Habilitado a la izquierda para reemplazar la palabra o frase.
+5. Puede añadir filas adicionales mediante el botón *Añadir fila.*
+6. Haga clic en Guardar cuando haya terminado de introducir los reemplazos.
+Cuando utilice esta función, asegúrese de anticiparse a formas alternativas de palabras y diferentes formas en las que su palabra o frase elegida puede aparecer en CiviCRM.
 
-When using this function, be sure to anticipate alternate forms of words
-and different ways your chosen word or phrase may appear in CiviCRM.
+
+
