@@ -87,6 +87,7 @@ Creación de formularios de entrada de datos personalizados
 ---------------------------------------------------------
 
 Si tiene personal o voluntarios que suelen introducir manualmente lotes de contactos similares, puede crear una herramienta denominada Perfil con sólo los campos que necesitan. Esto puede acelerar considerablemente la entrada de datos.
+
 1. Vaya a **Administrar > Pantallas y datos personalizados > Perfiles** y haga clic en **Agregar perfil.**
 2. Ingrese un nombre claro que se relacione con su propósito (por ejemplo, formulario de entrada de datos de nombre y dirección)
 3. Seleccione la opción de *Formulario autónomo o directorio*
