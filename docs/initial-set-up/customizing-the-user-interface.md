@@ -7,6 +7,7 @@ Cambiar las opciones desplegables
 ---------------------------------
 
 Las opciones incluidas en los campos desplegables que se ven en los formularios de entrada / edición de contactos en CiviCRM se pueden modificar (agregar, cambiar el nombre, deshabilitar o eliminar opciones) en **Administrar > Pantallas y Datos Personales > Opciones de Lista Desplegables**. Estas incluyen:
+
 -	Opciones de Género
 -	Prefijos y sufijos individuales (por ejemplo, Sra., Sr. y Jr., Sr.)
 -	Tipos de teléfono (por ejemplo, Teléfono, Móvil, Pager)
@@ -64,6 +65,7 @@ Personalización del menú de navegación
 --------------------------------------
 
 Puede agregar, eliminar, cambiar el nombre y mover todos los elementos de la barra de navegación de CiviCRM para satisfacer mejor las necesidades de sus usuarios. Algunas cosas que puede hacer son:
+
 -	Optimizar la navegación quitando elementos de menú que no utilice.
 -	Agregar elementos para soportar flujos de trabajo específicos (por ejemplo, perfiles de entrada de datos)
 -	Añadir enlaces a páginas web o aplicaciones que no sean de CiviCRM.
