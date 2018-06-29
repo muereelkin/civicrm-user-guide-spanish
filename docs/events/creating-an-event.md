@@ -18,9 +18,9 @@ La primera página que ves al crear un evento solicita información básica. Pue
 
 Si tiene **CiviCampaign** habilitado, puede seleccionar una campaña para que esto sea parte de (vea la sección *Campaña* para obtener más detalles).
 
-** ID del rol por defecto ** distinguen diferentes tipos de participantes del evento, como asistentes, oradores y personal. ¿Qué papel deberían asignar los participantes cuando se registran en línea para este evento? El valor colocado en este campo se asignará por defecto cuando los usuarios se registren en línea o cuando importe contactos a menos que incluya el campo Rol de participante con otros valores en su archivo de importación CSV. El valor más común es el asistente.
+**ID del rol por defecto** distinguen diferentes tipos de participantes del evento, como asistentes, oradores y personal. ¿Qué papel deberían asignar los participantes cuando se registran en línea para este evento? El valor colocado en este campo se asignará por defecto cuando los usuarios se registren en línea o cuando importe contactos a menos que incluya el campo Rol de participante con otros valores en su archivo de importación CSV. El valor más común es el asistente.
 
-¿Desea que los usuarios vean una lista de participantes y, cuánta información sobre los participantes desea revelar? **Los listados de participantes** muestran la relevancia de un evento y pueden ayudar a generar interés dentro de su comunidad constituyente. Tenga en cuenta que las opciones que define en esta sección solo *habilitan* los listados de participantes, para que estén visibles, deberá crear un elemento en el menú o un enlace a la lista en algún lugar de su sitio web. Una vez que haya creado el evento, se mostrará el enlace de la lista de participantes en la página de configuración del evento. Consulte el capítulo * Gestión de eventos * para obtener información sobre listas de participantes y otras formas de promocionar sus eventos.
+¿Desea que los usuarios vean una lista de participantes y, cuánta información sobre los participantes desea revelar? **Los listados de participantes** muestran la relevancia de un evento y pueden ayudar a generar interés dentro de su comunidad constituyente. Tenga en cuenta que las opciones que define en esta sección solo *habilitan* los listados de participantes, para que estén visibles, deberá crear un elemento en el menú o un enlace a la lista en algún lugar de su sitio web. Una vez que haya creado el evento, se mostrará el enlace de la lista de participantes en la página de configuración del evento. Consulte el capítulo *Gestión de eventos* para obtener información sobre listas de participantes y otras formas de promocionar sus eventos.
 
 ¿Cómo se llama tu evento? El **Título del evento** aparecerá en las páginas de información del evento, páginas de registro, listas de eventos y en la página administrativa de Gestión de eventos. Asegúrese de elegir un título significativo y que represente claramente su evento.
 
@@ -34,7 +34,7 @@ Si desea visualizar un mapa que muestre la ubicación del evento, puede hacerlo 
 
 Seleccione la casilla **Evento público** para incluir el evento en listas promocionales como fuentes RSS, archivos o fuentes de iCal y páginas de listas de eventos.
 
-Seleccione ** Permitir compartir a través de las redes sociales ** para incluir enlaces de redes sociales para compartir este evento en la página de información del evento, página de agradecimiento, página de Invita Amigos (si está habilitada) y en los correos electrónicos de confirmación de eventos.
+Seleccione **Permitir compartir a través de las redes sociales** para incluir enlaces de redes sociales para compartir este evento en la página de información del evento, página de agradecimiento, página de Invita Amigos (si está habilitada) y en los correos electrónicos de confirmación de eventos.
 
 Por último, tiene la opción de activar o desactivar este evento. Si cree que le llevará un tiempo completar la configuración de su evento, considere desactivarlo hasta que esté completo para asegurarse de que no aparezca inadvertidamente en las fuentes de la lista de eventos. Puede activar fácilmente el evento cuando esté listo para comenzar a publicitarlo.
 
@@ -47,7 +47,7 @@ Lugar del Evento
 
 El siguiente paso es completar la ubicación y los detalles de contacto para el evento.
 
-Una vez que haya insertado la ubicación de un evento, puede reutilizarlo para eventos posteriores haciendo clic en ** Usar ubicación existente ** y seleccionarlo de la lista desplegable. Tenga en cuenta que si elige una ubicación existente y la edita, actualizará esa ubicación para todos los eventos que la utilicen.
+Una vez que haya insertado la ubicación de un evento, puede reutilizarlo para eventos posteriores haciendo clic en **Usar ubicación existente** y seleccionarlo de la lista desplegable. Tenga en cuenta que si elige una ubicación existente y la edita, actualizará esa ubicación para todos los eventos que la utilicen.
 
 ![image](../img/event%20location%20with%20warning.PNG)
 
@@ -56,7 +56,7 @@ También puede incluir varios números de teléfono y direcciones de correo elec
 Tarifas
 --------
 
-Si el evento es gratuito, configure el botón de ** Evento de pago ** en **No**, luego haga clic en ** Guardar ** y salte al Registro en línea.
+Si el evento es gratuito, configure el botón de **Evento de pago** en **No**, luego haga clic en **Guardar** y salte al Registro en línea.
 
 Si se trata de un evento de pago, haga clic en **Sí**. La pantalla mostrará las opciones disponibles (consulte el siguiente conjunto de capturas de pantalla).
 
@@ -64,15 +64,15 @@ Si se trata de un evento de pago, haga clic en **Sí**. La pantalla mostrará la
 
 Si planea aceptar pagos con tarjeta de crédito a través del formulario de registro en línea, debe configurar un **procesador de pagos** antes de crear su evento. Encuentre más información sobre esto, consulte *Procesadores de pago* en la sección *Contribuciones*.
 
-¿Desea permitir que los participantes paguen más tarde enviando un cheque por correo postal, pagando en el lugar del evento con efectivo o tarjeta de crédito u organizando otro método de pago? De ser así, puede habilitar la opción ** Pagar más tarde ** y definir una etiqueta e instrucciones de pago. Si mantiene este campo sin marcar, los participantes deberán pagar con tarjeta de crédito.
+¿Desea permitir que los participantes paguen más tarde enviando un cheque por correo postal, pagando en el lugar del evento con efectivo o tarjeta de crédito u organizando otro método de pago? De ser así, puede habilitar la opción **Pagar más tarde** y definir una etiqueta e instrucciones de pago. Si mantiene este campo sin marcar, los participantes deberán pagar con tarjeta de crédito.
 
 ![EventFeesPayLater](../img/CiviCRM_update-CiviEvent-EventFeesPayLater-en.png "EventFeesPayLater")
 
-** Tarifas regulares ** proporcionan un conjunto de niveles de precios a elegir (por ejemplo, un registro individual por \ $ 50 o un registro familiar por \ $ 100). Cada cantidad de tarifa tiene una etiqueta asignada y puede establecer una tarifa por defecto. Este enfoque funciona bien para muchos eventos y es fácil de configurar. Aquí hay un ejemplo simple:
+**Tarifas regulares** proporcionan un conjunto de niveles de precios a elegir (por ejemplo, un registro individual por \ $ 50 o un registro familiar por \ $ 100). Cada cantidad de tarifa tiene una etiqueta asignada y puede establecer una tarifa por defecto. Este enfoque funciona bien para muchos eventos y es fácil de configurar. Aquí hay un ejemplo simple:
 
 ![EventRegFees](../img/CiviCRM_update-CiviEvent-EventRegFees-en.png "EventRegFees")
 
-Si su evento requiere una estructura de precios más compleja, con más opciones o complementos adicionales, es posible que desee utilizar ** conjuntos de precios ** o **descuentos**. Para obtener más información al respecto, consulte el capítulo *Tarifas de eventos complejos* en esta sección.
+Si su evento requiere una estructura de precios más compleja, con más opciones o complementos adicionales, es posible que desee utilizar **conjuntos de precios** o **descuentos**. Para obtener más información al respecto, consulte el capítulo *Tarifas de eventos complejos* en esta sección.
 
 Registro Online
 -------------------
@@ -111,9 +111,9 @@ Se agregará un registro de actividad de "Envíaselo a un amigo" a la pestaña A
 Confirmación de Registro y Recibo
 ----------------------------------------
 
-Puede enviar confirmaciones automáticas y correos electrónicos de recibos a los participantes que se registran a un evento, ya sea que se inscriban en línea o bien sean registrados por su personal o voluntarios. El contenido y el diseño de estos correos electrónicos están controlados por plantillas de mensajes. * Se proporcionan formatos HTML y de texto. Puede modificar o agregar texto a estos correos electrónicos, o agregar marcas como un logotipo a las versiones HTML. Para configurar una dirección de correo electrónico desde la que enviar la confirmación y los recibos, consulte Configuración en la sección Correo electrónico.
+Puede enviar confirmaciones automáticas y correos electrónicos de recibos a los participantes que se registran a un evento, ya sea que se inscriban en línea o bien sean registrados por su personal o voluntarios. El contenido y el diseño de estos correos electrónicos están controlados por plantillas de mensajes. Se proporcionan formatos HTML y de texto. Puede modificar o agregar texto a estos correos electrónicos, o agregar marcas como un logotipo a las versiones HTML. Para configurar una dirección de correo electrónico desde la que enviar la confirmación y los recibos, consulte Configuración en la sección Correo electrónico.
 
-Vaya a ** Administrar > Comunicaciones > Plantillas de mensajes ** (que se muestra en la siguiente captura de pantalla) y haga clic en la pestaña ** Mensajes del flujo de trabajo del sistema ** para ver la lista de mensajes que puede modificar. Haga clic en ** Editar ** junto a "Eventos - Confirmación de registro y recibo" para editar el contenido y el diseño.
+Vaya a **Administrar > Comunicaciones > Plantillas de mensajes** (que se muestra en la siguiente captura de pantalla) y haga clic en la pestaña ** Mensajes del flujo de trabajo del sistema ** para ver la lista de mensajes que puede modificar. Haga clic en ** Editar ** junto a "Eventos - Confirmación de registro y recibo" para editar el contenido y el diseño.
 
 ![WorkflowMsgTpls](../img/CiviCRM_update-CiviEvent-WorkflowMsgTpls-en.png "WorkflowMsgTpls")
 
