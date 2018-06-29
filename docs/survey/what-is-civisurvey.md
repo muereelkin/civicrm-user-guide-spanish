@@ -1,47 +1,26 @@
-What is CiviSurvey?
-===============
+¿Qué es CiviSurvey (Encuestas)?
+===============================
 
-CiviCampaign has a feature that enables offline surveys by providing a
-standardised way to record survey responses and to then generate reports
-from the survey data. Survey responses are captured in an activity
-record (in an activity of the type Survey) for each individual.
+CiviCampaign tiene una función que permite realizar encuestas fuera de línea al proporcionar una forma estandarizada de registrar las respuestas de la encuesta y luego generar informes a partir de los datos de la encuesta. Las respuestas de 
+la encuesta se capturan en un registro de actividad (en una actividad del tipo Encuesta) para cada individuo.
 
-Note that the Survey feature is used to record responses from your
-existing contacts. If you want to gather responses from individuals who
-may not exist in your database, you should use CiviCampaign's Petition
-feature; see the Petition section for more information.
+Tenga en cuenta que la función Encuesta se usa para registrar las respuestas de sus contactos existentes. Si desea recopilar respuestas de personas que pueden no existir en su base de datos, debe usar la función Petición de CiviCampaign; vea 
+la sección Petición para más información.
 
-For Drupal sites only, CiviCampaign interacts with the Drupal module
-CiviEngage to automatically provide additional options for your surveys;
-see the section Civic Engagement for more information.
+Solo para sitios de Drupal, CiviCampaign interactúa con el módulo de Drupal CiviEngage para proporcionar automáticamente opciones adicionales para sus encuestas; ver la sección Compromiso para más información.
 
-Scenario: Public housing survey
--------------------------------
 
-Toft Organisation For Tenants (TOFT) focuses on protecting tenants'
-rights and lobbying for affordable housing. The organisation wanted to
-gather information about the housing conditions in one particular
-neighborhood to gain a better understanding of the scale of the issues
-and which of them were most pressing for this community. They decided
-that one strategy would be to undertake a survey to capture basic
-information about housing conditions and complaints about landlords. A
-focus group met to determine what questions and who should be asked.
+Scenario: Public housing survey[¶](https://docs.civicrm.org/user/es/latest/survey/what-is-civisurvey/#scenario-public-housing-survey)
+-------------------------------------------------------------------------------------------------------------------------------------
 
-A TOFT staff member then created a new survey in CiviCRM and built the
-list of respondents from the existing contacts. She generated and
-printed a walk list report, which was given to the volunteers who would
-carry out the survey.
+La Organización para Inquilinos de Toft (TOFT) se enfoca en proteger los derechos de los inquilinos y hacer lobby por viviendas asequibles. La organización quería recopilar información sobre las condiciones de la vivienda en un vecindario en 
+particular para obtener una mejor comprensión de la escala de los problemas y cuáles de ellos eran más apremiantes para esta comunidad. Decidieron que una estrategia sería realizar una encuesta para capturar información básica sobre las 
+condiciones de la vivienda y quejas sobre los propietarios. Un grupo de discusión se reunió para determinar qué preguntas y a quién se debería preguntar.
 
-Over the period of a week, a team of volunteers visited selected public
-housing buildings to interview the respondents and record their
-responses on the walk list. At the end of each day, the volunteers
-entered the responses of each individual into the CiviCRM database; some
-were able to do this from their home computers, while others returned to
-TOFT's office and used computers there.
+Un miembro del personal TOFT creó una nueva encuesta en CiviCRM y creó la lista de encuestados de los contactos existentes. Ella generó e imprimió un informe de la lista, que se dió a los voluntarios que llevarían a cabo la encuesta.
 
-At the conclusion of the survey, the programme leader used CiviCRM to
-search activities for the group of individuals who were surveyed, and
-generated reports to analyse the responses and inform the next strategy
-for their campaign. The results of the survey were also used to frame
-their messages and communications about the issues that were affecting
-the neighborhood.
+Durante una semana, un equipo de voluntarios visitó edificios de viviendas públicas seleccionados, para entrevistar a los encuestados y registrar sus respuestas en la lista. Al final de cada día, los voluntarios registraron las respuestas de 
+cada individuo en la base de datos de CiviCRM; algunos pudieron hacer esto desde los ordenadores de sus hogares, mientras que otros regresaron a la oficina de TOFT y usaron los ordenadores de la oficina.
+
+Al final de la encuesta, el líder del programa utilizó CiviCRM para buscar actividades para el grupo de personas encuestadas y generó informes para analizar las respuestas y planear la próxima estrategia para su campaña. Los resultados de la 
+encuesta también se usaron para enmarcar sus mensajes y comunicaciones sobre los problemas que afectaban al vecindario.

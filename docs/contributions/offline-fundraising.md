@@ -1,71 +1,45 @@
-# Offline fundraising
 
-Your organisation may collect donations at events, solicit donations via
-postal mailings and other offline methods. Any money raised through
-offline activities needs to be manually entered into CiviCRM in order to
-ensure that final reporting is accurate.
+Captación de Fondos
+=====================
 
-There are three steps within CiviCRM for offline fundraising: creating
-your lists, creating your mailings, and
-[manually entering contributions](../contributions/manual-entry-of-contributions).
+Su organización puede recaudar donaciones en eventos, pedir donaciones por correo postal y otros métodos offline. Todo lo recaudado a través de actividades offline debe registrarse manualmente en CiviCRM para garantizar que los informes finales sean precisos.
 
-## Creating your lists
+Hay tres pasos dentro de CiviCRM orientados a la recaudación de fondos offline: crear listas de contactos, crear envíos de correo masivo, y [registrar contribuciones manualmente](https://docs.civicrm.org/user/es/latest/contributions/manual-entry-of-contributions )
 
-This process is fairly straightforward if you are familiar with
-CiviCRM's search capabilities.
+Crear listas de contactos[¶](https://docs.civicrm.org/user/es/latest/contributions/offline-fundraising/#creating-your-lists)
+----------------------------------------------------------------------------------------------------------------------
 
-Go to **Search > Find Contacts** to create a list of records to receive
-your offline postal mail appeal (it could be your entire database).
+Este proceso es bastante sencillo, si está familiarizado con los procesos de búsqueda en CiviCRM.
 
-If you want to track the success of a mailing or who receives certain
-appeals, save the search results as a group. Use the check box to select
-all and choose the appropriate option from the **Action**
-dropdown menu i.e. **Group - add contacts** or **Group - create smart group**). Later,
-you can mark everyone in that group as recipients of that appeal using
-the **Add Activity** option under the **Actions** dropdown menu.
+Vaya a ** Buscar > Buscar contactos ** para crear una lista de contactos que serán los destinatarios del envío de correo electrónico (podría ser toda su base de datos).
 
-If you want to create letters for postal mailings you can do this using
-CiviCRM's internal **PDF letters - print** feature, or you export the list as a
-CSV file and use mail merge to a word processor.
+Si desea realizar un seguimiento del éxito de este envío por correo electrónico o quiere saber quién recibe ciertos envíos, guarde los resultados de la búsqueda como un grupo. Use la casilla de verificación para seleccionar todos los contactos y elija la opción adecuada del menú desplegable ** Acción **, ** Grupo - agregar contactos ** o ** Grupo - crear grupo inteligente **). Más tarde, puede marcar a todos los miembros de ese grupo como destinatarios de ese envío mediante la opción ** Agregar actividad ** en el menú desplegable **Acciones**.
 
-To export a list:
+Si desea crear cartas para correos postales, puede hacerlo utilizando la función interna ** Imprimir Cartas PDF ** de CiviCRM, o puede exportar la lista como un archivo CSV y usar la combinación de correspondencia en un procesador de textos.
 
-1. Select all records or a subset using the checkboxes, and from
-    the **Actions** dropdown menu choose **Export Contacts**.
-1. Choose whether to **Export PRIMARY fields** or **Select fields for
-    export**. If you elect to export primary fields, the CSV file will
-    be immediately generated when you click **Continue**. If you opt to
-    select which fields you want to export, click **Continue** and a
-    list of dropdown options will appear.
-1. Select the required fields; if you wish to save the list of exported
-    fields as an export mapping for future use, check the **Save this
-    field mapping** box.
-1. Click **Export** to generate the CSV file.
-1. Click **Done** when you have finished to return to the contact list.
+Para exportar una lista:
 
+1.  Seleccione todos los contactos o un subconjunto de contactos utilizando las casillas de verificación y desde el menú desplegable de **Acciones**, elija **Exportar Contactos**  
 
-## Creating postal mailings
+2.  Elija si quiere **Exportar los campos PRINCIPALES** o **Seleccionar los campos a exportar**. Si elige exportar los campos principales, el fichero CSV se generará inmediatamente cuando haga clic en **Continuar**.  Si elige seleccionar los campos a exportar, haga clic en **Continuar**, le aparecerá un listado de opciones desplegables entre las que podrá elegir los campos que quiere exportar.
 
-Once your spreadsheet is created, you can do a mail merge using any word
-processing software (such as OpenOffice, the free software word
-processor) that will insert any fields you want in the letter.
+3.  Seleccione los campos requeridos; si desea guardar la lista de campos exportados como un mapa de exportación para un uso futuro, marque la casilla **Guardar el mapeo de este campo**.
 
-CiviCRM can also create mailing labels for you. Perform the same search
-you used in the previous section to create your list of recipients,
-then:
+4.  Haga clic en **Exportar** para generar el fichero CSV.
 
-1.  From the **Actions** dropdown menu, select **Mailing
-    labels - print**.
-2.  Select the mailing label number, determine whether you want to
-    exclude people with "do not mail" checked in their privacy options
-    (checked by default and recommended), and whether you want to merge
-    two records that have the same mailing address into one label. This
-    last option is very useful when you are mailing a household or
-    organization and you don't want them to receive duplicate mailings.
-    When the records are merged, each name at that address appears on
-    its own line on the label.
-3.  Click **Make Mailing Labels** and a printable PDF document will be
-    created.
+5.  Haga clic en **Hecho** cuando haya terminado, esto le llevará a la lista de contactos.
 
-Note that CiviCRM prints labels in the order shown on the research results page
-in a column-by-column pattern.
+Crear envíos postales[¶](https://docs.civicrm.org/user/es/latest/contributions/offline-fundraising/#creating-postal-mailings)
+--------------------------------------------------------------------------------------------------------------------------------
+
+Una vez haya creado o exportado una hoja de cálculo, puede realizar la unificación de envíos utilizando cualquier software de procesador de textos (como Openoffice, el software gratuito de procesador de textos) que introducirá cualquier campo que necesite en su carta.
+
+CiviCRM también puede crear etiquetas de correo.  Realice la misma búsqueda que hizo en la sección anterior para crear una lista de destinatarios, luego:
+
+1.  Del menú desplegable de **Acciones**,seleccione **Imprimir Etiquetas de Correo**.
+
+2.  Seleccione el número de etiqueta de correo, determine si quiere excluir a contactos que tienen marcada la opción ¨no enviar correo¨ en sus preferencias de privacidad y si quiere unificar dos contactos que tengan la misma dirección de correo postal en una sola etiqueta.  Esta última opción es muy útil cuando realiza el envío a familias o organizaciones y no quiere que reciban cartas por duplicado.  Cuando los contactos estén unificados, cada nombre aparece en su propia línea en la etiqueta.
+
+3.  Haga click en **Etiquetas de Correo**Click y se creará un documento PDF para imprimir.
+
+Tenga en cuenta que CiviCRM imprime etiquetas en el orden mostrado en la página de resultado de la búsqueda con un patrón de columna por columna. 

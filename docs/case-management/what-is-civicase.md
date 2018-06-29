@@ -1,121 +1,67 @@
-What is CiviCase?
+¿Qué es CiviCase?
 =================
 
-CiviCase is a tool for tracking and managing sequences of interactions
-between people in your organisation and contacts in CiviCRM. It's
-similar to a case management system. In addition to tracking and
-managing your organisation's interactions with clients or constituents,
-CiviCase can also help you manage internal organisational interactions.
+CiviCase es una herramienta para rastrear y administrar secuencias de interacciones entre personas de su organización y contactos en CiviCRM. Es similar a un sistema de gestión de casos. Además de rastrear y administrar las interacciones de su organización con clientes o constituyentes, CiviCase también puede ayudarlo a administrar las interacciones internas de la organización.
 
-Cases are used to track complex interactions or communication
-processes. A case can be used to:
+Los casos se usan para rastrear interacciones complejas o procesos de comunicación. Un caso se puede usar para:
 
--   track a specific workflow or set of procedures that must be followed
-    and that involves a number of different organisational staff
--   allow staff to manage and track interactions while avoiding
-    duplication
--   automate the task of remembering and scheduling follow-up
-    activities.
+- rastrear un flujo de trabajo específico o un conjunto de procedimientos que deben seguirse y que involucra a un número diferente de personal de la organización
 
-CiviCase relies on Activities. To learn about how they work, see the
-Activities chapter.
+- Permitir que el personal administre y rastree las interacciones mientras evita la duplicación.
 
-Organisations have employed CiviCase in a wide variety of situations.
-Here are a couple of examples of different types of organisations that
-use CiviCase. 
+- automatizar la tarea de recordar y programar actividades de seguimiento.
 
-Scenario: managing legislator-constituent interactions
-------------------------------------------------------
+CiviCase depende de las actividades. Para conocer cómo funcionan, consulte el capítulo Actividades.
 
-A legislator's staff manages hundreds of interactions with constituents
-and communities daily. Legislative staff can manage and track these
-interactions while avoiding duplicating work (for example, if a
-constituent calls in about an issue, the staffer taking the call can
-look at the activities in the case related to the issue and see that
-another staffer is already working on the issue and relay that
-information to the caller). CiviCase also automates the task of
-remembering and scheduling follow up activities by presenting staffers
-with a list of upcoming case activities that require their attention.
+Las organizaciones emplean CiviCase en una amplia variedad de situaciones. Aquí hay un par de ejemplos de diferentes tipos de organizaciones que usan CiviCase.
 
-CiviCase came in handy to track a series of related tasks that
-legislative staff do as a result of interactions with constituents,
-including:
+Escenario: manejar las interacciones legislador-integrante
+--------------------------------------------------------------
 
--   A legislative staffer received a phone call about illegal dumping
-    near the caller's home. The staffer created a case recording the
-    details and location of the reported issue. She then assigned the
-    task of following up with the Health Department to another member of
-    the legislator's staff. Upon logging-in to CiviCRM, the other staff
-    member saw that the task was assigned to them. He then contacted the
-    Health Department on behalf of the constituent, and contacted the
-    constituent to confirm that the Health Department was informed of
-    the situation. 
--   The legislator's office received a phone call from a constituent
-    requesting support from an agency. A staffer logged the call in
-    CiviCase and then set up a follow-up call for the next week to make
-    sure that action was taken on the agency's behalf.
--   The legislator's staff records event invitations on an ongoing basis
-    that a legislator's scheduler must respond to.
+El personal de un legislador administra cientos de interacciones diarias con constituyentes y  comunidades. El personal legislativo puede administrar y rastrear estas interacciones mientras evita duplicar el trabajo (por ejemplo, si un integrante llama sobre un problema, el miembro del personal que atiende puede ver las actividades en el caso relacionado con el problema y ver que otro miembro del personal ya está trabajando sobre el problema y transmitir esa información a la persona que llama). CiviCase también automatiza la tarea de recordar y programar las actividades de seguimiento presentando a los empleados una lista de las próximas actividades de casos que requieren su atención.
 
-Scenario: complex application process
---------------------------------------
+CiviCase fue útil para rastrear una serie de tareas relacionadas que el personal legislativo hace, como resultado de las interacciones con los integrantes, que incluyen:
 
-An organisation administering a health department grant programme to
-distribute several million dollars worth of grants used CiviCase to
-manage the grant applications process. When interested parties submitted
-their initial applications, a case was automatically created to manage
-each. The case created contained several activities which were
-automatically assigned to different staff managing the application
-process.
+- Un miembro del personal legislativo recibió una llamada telefónica sobre el vertido ilegal cerca de la casa de la persona que llamó. El miembro del personal creó un caso que registra los detalles y la ubicación del problema informado. Luego asignó la tarea de seguimiento con el Departamento de Salud a otro miembro del personal del legislador. Al iniciar sesión en CiviCRM, el otro miembro del personal vio que la tarea se le había asignado. Luego contactó al Departamento de Salud en nombre del integrante y contactó al integrante para confirmar que el Departamento de Salud estaba informado de la situación.
 
-In this instance the users were actually from three separate
-organisations who each had to apply their assessment of the application
-in turn. First, a basic initial assessment was made to check that
-certain criteria were met. Then an external organisation made a more
-technical assessment. The activities were all offset from the start of
-the case by the number of days in which it was anticipated they should
-be completed and a coordinator from each organisation assigned the case
-activities to members of staff according to their capacity as they came
-in.
+- La oficina del legislador recibió una llamada telefónica de un integrante que solicitaba apoyo de una agencia. Un miembro del personal registró la llamada en CiviCase y luego programó una llamada de seguimiento para la próxima semana para asegurarse de que se tomara una acción en nombre de la agencia.
 
-At various stages in the process, the status of the case was changed for
-one reason or another. In this process the main options were:
+- El personal del legislador registra las invitaciones a eventos de manera continua a las que el planificador del legislador debe responder.
 
--   passed basic checks
--   failed basic checks
--   technically feasible
--   technically infeasible
--   suppliers approved
--   suppliers disallowed
--   deferred to next round
--   accepted.
+Escenario: complejo procesos de solicitud
+-------------------------------------------
 
-Even though there were thousands of applications and tens of thousands
-of parts of the application review process, the coordinators from the
-first two organisations assigned activities to staff members so they
-each saw a case dashboard showing only the work assigned to them,
-helping them focus their energy on just their segment of the
-applications.
+Una organización que administra un programa de subvenciones del departamento de salud para distribuir varios millones de dólares en subvenciones utilizó CiviCase para administrar el proceso de solicitud de subvenciones. Cuando las partes interesadas presentaron sus solicitudes iniciales, se creó automáticamente un caso para gestionar cada una de ellas. El caso creado contenía varias actividades que se asignaban automáticamente a diferentes miembros del personal que administraban el proceso de solicitud.
 
-For the final assessment, the two organisations hired an external
-organisation to process the remaining applications. For this process, a
-review committee was able to view the key details of applications with
-different statuses, and finally, just review the summary details of all
-applications with an accepted status to make a final determination.
+En este caso, los usuarios eran en realidad de tres organizaciones distintas, cada una de las cuales tenía que aplicar su evaluación de la aplicación por turno. Primero, se realizó una evaluación inicial básica para verificar que se cumplieran ciertos criterios. Luego, una organización externa realizó una evaluación más técnica. Todas las actividades se compensaron desde el inicio del caso por el número de días en que se anticipó que deberían completarse y un coordinador de cada organización asignó las actividades del caso a los miembros del personal de acuerdo con su capacidad a medida que iban entrando.
 
-CiviCase in use 
------------------
+En varias etapas del proceso, el estado del caso cambió por una razón u otra. En este proceso las principales opciones fueron:
 
-Here's a simple example of a Housing Support case. The Open Case
-activity is marked as Completed when the case is opened. Three
-additional activities are automatically scheduled when the case is
-opened. A medical evaluation is scheduled for the following day
-(reference offset is 1); then secure temporary housing (reference offset
-2); and finally a follow-up three days later.
+- pasó comprobaciones básicas
 
-In this example there are three case roles. The Homeless Service
-Coordinator is both the creator and manager of these cases. In addition,
-a Health Services Coordinator and a Benefits Specialist role are created
-when the case is opened.
+- comprobaciones básicas fallidas
+
+- técnicamente viable
+
+- técnicamente inviable
+
+- proveedores aprobados
+
+- proveedores no permitidos
+
+- diferido a la siguiente ronda
+
+- aceptado
+
+A pesar de que hubo miles de solicitudes y decenas de miles de partes del proceso de revisión de la solicitud, los coordinadores de las dos primeras organizaciones asignaron actividades a los miembros del personal para que cada una viera un tablero mostrando solo el trabajo asignado, ayudándoles a enfocar su energía en solo su segmento de evaluación.
+
+Para la evaluación final, las dos organizaciones contrataron a una organización externa para procesar las aplicaciones restantes. Para este proceso, un comité de revisión pudo ver los detalles clave de las aplicaciones con diferentes estados y, finalmente, solo revisó los detalles resumidos de todas las solicitudes con un estado aceptado para tomar una determinación final.
+
+CiviCase en uso
+---------------
+
+Aquí hay un ejemplo simple de un caso de Apoyo a la Vivienda. La actividad de Caso abierto se marca como Completada cuando se abre el caso. Tres actividades adicionales se programan automáticamente cuando se abre el caso. Una evaluación médica está programada para el día siguiente (el desplazamiento de referencia es 1); luego vivienda temporal  segura (compensación de referencia 2); y finalmente un seguimiento tres días después.
+
+En este ejemplo, hay tres roles de casos. El coordinador de servicios para personas sin hogar es el creador y el administrador de estos casos. Además, cuando se abre el caso, se crean un coordinador de servicios de salud y un rol de especialista en beneficios.
 
 ![image](../img/Simple%20housing%20case.PNG)

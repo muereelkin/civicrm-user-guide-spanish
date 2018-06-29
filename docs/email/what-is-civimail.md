@@ -1,77 +1,26 @@
-What is CiviMail?
+¿Qué es CiviMail?
 =================
 
-The CiviMail component is a sophisticated tool for handling mass email
-campaigns. It can reliably deliver a high volume of email and provide
-detailed reports on the results and effectiveness of those emails.
-CiviMail is often used to complement other CiviCRM components, for
-example to send emails to non-members to encourage them to become
-members or to send emails to people that are yet to register for an
-event. 
+El módulo de CiviMail es una herramienta sofisticada para tratar campañas masivas de correo electrónico. Puede entregar un gran volumen de correo electrónico y proporcionar informes detallados sobre los resultados y la efectividad de esos correos electrónicos. CiviMail se usa a menudo para complementar otros módulos de CiviCRM, por ejemplo, para enviar correos electrónicos a personas que no son miembros,  para alentarlos a convertirse en miembros o enviar correos electrónicos a personas que aún no se han registrado para un evento.
 
-CiviMail (like all of CiviCRM's mail features) interacts with your mail
-server. Configuring the mail server and properly setting up CiviMail are
-system administrator tasks and you may require professional assistance.
-You will also need to check with your web hosting provider to ensure
-that they meet the configuration requirements, and find out about any
-limits they may have on how many emails you can send per day. A
-misconfigured mail server is a liability and if you don't know what you
-are doing you could easily end up on a spam black list. Getting off a
-spam black list is much harder that getting on it. For more information
-about configuring your mail server, see the "Email system configuration"
-chapter in the Initial Setup section.
+CiviMail (como todas las funciones de correo de CiviCRM) interactúa con su servidor de correo. La configuración del servidor de correo y la configuración adecuada de CiviMail son tareas del administrador del sistema y es posible que requieran asistencia profesional. También deberá verificar con su proveedor de alojamiento web para asegurarse de que cumplan con los requisitos de configuración, y conocer los límites que pueden tener sobre cuántos correos electrónicos puede enviar por día o mes. Un servidor de correo mal configurado es una responsabilidad y si no sabe lo que está haciendo, podría terminar fácilmente en una lista negra de correo no deseado. Salir de una lista negra de spam es mucho más difícil que entrar en ella. Para obtener más información sobre cómo configurar su servidor de correo, consulte el capítulo "Configuración del sistema de correo electrónico" en la sección Configuración inicial.
 
-Scenario: managing email lists
--------------------------------
+Escenario: gestionar listas de correo electrónico
+--------------------------------------------------
 
-St Ethelburga's Centre for Peace and Reconciliation uses CiviEvent to
-run a yearly event programme on a number of different themes. They have
-set up a mailing list page where people can sign up to be informed of
-events that interest them. They then use CiviMail to send out emails to
-those people based on those events. When someone unsubscribes from an
-event theme mailing list, CiviCRM keeps a record of the fact that they
-have unsubscribed.
+El Centro para la Paz y la Reconciliación de St Ethelburga usa CiviEvent para llevar a cabo un programa anual de eventos sobre diferentes temas. Han creado una página de listas de correo donde las personas pueden inscribirse para recibir información sobre los eventos que les interesan. Luego usan CiviMail para enviar correos electrónicos a esas personas en función de esos eventos. Cuando alguien cancela la suscripción a una lista de correo de un tipo de evento, CiviCRM mantiene un registro de la baja.
 
-St Ethelburga's also automatically subscribes anyone who has been to an
-event on a specific theme to receive emails about that theme. They don't
-have to worry about spamming people that have unsubscribed from a
-thematic event mailing list, as CiviCRM will remember that they have
-unsubscribed and not re-subscribe them.
+St Ethelburga también suscribe automáticamente a cualquier persona que haya asistido a un evento sobre un tema específico para recibir correos electrónicos sobre ese tema. No tienen que preocuparse de enviar correos no deseados a las personas que se han dado de baja de una lista de correo de eventos específico, ya que CiviCRM recordará que se han cancelado la suscripción y no se han vuelto a suscribir.
 
-From time to time, St. Ethelburga's sends out other emails to a mailing
-list that includes nearly all contacts in their database with personal
-messages from the centre director highlighting particular issues. Often,
-two similar versions of the same email are sent to different groups in
-their database to test which message formats are more effective. They
-can do this by sending the email to half the contacts in a particular
-group and then sending another email which excludes contacts that have
-already received the first email.
+De vez en cuando, St. Ethelburga envía otros correos electrónicos a una lista de correo que incluye casi todos los contactos en su base de datos con mensajes personales del director del centro que resaltan problemas particulares. A menudo, se envían dos versiones similares del mismo correo electrónico a diferentes grupos en su base de datos para probar qué formatos de mensaje son más efectivos. Pueden hacerlo enviando el correo electrónico a la mitad de los contactos de un grupo en particular y luego enviando otro correo electrónico que excluya a los contactos que ya recibieron el primer correo electrónico.
 
-Scenario: mobilising with email
--------------------------------
+Escenario: movilizando por correo electrónico
+---------------------------------------------
 
-The Townsville Organisation For Tenants (TOFT) held a survey and
-petition to gather data and support for the campaign Demand Affordable
-Public Housing. The survey was undertaken by volunteers visiting
-selected constituents in their homes, and the petition was widely
-promoted to the public who could sign and answer questions online.
+La Organización para Inquilinos de Townsville (TOFT, por sus siglas en inglés) realizó una encuesta y una petición para reunir datos y apoyo para la campaña Solicita vivienda pública asequible. La encuesta fue realizada por voluntarios que visitaban a los electores seleccionados en sus hogares, y la petición fue ampliamente promocionada entre el público, que podía firmar y responder preguntas en línea.
 
-In the early stages of the campaign, the TOFT volunteer coordinator
-searched for contacts in the group Volunteers and used the Send Email
-action to send a general email asking for volunteers to help with the
-survey. From those who responded that they were available, a small group
-were trained to carry out the home visits and record survey responses.
+En las primeras etapas de la campaña, el coordinador voluntario de TOFT buscó contactos en el grupo Voluntarios y usó la acción Enviar correo electrónico para enviar un correo electrónico general solicitando voluntarios para ayudar con la encuesta. De aquellos que respondieron que estaban disponibles, se capacitó a un pequeño grupo para llevar a cabo las visitas domiciliarias y registrar las respuestas de la encuesta.
 
-Once the online petition had been created using tools in CiviCampaign,
-the TOFT communications officer created an email including text, images
-and links to promote the campaign and encourage people to click through
-to the site and complete the online petition. This email was then sent
-out to the entire database using CiviMail, including a forwarding link
-so that recipients could easily distribute the email widely through
-their own networks.
+Una vez que se creó la petición en línea usando las herramientas en CiviCampaign, el responsable de comunicaciones de TOFT creó un correo electrónico que incluía texto, imágenes y enlaces para promocionar la campaña y alentar a las personas a hacer clic en el sitio y completar la petición en línea. Este correo electrónico se envió a toda la base de datos usando CiviMail, incluido un enlace de reenvío para que los destinatarios pudieran distribuir fácilmente el correo electrónico a través de sus propias redes.
 
-CiviMail enabled TOFT to track responses to this mass emailing; reports
-were generated showing that 89% of recipients clicked through to sign
-the petition, and 75% forwarded it on to others. This data was then
-compared with previous offline petition and survey efforts to
-demonstrate the increased reach of the campaign through using CiviCRM.
+CiviMail habilitó TOFT para rastrear las respuestas a este correo masivo; se generaron informes que muestran que el 89% de los destinatarios hicieron clic para firmar la petición, y el 75% la reenviaron a otros. Luego, estos datos se compararon con esfuerzos previos de encuestas y solicitudes fuera de línea para demostrar el mayor alcance de la campaña mediante el uso de CiviCRM.

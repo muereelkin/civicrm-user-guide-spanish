@@ -1,66 +1,44 @@
-What is CiviCampaign?
+¿Qué es CiviCampaign?
 =====================
 
-CiviCampaign lets you link together events, mailings, activities, and
-contributions under one "umbrella" so that you can track the progress of
-all your efforts towards one programmatic goal or campaign. This enables
-organizations to measure and analyze the effectiveness of their outreach
-and mobilization efforts.
+CiviCampaign le permite vincular eventos, correos, actividades y contribuciones bajo un mismo "paraguas" para que pueda seguir el progreso de todos sus esfuerzos hacia una meta o campaña programática. Esto permite a las organizaciones medir y analizar la efectividad de sus esfuerzos de alcance y movilización.
 
-CiviCampaign allows you to:
+CiviCampaign le permite:
 
--   create surveys and petitions
--   record responses to surveys and petitions
--   link activity such as donations, mailings and events to a particular
-    campaign
--   track who has voted using Get Out The Vote (GOTV)
--   record individual members' levels of interest and engagement in a
-    particular activity.
+- crear encuestas y peticiones
 
-CiviCampaign is integrated with other CiviCRM components so that you can
-select which activities are part of of the overall campaign or goal.
+- registrar respuestas a encuestas y peticiones
 
-For Drupal sites, the CiviEngage module enhances CiviCampaign by
-providing a package of custom fields that enable the Survey and Petition
-features of CiviCampaign. Read more about CviEngage in the Civic
-Engagement section.
+- vincular actividad como donaciones, correos y eventos a una campaña en particular
 
-Scenario: Year-long mobilization campaign
------------------------------------------
+- rastrear quién ha votado usando Get Out The Vote (GOTV)
 
-To kick off a year-long campaign to mobilize community members, the
-Townsville Organisation For Tenants (TOFT) held a protest at the
-Capitol. The campaign organizers use CiviCampaign to associate all
-related campaign activities together over the course of the campaign.
+- registrar los niveles de interés y participación de los miembros individuales en una actividad en particular.
 
-The lead organizer created a campaign called "Mobilize the Masses 2011"
-to link a series of related activities including communications about
-the mobilizing event, participation and financial contributions for
-transport and food during the action.
+CiviCampaign se integra con otros componentes de CiviCRM para que pueda seleccionar qué actividades forman parte de la campaña o el objetivo general.
 
-Using CiviCampaign, the organisers:
+Para los sitios de Drupal, el módulo CiviEngage mejora CiviCampaign al proporcionar un paquete de campos personalizados que habilitan las características de Encuesta y Petición de CiviCampaign. Lea más acerca de CviEngage en la sección de Participación Cívica.
 
--   created a Campaign as the umbrella for all related activities,
-    including the duration of the campaign and the revenue goal
--   created a group consisting of the individuals they wanted to target
-    for the activities in the campaign
--   called their most active members to help organize other constituents
-    in their neighborhoods to participate, and recorded the activity
-    phone call in the individual's record, indicating the specific
-    campaign and the member's response 
--   sent a mass fundraising mailing and indicated the campaign, which
-    was then recorded in the contribution information of individuals'
-    records
--   created an event to track who will be attending the mobilization,
-    and indicate the campaign in the event setup.
 
-Periodically throughout the campaign, the program lead searches all of
-the activities related to the campaign, and/or individuals who have
-activities related to the campaign, to monitor the effectiveness of
-their outreach and fundraising efforts, and if necessary adjust
-strategies.
+Escenario: Campaña de movilización de un año
+---------------------------------------------
 
-Organizers can relate subsequent events, mailings, and other activities
-with the same campaign as it proceeds over the course of the year. At
-the end of the campaign this information can be reviewed within the
-context of the whole campaign.
+Para iniciar una campaña de un año de duración para movilizar a los miembros de la comunidad, la Organización para Inquilinos de Townsville (TOFT) realizó una protesta en el Capitolio. Los organizadores de la campaña usan CiviCampaign para asociar todas las actividades relacionadas en el transcurso de la campaña.
+
+El organizador principal creó una campaña llamada "Movilizar las masas 2011" para vincular una serie de actividades relacionadas, incluidas las comunicaciones sobre el evento movilizador, la participación y las contribuciones financieras para el transporte y la alimentación durante la acción.
+
+Usando CiviCampaign, los organizadores:
+
+- crearon una Campaña como paraguas para todas las actividades relacionadas, incluida la duración de la campaña y el objetivo de ingresos
+
+- crearon un grupo compuesto por las personas a las que querían orientar para las actividades de la campaña
+
+- llamaron a sus miembros más activos para ayudar a organizar a otros constituyentes en sus vecindarios para que participaran, y registraron la llamada telefónica como una actividad en el registro del individuo de CiviCRM, indicando la campaña específica y la respuesta del miembro
+
+- enviaron un correo masivo de recaudación de fondos e indicaron la campaña, que luego se registró en la información de contribución de los registros de las personas
+
+- crearon un evento para rastrear quién asistiría a la movilización e indicaron la campaña en la configuración del evento.
+
+Periódicamente a lo largo de la campaña, el líder del programa busca todas las actividades relacionadas con la campaña y / o individuos que tienen actividades relacionadas con la campaña, para monitorear la efectividad de su alcance y esfuerzos de recaudación de fondos, y si es necesario ajustar las estrategias.
+
+Los organizadores pueden relacionar eventos posteriores, correos y otras actividades con la misma campaña a medida que avanza a lo largo del año. Al final de la campaña, esta información se puede revisar dentro del contexto de toda la campaña.
