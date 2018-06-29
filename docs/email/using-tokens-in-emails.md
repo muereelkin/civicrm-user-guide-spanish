@@ -3,12 +3,12 @@ Usar tokens en correos electrónicos
 
 Puede usar tokens para incluir texto personalizado (como el nombre de una persona), agregar enlaces de acción (como una opción de cancelación de suscripción) o mostrar información de organización estándar (como la dirección de dominio) en un correo masivo enviado con CiviCRM. Los tokens se reemplazan por el valor apropiado en el momento en que se envía el correo electrónico.
 
-Para ver la lista de tokens de contacto disponibles, haga clic en **Insertar tokens**. Para obtener más información acerca de los tokens en general, consulte * Funciones de combinación de correo (a.k. a. usando Tokens) *en la sección* Trabajar con sus datos * de este manual.
+Para ver la lista de tokens de contacto disponibles, haga clic en **Insertar tokens**. Para obtener más información acerca de los tokens en general, consulte *Funciones de combinación de correo (a.k. a. usando Tokens)* en la sección *Trabajar con sus datos* de este manual.
 
 Tokens de información de contacto
 ---------------------------------
 
-Si desea que cada correo electrónico se dirija a la persona por su nombre de pila, después del saludo "Estimado", debe escribir un espacio y luego hacer clic en ** Insertar tokens ** en la parte superior derecha del campo Formato HTML. La ventana emergente que aparece le permite encontrar el token apropiado cuando teclee  "Nombre" en el cuadro y elegir así el token que corresponda. Haga clic en Cerrar y verá que su mensaje ahora dice "Estimado {primer nombre}". Cuando se envía el correo electrónico, se insertará el nombre apropiado en cada mensaje. Examine la ventana emergente Tokens de inserción para obtener una lista completa de los tokens de datos de contacto, incluido cualquiera de los campos personalizados que se han creado para su sitio. También puede consultar: <http://wiki.civicrm.org/confluence/display/CRMDOC/Tokens> para más detalles.
+Si desea que cada correo electrónico se dirija a la persona por su nombre de pila, después del saludo "Estimado", debe escribir un espacio y luego hacer clic en **Insertar tokens** en la parte superior derecha del campo Formato HTML. La ventana emergente que aparece le permite encontrar el token apropiado cuando teclee  "Nombre" en el cuadro y elegir así el token que corresponda. Haga clic en Cerrar y verá que su mensaje ahora dice "Estimado {primer nombre}". Cuando se envía el correo electrónico, se insertará el nombre apropiado en cada mensaje. Examine la ventana emergente Tokens de inserción para obtener una lista completa de los tokens de datos de contacto, incluido cualquiera de los campos personalizados que se han creado para su sitio. También puede consultar: <http://wiki.civicrm.org/confluence/display/CRMDOC/Tokens> para más detalles.
 
 **Tokens de Acción y Organización**
 ------------------------------------
