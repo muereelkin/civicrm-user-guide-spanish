@@ -42,7 +42,7 @@ La Asociación de Tránsito Público de la Región Atlántica (ARPTA) tiene nece
 
 Cuando el administrador de membresías de ARPTA, Sue, configuró inicialmente CiviMember, creó un tipo de membresía por separado para cada una de las cuatro categorías de miembros descritas anteriormente. Esto fue manejado fácilmente por CiviMember. Inicialmente, continuaron con el proceso manual de renovaciones de membresía y nuevas inscripciones mientras el sistema estaba en modo reposo.
 
-Last year ARPTA's board agreed that they needed to boost membership income by improving their membership recruitment and renewal rates, whilst keeping tight control, and if possible reducing, the amount of time spent on membership administration.
+El año pasado, la junta directiva de la ARPTA acordó que necesitaban aumentar los ingresos de la membresía mejorando el reclutamiento de miembros y las tasas de renovación, al mismo tiempo que mantenían un control estricto y, si era posible, reducían la cantidad de tiempo dedicado a la administración de la membresía.
 
 Para poder realizar todos estos procesos, utilizaron CiviContribute y CiviMember para configurar páginas de registro y renovación en línea para Miembros Regulares y Afiliados. Luego pudieron realizar campañas de reclutamiento de miembros dirigidas a las páginas de registro en línea para que los miembros potenciales pudieran unirse rápidamente en línea. Al mismo tiempo, se alentó a los miembros existentes a renovar en línea, iniciando sesión en la sección de miembros en el sitio web de ARPTA.
 
